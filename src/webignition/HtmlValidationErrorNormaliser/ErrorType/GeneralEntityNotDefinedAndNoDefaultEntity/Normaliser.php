@@ -6,23 +6,48 @@ use webignition\HtmlValidationErrorNormaliser\ErrorType\Normaliser as AbstractNo
 use webignition\HtmlValidationErrorNormaliser\ErrorType\GeneralEntityNotDefinedAndNoDefaultEntity\ErrorType as TargetErrorType;
 
 class Normaliser extends AbstractNormaliser {
-
-    public function normalise($htmlErrorString, \webignition\HtmlValidationErrorNormaliser\ErrorType\ErrorType $errorType) {
-        /* @var $errorType TargetErrorType */        
-        if (!$errorType instanceof TargetErrorType) {
-            return false;
+    
+    /**
+     *
+     * @var string
+     */
+    private $normalForm = null;
+    
+    /**
+     *
+     * @var array
+     */
+    private $parameters = null;
+   
+    protected function getNormalForm() {
+        if (is_null($this->normalForm)) {
+            $this->performNormalisation();
         }
         
-        $parameter = str_replace(array(
-            $errorType::PLACEHOLDER_PREFIX,
-            $errorType::PLACEHOLDER_POSTFIX
-        ), '', $htmlErrorString);
+        return $this->normalForm;
+    }
+
+    protected function getParameters() {
+        if (is_null($this->parameters)) {
+            $this->performNormalisation();
+        }
         
-        return array(
-            'normal-form' => $errorType::PLACEHOLDER_PREFIX . '%0' . $errorType::PLACEHOLDER_POSTFIX,
-            'parameters' => array(
-                $parameter
-            )
-        );
-    }    
+        return $this->parameters;        
+    }
+
+    protected function isCorrectErrorType() {
+        return $this->errorType instanceof TargetErrorType;      
+    }  
+    
+    private function performNormalisation() {        
+        $parameter = str_replace(array(
+            $this->errorType->getPlaceholderPrefix(),
+            $this->errorType->getPlaceholderPostfix()
+        ), '', $this->htmlErrorString);
+        
+        $this->normalForm = $this->errorType->getPlaceholderPrefix() . '%0' . $this->errorType->getPlaceholderPostfix();
+        $this->parameters = array(
+            $parameter
+        );       
+    }
 }

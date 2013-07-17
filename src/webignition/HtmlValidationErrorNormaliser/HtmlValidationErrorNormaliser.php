@@ -43,7 +43,8 @@ class HtmlValidationErrorNormaliser {
      * @return array
      */
     public function normalise($htmlErrorString) {
-        $htmlErrorString;
+        $result = new Result();
+        $result->setRawError($htmlErrorString);
         
         foreach ($this->errorTypes as $errorTypeName) {
             /* @var $errorType Error */
@@ -52,13 +53,13 @@ class HtmlValidationErrorNormaliser {
             if ($errorType->is($htmlErrorString)) {                
                 $normaliserClassName = $errorTypeName . '\Normaliser';
                 $normaliser = new $normaliserClassName;
-                return $normaliser->normalise($htmlErrorString, $errorType);
+                $normalisedError = $normaliser->normalise($htmlErrorString, $errorType);
+                $result->setNormalisedError($normalisedError);
+                return $result;
             }
         } 
-        
-        return array(
-            'normal-form' => $htmlErrorString
-        );
+
+        return $result;
     }
     
 }

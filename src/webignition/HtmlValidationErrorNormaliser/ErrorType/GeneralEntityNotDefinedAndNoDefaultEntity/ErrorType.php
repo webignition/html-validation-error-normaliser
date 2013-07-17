@@ -2,14 +2,21 @@
 
 namespace webignition\HtmlValidationErrorNormaliser\ErrorType\GeneralEntityNotDefinedAndNoDefaultEntity;
 
-use webignition\HtmlValidationErrorNormaliser\ErrorType\ErrorType as AbstractErrorType;
+use webignition\HtmlValidationErrorNormaliser\ErrorType\SingleParameterErrorType;
 
-class ErrorType extends AbstractErrorType {
+class ErrorType extends SingleParameterErrorType {
     
     const PATTERN = '/general entity "[a-z0-9]+" not defined and no default entity/';
     const PLACEHOLDER_PREFIX = 'general entity "';
     CONST PLACEHOLDER_POSTFIX = '" not defined and no default entity';
     
+    public function getPlaceholderPrefix() {
+        return self::PLACEHOLDER_PREFIX;
+    }  
+    
+    public function getPlaceholderPostfix() {
+        return self::PLACEHOLDER_POSTFIX;
+    }    
     
     /**
      * 
@@ -17,5 +24,7 @@ class ErrorType extends AbstractErrorType {
      */
     public function getPattern() {
         return self::PATTERN;
-    }    
+    }
+
+  
 }
