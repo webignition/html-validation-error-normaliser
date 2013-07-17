@@ -7,14 +7,30 @@ use webignition\HtmlValidationErrorNormaliser\Tests\webignition\HtmlValidationEr
 class GetParametersTest extends BaseTest {    
     
     public function testNormaliseGeneralEntityDefinedAndNoDefaultEntity() {        
-        $htmlErrorString = 'general entity "t" not defined and no default entity';
-        
-        $this->assertEquals(
-            array(
+        $this->parametersTest(
+            'general entity "t" not defined and no default entity',
+             array(
                 't'
-            ),
-            $this->getNormaliser()->normalise($htmlErrorString)->getNormalisedError()->getParameters()
+            )
         );
     }
+    
+    public function testUnknownDeclarationType() {
+        $this->parametersTest(
+            'unknown declaration type "doctype"',
+             array(
+                'doctype'
+            )
+        );        
+    }
+    
+    public function testDocumentTypeDoesnotAllowElementHere() {
+        $this->parametersTest(
+            'document type does not allow element "style" here',
+             array(
+                'style'
+            )
+        );        
+    }    
     
 }

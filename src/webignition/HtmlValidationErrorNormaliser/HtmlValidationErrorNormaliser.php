@@ -2,8 +2,8 @@
 
 namespace webignition\HtmlValidationErrorNormaliser;
 
-use webignition\HtmlValidationErrorNormaliser\ErrorType\ErrorType;
-use webignition\HtmlValidationErrorNormaliser\ErrorType\Normaliser;
+use webignition\HtmlValidationErrorNormaliser\ErrorHandler\ErrorHandler;
+//use webignition\HtmlValidationErrorNormaliser\ErrorType\Normaliser;
 
 
 /**
@@ -25,15 +25,15 @@ class HtmlValidationErrorNormaliser {
      *
      * @var array
      */
-    private $errorTypes = array();
+    private $errorHandlers = array();
     
     
     /**
      * 
-     * @param string $errorType
+     * @param ErrorHandler $errorHandler
      */
-    public function addErrorType($errorType) {
-        $this->errorTypes[] = $errorType;
+    public function addErrorHandler(ErrorHandler $errorHandler) {
+        $this->errorHandlers[] = $errorHandler;
     }
     
     
@@ -46,18 +46,14 @@ class HtmlValidationErrorNormaliser {
         $result = new Result();
         $result->setRawError($htmlErrorString);
         
-        foreach ($this->errorTypes as $errorTypeName) {
-            /* @var $errorType Error */
-            $errorClassName = $errorTypeName . '\ErrorType';            
-            $errorType = new $errorClassName;
-            if ($errorType->is($htmlErrorString)) {                
-                $normaliserClassName = $errorTypeName . '\Normaliser';
-                $normaliser = new $normaliserClassName;
-                $normalisedError = $normaliser->normalise($htmlErrorString, $errorType);
-                $result->setNormalisedError($normalisedError);
+        foreach ($this->errorHandlers as $errorHandler) {
+            /* @var $errorHandler ErrorHandler */            
+            if ($errorHandler->getErrorType()->is($htmlErrorString)) {
+                $normalisedError = $errorHandler->getNormaliser()->normalise($htmlErrorString, $errorHandler->getErrorType());
+                $result->setNormalisedError($normalisedError);               
                 return $result;
             }
-        } 
+        }
 
         return $result;
     }

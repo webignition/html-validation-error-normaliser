@@ -19,8 +19,7 @@ abstract class Normaliser {
     protected $errorType;
     
     abstract protected function getNormalForm();
-    abstract protected function getParameters();
-    abstract protected function isCorrectErrorType();    
+    abstract protected function getParameters();  
     
     /**
      * 
@@ -31,10 +30,6 @@ abstract class Normaliser {
     public function normalise($htmlErrorString, ErrorType $errorType) {
         $this->htmlErrorString = $htmlErrorString;
         $this->errorType = $errorType;
-        
-        if (!$this->isCorrectErrorType()) {
-            return null;
-        }
         
         $normalisedError = new NormalisedError();
         $normalisedError->setNormalForm($this->getNormalForm());

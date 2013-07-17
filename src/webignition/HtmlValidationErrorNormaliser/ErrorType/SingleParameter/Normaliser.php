@@ -4,7 +4,7 @@ namespace webignition\HtmlValidationErrorNormaliser\ErrorType\SingleParameter;
 
 use webignition\HtmlValidationErrorNormaliser\ErrorType\Normaliser as AbstractNormaliser;
 
-abstract class Normaliser extends AbstractNormaliser {
+class Normaliser extends AbstractNormaliser {
     
     /**
      *
