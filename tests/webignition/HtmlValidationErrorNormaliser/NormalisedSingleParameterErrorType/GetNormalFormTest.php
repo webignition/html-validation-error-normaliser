@@ -34,12 +34,18 @@ class GetNormalFormTest extends BaseTest {
             'end tag for "%0" omitted, but its declaration does not permit this'
         );     
     }
-    
+
     public function testEndTagOmittedButOmmittagNoWasSpecified() {
         $this->normalFormTest(
-            'end tag for "FONT" omitted, but its declaration does not permit this',
-            'end tag for "%0" omitted, but its declaration does not permit this'
+            'end tag for "h1" omitted, but OMITTAG NO was specified',
+            'end tag for "%0" omitted, but OMITTAG NO was specified'
         );     
     }    
-    // end tag for "h1" omitted, but OMITTAG NO was specified
+    
+    public function testEndTagWhichIsNotFinished() {
+        $this->normalFormTest(
+            'end tag for "tbody" which is not finished',
+            'end tag for "%0" which is not finished'
+        );     
+    }
 }

@@ -49,6 +49,15 @@ class GetParametersTest extends BaseTest {
                 'h1'
             )
         );  
+    } 
+    
+    public function testEndTagWhichIsNotFinished() {
+        $this->parametersTest(
+            'end tag for "tbody" which is not finished',
+             array(
+                'tbody'
+            )
+        );    
     }    
     
 }

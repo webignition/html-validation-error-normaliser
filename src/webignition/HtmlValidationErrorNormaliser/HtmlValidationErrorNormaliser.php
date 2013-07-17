@@ -52,6 +52,12 @@ class HtmlValidationErrorNormaliser {
             'end tag for "',
             '" omitted, but OMITTAG NO was specified'
         ), new SingleParameterNormaliser()));
+
+        $this->addErrorHandler(new ErrorHandler(new SingleParameterErrorType(
+            '/end tag for ".+" which is not finished/',
+            'end tag for "',
+            '" which is not finished'
+        ), new SingleParameterNormaliser()));        
         
         $this->addErrorHandler(new ErrorHandler(
             new DocumentTypeDoesNotAllowElementHereMissingOneOfErrorType,
