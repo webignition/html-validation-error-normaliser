@@ -47,9 +47,11 @@ class HtmlValidationErrorNormaliser {
             '" omitted, but its declaration does not permit this'
         ), new SingleParameterNormaliser()));    
         
-        // end tag for "FONT" omitted, but its declaration does not permit this
-        
-// end tag for X omitted, but its declaration does not permit this        
+        $this->addErrorHandler(new ErrorHandler(new SingleParameterErrorType(
+            '/end tag for ".+" omitted, but OMITTAG NO was specified/',
+            'end tag for "',
+            '" omitted, but OMITTAG NO was specified'
+        ), new SingleParameterNormaliser()));
         
         $this->addErrorHandler(new ErrorHandler(
             new DocumentTypeDoesNotAllowElementHereMissingOneOfErrorType,

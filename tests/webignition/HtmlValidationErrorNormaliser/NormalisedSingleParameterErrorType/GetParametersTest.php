@@ -40,6 +40,15 @@ class GetParametersTest extends BaseTest {
                 'FONT'
             )
         );        
-    }     
+    } 
+    
+    public function testEndTagOmittedButOmmittagNoWasSpecified() {
+        $this->parametersTest(
+            'end tag for "h1" omitted, but OMITTAG NO was specified',
+             array(
+                'h1'
+            )
+        );  
+    }    
     
 }
