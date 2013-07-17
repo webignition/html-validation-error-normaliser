@@ -7,19 +7,22 @@ use webignition\HtmlValidationErrorNormaliser\Tests\webignition\HtmlValidationEr
 class IsNormalisedTest extends BaseTest {    
 
     public function testUnterminatedCommentFound() {        
-        $htmlErrorString = 'unterminated comment: found end of entity inside comment';
-        
-        $this->assertFalse(
-            $this->getNormaliser()->normalise($htmlErrorString)->isNormalised()
-        );     
+        $this->noNormalisationNeededTest('unterminated comment: found end of entity inside comment'); 
     }    
     
     public function testLiteralIsMissingClosingDelimiter() {        
-        $htmlErrorString = 'literal is missing closing delimiter';
-        
+        $this->noNormalisationNeededTest('literal is missing closing delimiter');
+    }
+    
+
+    public function testCharacterDataIsNotAllowedHere() {        
+        $this->noNormalisationNeededTest('character data is not allowed here');     
+    }
+    
+    private function noNormalisationNeededTest($htmlErrorString) {        
         $this->assertFalse(
             $this->getNormaliser()->normalise($htmlErrorString)->isNormalised()
-        );     
+        );            
     }
     
 }
