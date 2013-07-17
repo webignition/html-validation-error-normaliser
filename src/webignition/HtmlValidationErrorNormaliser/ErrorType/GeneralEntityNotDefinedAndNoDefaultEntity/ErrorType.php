@@ -2,9 +2,9 @@
 
 namespace webignition\HtmlValidationErrorNormaliser\ErrorType\GeneralEntityNotDefinedAndNoDefaultEntity;
 
-use webignition\HtmlValidationErrorNormaliser\ErrorType\SingleParameterErrorType;
+use webignition\HtmlValidationErrorNormaliser\ErrorType\SingleParameter\ErrorType as BaseErrorType;
 
-class ErrorType extends SingleParameterErrorType {
+class ErrorType extends BaseErrorType {
     
     const PATTERN = '/general entity "[a-z0-9]+" not defined and no default entity/';
     const PLACEHOLDER_PREFIX = 'general entity "';

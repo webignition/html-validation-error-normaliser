@@ -2,9 +2,9 @@
 
 namespace webignition\HtmlValidationErrorNormaliser\ErrorType\UnknownDeclarationType;
 
-use webignition\HtmlValidationErrorNormaliser\ErrorType\SingleParameterErrorType;
+use webignition\HtmlValidationErrorNormaliser\ErrorType\SingleParameter\ErrorType as BaseErrorType;
 
-class ErrorType extends SingleParameterErrorType {
+class ErrorType extends BaseErrorType {
     
     const PATTERN = '/unknown declaration type "[a-z0-9]+"/';
     const PLACEHOLDER_PREFIX = 'unknown declaration type "';
