@@ -7,24 +7,33 @@ use webignition\HtmlValidationErrorNormaliser\Tests\webignition\HtmlValidationEr
 class GetNormalFormTest extends BaseTest {    
 
     public function testNormaliseGeneralEntityDefinedAndNoDefaultEntity() {        
-        $htmlErrorString = 'general entity "t" not defined and no default entity';
-        $normalForm = 'general entity "%0" not defined and no default entity';
-        
-        $this->assertEquals(
-            $normalForm,
-            $this->getNormaliser()->normalise($htmlErrorString)->getNormalisedError()->getNormalForm()
+        $this->normalFormTest(
+            'general entity "t" not defined and no default entity',
+            'general entity "%0" not defined and no default entity'
         );     
     }
     
     
     public function testUnknownDeclarationType() {
-        $htmlErrorString = 'unknown declaration type "doctype"';
-        $normalForm = 'unknown declaration type "%0"';
-        
+        $this->normalFormTest(
+            'unknown declaration type "doctype"',
+            'unknown declaration type "%0"'
+        );          
+    }
+    
+    public function testDocumentTypeDoesnotAllowElementHere() {
+        $this->normalFormTest(
+            'document type does not allow element "style" here',
+            'document type does not allow element "%0" here'
+        );     
+    }
+    
+    
+    private function normalFormTest($htmlErrorString, $expectedNormalForm) {        
         $this->assertEquals(
-            $normalForm,
+            $expectedNormalForm,
             $this->getNormaliser()->normalise($htmlErrorString)->getNormalisedError()->getNormalForm()
-        );         
+        );            
     }
     
 }

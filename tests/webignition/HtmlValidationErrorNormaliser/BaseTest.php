@@ -8,7 +8,9 @@ abstract class BaseTest extends \PHPUnit_Framework_TestCase {
     
     private $errorTypes = array(
         'webignition\HtmlValidationErrorNormaliser\ErrorType\GeneralEntityNotDefinedAndNoDefaultEntity',
-        'webignition\HtmlValidationErrorNormaliser\ErrorType\UnknownDeclarationType'
+        'webignition\HtmlValidationErrorNormaliser\ErrorType\UnknownDeclarationType',
+        'webignition\HtmlValidationErrorNormaliser\ErrorType\DocumentTypeDoesNotAllowElementHere'
+        
     );
 
 
