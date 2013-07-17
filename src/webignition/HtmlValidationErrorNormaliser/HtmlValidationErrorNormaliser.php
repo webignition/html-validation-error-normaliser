@@ -3,19 +3,13 @@
 namespace webignition\HtmlValidationErrorNormaliser;
 
 use webignition\HtmlValidationErrorNormaliser\ErrorHandler\ErrorHandler;
-//use webignition\HtmlValidationErrorNormaliser\ErrorType\Normaliser;
-
+use webignition\HtmlValidationErrorNormaliser\ErrorType\SingleParameter\ErrorType as SingleParameterErrorType;
+use webignition\HtmlValidationErrorNormaliser\ErrorType\SingleParameter\Normaliser as SingleParameterNormaliser;
+use webignition\HtmlValidationErrorNormaliser\ErrorType\DocumentTypeDoesNotAllowElementHereMissingOneOf\ErrorType as DocumentTypeDoesNotAllowElementHereMissingOneOfErrorType;
+use webignition\HtmlValidationErrorNormaliser\ErrorType\DocumentTypeDoesNotAllowElementHereMissingOneOf\Normaliser as DocumentTypeDoesNotAllowElementHereMissingOneOfNormaliser;
 
 /**
  * Take a raw HTML validation error and return a normal form
- * 
- * e.g. normalise('reference to entity "order" for which no system identifier could be generated') 
- *      returns array(
- *          'normal-form' => 'reference to entity "%0" for which no system identifier could be generated'
- *          'parameters' => array(
- *              'order'
-             )
- *      )
  * 
  * W3C html error reference: http://validator.w3.org/docs/errors.html
  */
@@ -27,6 +21,31 @@ class HtmlValidationErrorNormaliser {
      */
     private $errorHandlers = array();
     
+    
+    public function __construct() {
+        $this->addErrorHandler(new ErrorHandler(new SingleParameterErrorType(
+            '/general entity "[a-z0-9]+" not defined and no default entity/',
+            'general entity "',
+            '" not defined and no default entity'
+        ), new SingleParameterNormaliser()));
+        
+        $this->addErrorHandler(new ErrorHandler(new SingleParameterErrorType(
+            '/unknown declaration type ".+"/',
+            'unknown declaration type "',
+            '"'
+        ), new SingleParameterNormaliser()));        
+        
+        $this->addErrorHandler(new ErrorHandler(new SingleParameterErrorType(
+            '/document type does not allow element ".+" here$/',
+            'document type does not allow element "',
+            '" here'
+        ), new SingleParameterNormaliser()));            
+        
+        $this->addErrorHandler(new ErrorHandler(
+            new DocumentTypeDoesNotAllowElementHereMissingOneOfErrorType,
+            new DocumentTypeDoesNotAllowElementHereMissingOneOfNormaliser
+        ));           
+    }
     
     /**
      * 
