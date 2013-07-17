@@ -16,4 +16,15 @@ class GetNormalFormTest extends BaseTest {
         );     
     }
     
+    
+    public function testUnknownDeclarationType() {
+        $htmlErrorString = 'unknown declaration type "doctype"';
+        $normalForm = 'unknown declaration type "%0"';
+        
+        $this->assertEquals(
+            $normalForm,
+            $this->getNormaliser()->normalise($htmlErrorString)->getNormalisedError()->getNormalForm()
+        );         
+    }
+    
 }
