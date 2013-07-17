@@ -6,7 +6,7 @@ use webignition\HtmlValidationErrorNormaliser\ErrorType\SingleParameter\ErrorTyp
 
 class ErrorType extends BaseErrorType {
     
-    const PATTERN = '/document type does not allow element "[a-z0-9]+" here/';
+    const PATTERN = '/document type does not allow element ".+" here$/';
     const PLACEHOLDER_PREFIX = 'document type does not allow element "';
     CONST PLACEHOLDER_POSTFIX = '" here';
     

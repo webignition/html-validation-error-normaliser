@@ -26,14 +26,5 @@ class GetNormalFormTest extends BaseTest {
             'document type does not allow element "style" here',
             'document type does not allow element "%0" here'
         );     
-    }
-    
-    
-    private function normalFormTest($htmlErrorString, $expectedNormalForm) {        
-        $this->assertEquals(
-            $expectedNormalForm,
-            $this->getNormaliser()->normalise($htmlErrorString)->getNormalisedError()->getNormalForm()
-        );            
-    }
-    
+    }    
 }

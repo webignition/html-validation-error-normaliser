@@ -9,7 +9,8 @@ abstract class BaseTest extends \PHPUnit_Framework_TestCase {
     private $errorTypes = array(
         'webignition\HtmlValidationErrorNormaliser\ErrorType\GeneralEntityNotDefinedAndNoDefaultEntity',
         'webignition\HtmlValidationErrorNormaliser\ErrorType\UnknownDeclarationType',
-        'webignition\HtmlValidationErrorNormaliser\ErrorType\DocumentTypeDoesNotAllowElementHere'
+        'webignition\HtmlValidationErrorNormaliser\ErrorType\DocumentTypeDoesNotAllowElementHere',
+        'webignition\HtmlValidationErrorNormaliser\ErrorType\DocumentTypeDoesNotAllowElementHereMissingOneOf'
         
     );
 
@@ -23,5 +24,13 @@ abstract class BaseTest extends \PHPUnit_Framework_TestCase {
         
         return $normaliser;
     }
+    
+    
+    protected function normalFormTest($htmlErrorString, $expectedNormalForm) {        
+        $this->assertEquals(
+            $expectedNormalForm,
+            $this->getNormaliser()->normalise($htmlErrorString)->getNormalisedError()->getNormalForm()
+        );            
+    }    
     
 }

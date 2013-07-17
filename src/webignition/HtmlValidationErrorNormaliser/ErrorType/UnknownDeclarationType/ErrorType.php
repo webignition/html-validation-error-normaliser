@@ -6,7 +6,7 @@ use webignition\HtmlValidationErrorNormaliser\ErrorType\SingleParameter\ErrorTyp
 
 class ErrorType extends BaseErrorType {
     
-    const PATTERN = '/unknown declaration type "[a-z0-9]+"/';
+    const PATTERN = '/unknown declaration type ".+"/';
     const PLACEHOLDER_PREFIX = 'unknown declaration type "';
     CONST PLACEHOLDER_POSTFIX = '"';
     
