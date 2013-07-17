@@ -27,4 +27,11 @@ class GetNormalFormTest extends BaseTest {
             'document type does not allow element "%0" here'
         );     
     }    
+    
+    public function testEndTagOmitted() {
+        $this->normalFormTest(
+            'end tag for "FONT" omitted, but its declaration does not permit this',
+            'end tag for "%0" omitted, but its declaration does not permit this'
+        );     
+    }      
 }

@@ -33,4 +33,13 @@ class GetParametersTest extends BaseTest {
         );        
     }    
     
+    public function testEndTagOmittedDeclarationDoesNotPermitThis() {
+        $this->parametersTest(
+            'end tag for "FONT" omitted, but its declaration does not permit this',
+             array(
+                'FONT'
+            )
+        );        
+    }     
+    
 }

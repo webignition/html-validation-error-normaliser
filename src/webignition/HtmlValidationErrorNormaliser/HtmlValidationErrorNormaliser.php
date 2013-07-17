@@ -13,7 +13,7 @@ use webignition\HtmlValidationErrorNormaliser\ErrorType\DocumentTypeDoesNotAllow
  * 
  * W3C html error reference: http://validator.w3.org/docs/errors.html
  */
-class HtmlValidationErrorNormaliser {
+class HtmlValidationErrorNormaliser {    
     
     /**
      *
@@ -40,6 +40,16 @@ class HtmlValidationErrorNormaliser {
             'document type does not allow element "',
             '" here'
         ), new SingleParameterNormaliser()));            
+        
+        $this->addErrorHandler(new ErrorHandler(new SingleParameterErrorType(
+            '/end tag for ".+" omitted, but its declaration does not permit this/',
+            'end tag for "',
+            '" omitted, but its declaration does not permit this'
+        ), new SingleParameterNormaliser()));    
+        
+        // end tag for "FONT" omitted, but its declaration does not permit this
+        
+// end tag for X omitted, but its declaration does not permit this        
         
         $this->addErrorHandler(new ErrorHandler(
             new DocumentTypeDoesNotAllowElementHereMissingOneOfErrorType,
