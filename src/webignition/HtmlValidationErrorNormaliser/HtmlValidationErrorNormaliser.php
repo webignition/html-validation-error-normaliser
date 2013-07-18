@@ -2,77 +2,14 @@
 
 namespace webignition\HtmlValidationErrorNormaliser;
 
-use webignition\HtmlValidationErrorNormaliser\ErrorHandler\ErrorHandler;
-use webignition\HtmlValidationErrorNormaliser\ErrorType\SingleParameter\ErrorType as SingleParameterErrorType;
-use webignition\HtmlValidationErrorNormaliser\ErrorType\SingleParameter\Normaliser as SingleParameterNormaliser;
-use webignition\HtmlValidationErrorNormaliser\ErrorType\DocumentTypeDoesNotAllowElementHereMissingOneOf\ErrorType as DocumentTypeDoesNotAllowElementHereMissingOneOfErrorType;
-use webignition\HtmlValidationErrorNormaliser\ErrorType\DocumentTypeDoesNotAllowElementHereMissingOneOf\Normaliser as DocumentTypeDoesNotAllowElementHereMissingOneOfNormaliser;
+use webignition\HtmlValidationErrorNormaliser\NormalisedError;
 
 /**
  * Take a raw HTML validation error and return a normal form
  * 
  * W3C html error reference: http://validator.w3.org/docs/errors.html
  */
-class HtmlValidationErrorNormaliser {    
-    
-    /**
-     *
-     * @var array
-     */
-    private $errorHandlers = array();
-    
-    
-    public function __construct() {
-        $this->addErrorHandler(new ErrorHandler(new SingleParameterErrorType(
-            '/general entity "[a-z0-9]+" not defined and no default entity/',
-            'general entity "',
-            '" not defined and no default entity'
-        ), new SingleParameterNormaliser()));
-        
-        $this->addErrorHandler(new ErrorHandler(new SingleParameterErrorType(
-            '/unknown declaration type ".+"/',
-            'unknown declaration type "',
-            '"'
-        ), new SingleParameterNormaliser()));        
-        
-        $this->addErrorHandler(new ErrorHandler(new SingleParameterErrorType(
-            '/document type does not allow element ".+" here$/',
-            'document type does not allow element "',
-            '" here'
-        ), new SingleParameterNormaliser()));            
-        
-        $this->addErrorHandler(new ErrorHandler(new SingleParameterErrorType(
-            '/end tag for ".+" omitted, but its declaration does not permit this/',
-            'end tag for "',
-            '" omitted, but its declaration does not permit this'
-        ), new SingleParameterNormaliser()));    
-        
-        $this->addErrorHandler(new ErrorHandler(new SingleParameterErrorType(
-            '/end tag for ".+" omitted, but OMITTAG NO was specified/',
-            'end tag for "',
-            '" omitted, but OMITTAG NO was specified'
-        ), new SingleParameterNormaliser()));
-
-        $this->addErrorHandler(new ErrorHandler(new SingleParameterErrorType(
-            '/end tag for ".+" which is not finished/',
-            'end tag for "',
-            '" which is not finished'
-        ), new SingleParameterNormaliser()));        
-        
-        $this->addErrorHandler(new ErrorHandler(
-            new DocumentTypeDoesNotAllowElementHereMissingOneOfErrorType,
-            new DocumentTypeDoesNotAllowElementHereMissingOneOfNormaliser
-        ));           
-    }
-    
-    /**
-     * 
-     * @param ErrorHandler $errorHandler
-     */
-    public function addErrorHandler(ErrorHandler $errorHandler) {
-        $this->errorHandlers[] = $errorHandler;
-    }
-    
+class HtmlValidationErrorNormaliser {  
     
     /**
      * 
@@ -83,15 +20,23 @@ class HtmlValidationErrorNormaliser {
         $result = new Result();
         $result->setRawError($htmlErrorString);
         
-        foreach ($this->errorHandlers as $errorHandler) {
-            /* @var $errorHandler ErrorHandler */            
-            if ($errorHandler->getErrorType()->is($htmlErrorString)) {
-                $normalisedError = $errorHandler->getNormaliser()->normalise($htmlErrorString, $errorHandler->getErrorType());
-                $result->setNormalisedError($normalisedError);               
-                return $result;
-            }
+        $parameterMatches = array();
+        $matchCount = preg_match_all('/"[^"]+"/', $htmlErrorString, $parameterMatches);
+        
+        if ($matchCount === 0) {
+            return $result;
         }
+        
+        $normalisedError = new NormalisedError();
+        $normalisedErrorString = $htmlErrorString;
 
+        foreach ($parameterMatches[0] as $parameterIndex => $parameterMatch) {
+            $normalisedErrorString = str_replace($parameterMatch, '"%'.$parameterIndex.'"', $normalisedErrorString);            
+            $normalisedError->addParameter(trim($parameterMatch, '"'));
+        }
+        
+        $normalisedError->setNormalForm($normalisedErrorString);
+        $result->setNormalisedError($normalisedError);               
         return $result;
     }
     
