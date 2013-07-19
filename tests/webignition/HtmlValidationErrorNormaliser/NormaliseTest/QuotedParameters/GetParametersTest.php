@@ -103,4 +103,15 @@ class GetParametersTest extends BaseTest {
         );
     }     
     
+    public function testValueOfAttributeXCannotBeBlank() {
+        $this->parametersTest(
+            'value of attribute "nowrap" cannot be ""; must be one of "nowrap"',
+             array(
+                 'nowrap',
+                 '',
+                 'nowrap'
+            )
+        );
+    }    
+    
 }

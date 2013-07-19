@@ -35,17 +35,17 @@ class HtmlValidationErrorNormaliser {
     }
     
     
-    private function getQuotedParameterNormalisedError($htmlErrorString) {        
+    private function getQuotedParameterNormalisedError($htmlErrorString) {                
         if (($normalisedError = $this->getDocumentDoesNotAllowElementXHereMissingOneOfYError($htmlErrorString)) !== false) {            
             return $normalisedError;            
         }     
         
         if (($normalisedError = $this->getValueOfAttributeXCannotBeYMustBeOneOfZError($htmlErrorString)) !== false) {            
             return $normalisedError;            
-        }            
+        };
         
         $parameterMatches = array();
-        $matchCount = preg_match_all('/"[^"]+"/', $htmlErrorString, $parameterMatches);
+        $matchCount = preg_match_all('/"([^"]?)+"/', $htmlErrorString, $parameterMatches);
         
         if ($matchCount === 0) {
             return false;
@@ -54,12 +54,13 @@ class HtmlValidationErrorNormaliser {
         $normalisedError = new NormalisedError();
         $normalisedErrorString = $htmlErrorString;
 
-        foreach ($parameterMatches[0] as $parameterIndex => $parameterMatch) {
-            $normalisedErrorString = str_replace($parameterMatch, '"%'.$parameterIndex.'"', $normalisedErrorString);            
+        foreach ($parameterMatches[0] as $parameterIndex => $parameterMatch) {            
+            $normalisedErrorString = preg_replace('/'.$parameterMatch.'/', '"%'.$parameterIndex.'"', $normalisedErrorString, 1);          
             $normalisedError->addParameter(trim($parameterMatch, '"'));
         }
         
-        $normalisedError->setNormalForm($normalisedErrorString);
+        $normalisedError->setNormalForm($normalisedErrorString);         
+        
         return $normalisedError;
     }    
     

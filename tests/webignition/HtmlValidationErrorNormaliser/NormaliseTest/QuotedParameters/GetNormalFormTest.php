@@ -74,5 +74,12 @@ class GetNormalFormTest extends BaseTest {
         $expectedNormalForm = 'value of attribute "%0" cannot be "%1"; must be one of %2';
         
         $this->normalFormTest($htmlErrorString, $expectedNormalForm);
-    }     
+    }  
+    
+    public function testValueOfAttributeXCannotBeBlank() {
+        $htmlErrorString = 'value of attribute "nowrap" cannot be ""; must be one of "nowrap"';
+        $expectedNormalForm = 'value of attribute "%0" cannot be "%1"; must be one of "%2"';
+        
+        $this->normalFormTest($htmlErrorString, $expectedNormalForm);
+    }
 }
