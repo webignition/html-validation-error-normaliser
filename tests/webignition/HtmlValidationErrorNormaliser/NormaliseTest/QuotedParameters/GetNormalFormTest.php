@@ -96,4 +96,18 @@ class GetNormalFormTest extends BaseTest {
         
         $this->normalFormTest($htmlErrorString, $expectedNormalForm);              
     }    
+    
+    public function testIdAltreadyDefinedOne() {
+        $htmlErrorString = 'ID "\"playerbox_"+playerid+"\"" already defined';
+        $expectedNormalForm = 'ID "%0" already defined';
+        
+        $this->normalFormTest($htmlErrorString, $expectedNormalForm);              
+    }      
+    
+    public function testIdAltreadyDefinedTwo() {
+        $htmlErrorString = 'ID "\"contenedor_ayuda\"" already defined';
+        $expectedNormalForm = 'ID "%0" already defined';
+        
+        $this->normalFormTest($htmlErrorString, $expectedNormalForm);              
+    }     
 }

@@ -121,6 +121,25 @@ class GetParametersTest extends BaseTest {
                  '('
             )
         );     
-    }     
+    } 
+    
+    
+    public function testIdAltreadyDefinedOne() {
+        $this->parametersTest(
+            'ID "\"playerbox_"+playerid+"\"" already defined',
+             array(
+                 '\"playerbox_"+playerid+"\"'
+            )
+        ); 
+    }      
+    
+    public function testIdAltreadyDefinedTwo() {
+        $this->parametersTest(
+            'ID "\"contenedor_ayuda\"" already defined',
+             array(
+                 '\"contenedor_ayuda\"'
+            )
+        );           
+    }      
     
 }

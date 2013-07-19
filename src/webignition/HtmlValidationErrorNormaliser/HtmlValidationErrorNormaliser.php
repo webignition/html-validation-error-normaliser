@@ -16,7 +16,7 @@ class HtmlValidationErrorNormaliser {
      * @param string $htmlErrorString
      * @return array
      */
-    public function normalise($htmlErrorString) {                
+    public function normalise($htmlErrorString) {
         $result = new Result();
         $result->setRawError($htmlErrorString);
         
@@ -36,13 +36,17 @@ class HtmlValidationErrorNormaliser {
     
     
     private function getQuotedParameterNormalisedError($htmlErrorString) {                
+        if (($normalisedError = $this->getIdAlreadyDefinedError($htmlErrorString)) !== false) {            
+            return $normalisedError;            
+        }            
+        
         if (($normalisedError = $this->getDocumentDoesNotAllowElementXHereMissingOneOfYError($htmlErrorString)) !== false) {            
             return $normalisedError;            
         }     
         
         if (($normalisedError = $this->getValueOfAttributeXCannotBeYMustBeOneOfZError($htmlErrorString)) !== false) {            
             return $normalisedError;            
-        };       
+        };
         
         $parameterMatches = array();
         $matchCount = preg_match_all('/"([^"]?)+"/', $htmlErrorString, $parameterMatches);
@@ -72,6 +76,21 @@ class HtmlValidationErrorNormaliser {
         
         return $escapedValue;
     }
+    
+    private function getIdAlreadyDefinedError($htmlErrorString) {                        
+        if (preg_match('/ID .+ already defined/i', $htmlErrorString)) {
+            $normalisedError = new NormalisedError();            
+            $normalisedError->setNormalForm('ID "%0" already defined');            
+            $normalisedError->addParameter(str_replace(array(
+                'ID "',
+                '" already defined'
+            ), '', $htmlErrorString));
+            
+            return $normalisedError;
+        }
+        
+        return false;
+    }    
     
     private function getValueOfAttributeXCannotBeYMustBeOneOfZError($htmlErrorString) {                
         if (preg_match('/value of attribute ".+" cannot be ".+"; must be one of/i', $htmlErrorString)) {            
