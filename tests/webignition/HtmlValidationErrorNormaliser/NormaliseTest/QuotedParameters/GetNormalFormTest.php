@@ -124,4 +124,11 @@ class GetNormalFormTest extends BaseTest {
         
         $this->normalFormTest($htmlErrorString, $expectedNormalForm);          
     }    
+    
+    public function testElementXUndefined() {
+        $htmlErrorString = 'Element "Variable" undefined';
+        $expectedNormalForm = 'Element "%0" undefined';
+        
+        $this->normalFormTest($htmlErrorString, $expectedNormalForm);          
+    }    
 }

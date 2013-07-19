@@ -241,6 +241,10 @@ class HtmlValidationErrorNormaliser {
             return false;
         }
         
+        if ($parts[0] !== 'Duplicate') {
+            return false;
+        }
+        
         $normalisedError = new NormalisedError();            
         $normalisedError->setNormalForm('Duplicate '. $parts[1] .' %0.');
 
