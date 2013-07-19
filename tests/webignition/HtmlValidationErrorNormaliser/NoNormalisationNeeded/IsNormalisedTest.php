@@ -17,7 +17,7 @@ class IsNormalisedTest extends BaseTest {
 
     public function testCharacterDataIsNotAllowedHere() {        
         $this->noNormalisationNeededTest('character data is not allowed here');     
-    }
+    }   
     
     private function noNormalisationNeededTest($htmlErrorString) {        
         $this->assertFalse(

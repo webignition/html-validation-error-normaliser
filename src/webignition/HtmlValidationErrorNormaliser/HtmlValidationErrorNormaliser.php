@@ -16,7 +16,7 @@ class HtmlValidationErrorNormaliser {
      * @param string $htmlErrorString
      * @return array
      */
-    public function normalise($htmlErrorString) {        
+    public function normalise($htmlErrorString) {                
         $result = new Result();
         $result->setRawError($htmlErrorString);
         
@@ -49,20 +49,29 @@ class HtmlValidationErrorNormaliser {
         
         if ($matchCount === 0) {
             return false;
-        }        
+        }
 
         $normalisedError = new NormalisedError();
-        $normalisedErrorString = $htmlErrorString;
+        $normalisedErrorString = $htmlErrorString;        
 
-        foreach ($parameterMatches[0] as $parameterIndex => $parameterMatch) {
-            $normalisedErrorString = preg_replace('/'.preg_quote($parameterMatch).'/', '"%'.$parameterIndex.'"', $normalisedErrorString, 1);          
+        foreach ($parameterMatches[0] as $parameterIndex => $parameterMatch) {          
+            $normalisedErrorString = preg_replace('/'.$this->preg_quote($parameterMatch).'/', '"%'.$parameterIndex.'"', $normalisedErrorString, 1);
             $normalisedError->addParameter(trim($parameterMatch, '"'));
         }
         
         $normalisedError->setNormalForm($normalisedErrorString);
         
         return $normalisedError;
-    }    
+    }
+    
+    private function preg_quote($value) {
+        $escapedValue = preg_quote($value);
+        if (substr_count($escapedValue, '/') && !substr_count($escapedValue, '\/')) {
+            $escapedValue = str_replace('/', '\/', $escapedValue);
+        }
+        
+        return $escapedValue;
+    }
     
     private function getValueOfAttributeXCannotBeYMustBeOneOfZError($htmlErrorString) {                
         if (preg_match('/value of attribute ".+" cannot be ".+"; must be one of/i', $htmlErrorString)) {            
