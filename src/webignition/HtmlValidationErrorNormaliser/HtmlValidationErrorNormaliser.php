@@ -16,7 +16,7 @@ class HtmlValidationErrorNormaliser {
      * @param string $htmlErrorString
      * @return array
      */
-    public function normalise($htmlErrorString) {        
+    public function normalise($htmlErrorString) {
         $result = new Result();
         $result->setRawError($htmlErrorString);
         
@@ -159,6 +159,14 @@ class HtmlValidationErrorNormaliser {
     
     
     private function getNonQuotedParameterNormalisedError($htmlErrorString) {
+        if (($normalisedError = $this->getDuplicatePropertyX($htmlErrorString)) !== false) {
+            return $normalisedError;             
+        }         
+        
+        if (($normalisedError = $this->getStrayEndTagError($htmlErrorString)) !== false) {
+            return $normalisedError;             
+        }          
+        
         if (($normalisedError = $this->getAttributeXNotAllowedOnElementYNormalisedError($htmlErrorString)) !== false) {
             return $normalisedError;             
         }        
@@ -204,5 +212,55 @@ class HtmlValidationErrorNormaliser {
         
         return false;        
     }
+    
+    private function getStrayEndTagError($htmlErrorString) {
+        $identifier = 'Stray end tag ';
+        $prefix = 'Stray end tag ';
+        $suffix = '.';
+        
+        if (substr($htmlErrorString, 0, strlen($identifier)) !== $identifier) {
+            return false;
+        }
+        
+        $parameter = str_replace(array(
+            $prefix,
+            $suffix
+        ), '', $htmlErrorString);
+        
+        $normalisedError = new NormalisedError();            
+        $normalisedError->setNormalForm($prefix . '%0' . $suffix);
+
+        $normalisedError->addParameter($parameter);
+        return $normalisedError;
+    }
+    
+    
+    private function getDuplicatePropertyX($htmlErrorString) {
+        $parts = explode(' ', $htmlErrorString);
+        if (count($parts) !== 3) {
+            return false;
+        }
+        
+        $normalisedError = new NormalisedError();            
+        $normalisedError->setNormalForm('Duplicate '. $parts[1] .' %0.');
+
+        $normalisedError->addParameter(trim($parts[2], '.'));
+        
+        return $normalisedError;
+    }
+
+    
+    // Unclosed element div.
+    // Unclosed element %0
+    // 
+    // 
+    // End tag h3 seen, but there were open elements
+    // End tag %0 seen, but there were open elements
+    // 
+    // 
+    // Bad value 100% for attribute width on element img: Expected a digit but saw % instead.
+    // Bad value %0 for attribute %1 on element %2: %3
+    //
+    
     
 }
