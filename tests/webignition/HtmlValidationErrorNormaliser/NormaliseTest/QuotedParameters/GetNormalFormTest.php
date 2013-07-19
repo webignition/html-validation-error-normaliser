@@ -82,4 +82,11 @@ class GetNormalFormTest extends BaseTest {
         
         $this->normalFormTest($htmlErrorString, $expectedNormalForm);
     }
+    
+    public function testInvalidCommentDeclarationWithQuotedCurvedBacket() {
+        $htmlErrorString = 'invalid comment declaration: found delimiter "(" outside comment but inside comment declaration';
+        $expectedNormalForm = 'invalid comment declaration: found delimiter "%0" outside comment but inside comment declaration';
+        
+        $this->normalFormTest($htmlErrorString, $expectedNormalForm);        
+    }    
 }

@@ -26,10 +26,10 @@ class HtmlValidationErrorNormaliser {
         }
         
         
-        if (($normalisedError = $this->getQuotedParameterNormalisedError($htmlErrorString)) !== false) {
+        if (($normalisedError = $this->getQuotedParameterNormalisedError($htmlErrorString)) !== false) {            
             $result->setNormalisedError($normalisedError);               
             return $result;               
-        }        
+        }
         
         return $result;
     }
@@ -42,7 +42,7 @@ class HtmlValidationErrorNormaliser {
         
         if (($normalisedError = $this->getValueOfAttributeXCannotBeYMustBeOneOfZError($htmlErrorString)) !== false) {            
             return $normalisedError;            
-        };
+        };       
         
         $parameterMatches = array();
         $matchCount = preg_match_all('/"([^"]?)+"/', $htmlErrorString, $parameterMatches);
@@ -54,12 +54,12 @@ class HtmlValidationErrorNormaliser {
         $normalisedError = new NormalisedError();
         $normalisedErrorString = $htmlErrorString;
 
-        foreach ($parameterMatches[0] as $parameterIndex => $parameterMatch) {            
-            $normalisedErrorString = preg_replace('/'.$parameterMatch.'/', '"%'.$parameterIndex.'"', $normalisedErrorString, 1);          
+        foreach ($parameterMatches[0] as $parameterIndex => $parameterMatch) {
+            $normalisedErrorString = preg_replace('/'.preg_quote($parameterMatch).'/', '"%'.$parameterIndex.'"', $normalisedErrorString, 1);          
             $normalisedError->addParameter(trim($parameterMatch, '"'));
         }
         
-        $normalisedError->setNormalForm($normalisedErrorString);         
+        $normalisedError->setNormalForm($normalisedErrorString);
         
         return $normalisedError;
     }    

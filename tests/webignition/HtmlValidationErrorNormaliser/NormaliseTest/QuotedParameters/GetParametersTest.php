@@ -112,6 +112,15 @@ class GetParametersTest extends BaseTest {
                  'nowrap'
             )
         );
-    }    
+    }
+    
+    public function testInvalidCommentDeclarationWithQuotedCurvedBacket() {
+        $this->parametersTest(
+            'invalid comment declaration: found delimiter "(" outside comment but inside comment declaration',
+             array(
+                 '('
+            )
+        );     
+    }     
     
 }
