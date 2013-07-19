@@ -1,0 +1,311 @@
+540626	N	reference to entity "%0" for which no system identifier could be generated (v:153, c2:149, cv:129, cj:129, user_id:123, rand:110, subd:107, tz:107, post:107, online-link-html:10, ps_t:10)
+178162	N	general entity "%0" not defined and no default entity (c2:139, v:126, cv:119, cj:119, user_id:117, rand:110, subd:107, tz:107, post:107, online-link-html:10, ps_t:10)
+134402	N	end tag for "%0" omitted, but OMITTAG NO was specified (area:59517, img:25931, li:14435, br:8040, input:3096, div:1721, link:1240, a:968, script:202, object:168, body:97)
+129422	N	Document type does not allow element "%0" here; missing one of %1 start-tag (p:15037, div:9403, input:3775, img:1137, a:1062, ul:608, noscript:457, h2:379, span:243, h1:117, i:17)
+94746	N	Attribute %0 not allowed on element %1 at this point. (rel:31964, pubdate:3289, allowfullscreen:362, addthis:url:344, addthis:title:214, fb:like:layout:212, g:plusone:size:173, value:136, type:71, addthis:description:67, valign:6)
+92996	N	there is no attribute "%0" (sizes:4781, type:670, data-width:609, data-href:599, data-show-faces:544, data-send:307, data-show-count:263, data-lang:259, data-colorscheme:139, data-theme:128, data-rel:116)
+81740	N	required attribute "%0" not specified (type:40243, alt:28624, id:9935, cols:891, rows:827, src:797, action:224, content:196, name:2, href:1)
+39482	N	document type does not allow element "%0" here (div:19573, meta:4272, style:2651, link:1932, a:483, body:293, input:240, p:77, label:21, h4:2, button:2)
+32203	N	ID "%0" already defined (all-css-0:564, footercontent:66, searchform:50, to:41, from:41, read_more3:36, subscribe-blog:10, submit:9, refreshlink:4, news_home:4, comment-1262:2)
+30493	N	element "%0" undefined (variable:5012, iframe:4913, g:plusone:915, center:495, k:298, h2:37, input:27, select:18, h1:15, sc:14, fb:fan:10)
+28852	N	end tag for element "%0" which is not open (div:11392, li:10564, p:1902, a:861, span:817, link:198, head:174, ul:42, dd:12, hr:8, noscript:8)
+18706	N	"%0" is not a member of a group specified for any attribute (itemscope:6512, allowfullscreen:185, mozallowfullscreen:9, webkitallowfullscreen:9, k:6, in:4, party:4, who:2, dead:2, shot:2, were:2)
+9490	N	value of attribute "%0" must be a single token (id:9168, name:313, for:7, align:2)
+5766	N	end tag for "%0" which is not finished (ul:4850, noscript:412, form:103, tr:96, head:88, html:82, dl:40, table:32, fieldset:23, select:18, ol:11)
+4191	N	document type does not allow element "%0" here; assuming missing "%1" start-tag (div:2126, ul:1217, script:114, a:104, noscript:91, dt:70, td:62, tr:61, br:37, b:12, th:4)
+3808	N	value of attribute "%0" invalid: "%1" cannot start a name (id:3803, for:5)
+2951	N	character "%0" is not allowed in the value of attribute "%1" (#:620, \:308, /:114, &:49, +:19, ':14, %:12, ,:6, (:1, ？:1, $:1)
+1817	N	character "%0" not allowed in attribute specification list (&:858, ;:666, \:127, ):68, (:35, ,:15, +:12, ?:10, #:9, |:6, 　:3)
+1596	N	value of attribute "%0" cannot be "%1"; must be one of "%2", "%3", "%4", "%5", "%6", "%7", "%8", "%9", "%10", "%11" (type:1596)
+965	N	duplicate specification of attribute "%0" (title:229, class:133, width:94, height:91, id:51, type:45, name:41, border:29, rel:26, alt:9, aria-required:8)
+903	N	end tag for "%0" omitted, but its declaration does not permit this (a:581, ul:125, div:37, span:36, font:28, h3:15, legend:12, form:10, table:8, script:3, b:2)
+309	N	value of attribute "%0" cannot be "%1"; must be one of "%2", "%3", "%4", "%5", "%6" (align:309)
+141	N	start tag for "%0" omitted, but its declaration does not permit this (li:126, legend:12, tr:3)
+130	N	delimiter "%0" invalid: only S separators and TAGC allowed here (':125, /:5)
+128	N	value of attribute "%0" cannot be "%1"; must be one of "%2", "%3" (method:122, frameborder:5, dir:1)
+103	N	"%0" not finished but containing element ended (ul:61, head:27, tr:10, table:3, html:1, fieldset:1)
+78	N	value of attribute "%0" cannot be ""%1"%0" (nowrap:43, defer:22, checked:11, selected:2)
+76	N	value of attribute "%0" cannot be "%1"; must be one of "%0" (disabled:49, selected:16, checked:9, defer:2)
+67	N	"%0" not finished but document ended (html:56, head:10, ul:1)
+64	N	invalid comment declaration: found character "%0" outside comment but inside comment declaration (<:27, ~:10, �:9, /:6, @:4, !:3, &:3, ):1, }:1)
+55	N	value of attribute "%0" cannot be "%1"; must be one of "%2", "%3", "%4", "%5" (valign:50, clear:3, align:2)
+54	N	"%0" declaration not allowed in instance (doctype:54)
+36	N	value of attribute "%0" cannot be "%1"hidden\""%2"text"%3"password"%3"checkbox"%3"radio"%3"submit"%3"reset"%3"file"%3"hidden"%3"image"%3"button" (type:36)
+24	N	invalid comment declaration: found delimiter "%0" outside comment but inside comment declaration (-:23, (:1)
+18	N	value of attribute "%0" cannot be "%1"text\""%2"text"%3"password"%3"checkbox"%3"radio"%3"submit"%3"reset"%3"file"%3"hidden"%3"image"%3"button" (type:18)
+12	N	<!DOCTYPE html PUBLIC "%0" "%1"> (-//w3c//dtd xhtml 1.0 transitional//en:2, -//softquad//dtd hotmetal pro 4.0::19971010::extensions to html 4.0//en:1, -//w3c//dtd xhtml 1.0 transitional//fr:1, -//w3c//dtd xhtml 1.0 transitional//es:1, -//w3c//dtd xhtml 1.0 transitiomal//en:1, -//w3c//dtd xhtml 1.0 strict//en:1, -//wapforum//dtd xhtml mobile 1.0//en:1, -//w3c//dtd xhtml+rdfa 1.0//en:1, -//w3c//dtd xhtml 1.0 transitional//de:1, -//w3c//dtd html 4.0 transitional//en:1, -/w3c/dtd xhtml 1.0 transitional/en:1)
+12	N	Bad value \\\"%0" for attribute type on element script: Expected a token character but saw \ instead. (text/javascript\\\:12)
+11	N	value of attribute "%0" cannot be "%1"; must be one of "%2", "%3", "%4" (scrolling:10, type:1)
+11	N	"%0" is not a reserved name (endif:5, if:4, public:1, xmlns:1)
+10	N	unknown declaration type "%0" (doctype:9, cdata:1)
+9	N	value of attribute "%0" cannot be "%1"submit\""%2"text"%3"password"%3"checkbox"%3"radio"%3"submit"%3"reset"%3"file"%3"hidden"%3"image"%3"button" (type:9)
+9	N	value of attribute "%0" cannot be "%1"post\""%2"get"%3"post" (method:9)
+9	N	ID "%0"playerbox_"%1"%0"" already defined (\:9)
+8	N	value of attribute "%0" cannot be ""%1"left"%2"center"%2"right"%2"justify" (align:8)
+7	N	value of attribute "%0" cannot be ""%1"top"%2"middle"%2"bottom"%2"baseline" (valign:7)
+7	N	<!DOCTYPE html PUBLIC "%0" ""> (-//w3c//dtd html 4.01 transitional//en:3, -//w3c//dtd html 4.0 transitional//es:1, -//w3c//dtd html+rdfa 1.1//en:1, -//w3c//dtd html 4.01 
+transitional//en:1, -//w3c//dtd html 4.0 transitional//en:1)
+6	N	character """%0"id" ( is not allowed in the value of attribute :6)
+6	N	character "%0" not allowed in end tag (,:6)
+5	N	<p>
+        Sorry, I am unable to validate this document because on line
+        <strong>5</strong>
+        it contained one or more bytes that I cannot interpret as
+        <code>utf-8</code>
+        (in other words, the bytes found are not valid values in the specified
+        Character Encoding). Please check both the content of the file and the
+        character encoding indication.
+      </p>
+<p>The error was: 
+        utf8 "%0" does not map to Unicode
+
+      </p>
+ (\x91:1, \xed:1, \xf1:1, \xf3:1, \xe1:1)
+5	N	<p>
+        Sorry, I am unable to validate this document because on line
+        <strong>6</strong>
+        it contained one or more bytes that I cannot interpret as
+        <code>utf-8</code>
+        (in other words, the bytes found are not valid values in the specified
+        Character Encoding). Please check both the content of the file and the
+        character encoding indication.
+      </p>
+<p>The error was: 
+        utf8 "%0" does not map to Unicode
+
+      </p>
+ (\xed:1, \xf1:1, \xe9:1, \xe1:1, \x92:1)
+4	N	value of attribute "%0" cannot be ""%1"left"%2"center"%2"right"%2"justify"%2"char" (align:4)
+4	N	<p>
+        Sorry, I am unable to validate this document because on line
+        <strong>7</strong>
+        it contained one or more bytes that I cannot interpret as
+        <code>utf-8</code>
+        (in other words, the bytes found are not valid values in the specified
+        Character Encoding). Please check both the content of the file and the
+        character encoding indication.
+      </p>
+<p>The error was: 
+        utf8 "%0" does not map to Unicode
+
+      </p>
+ (\x95:1, \xce:1, \xc7:1, \x92:1)
+4	N	character """%0"name" ( is not allowed in the value of attribute :4)
+3	N	value of attribute "%0" cannot be "%1"0\""%2"1"%3"0" (frameborder:3)
+3	N	<p>
+        Sorry, I am unable to validate this document because on line
+        <strong>198</strong>
+        it contained one or more bytes that I cannot interpret as
+        <code>utf-8</code>
+        (in other words, the bytes found are not valid values in the specified
+        Character Encoding). Please check both the content of the file and the
+        character encoding indication.
+      </p>
+<p>The error was: 
+        utf8 "%0" does not map to Unicode
+
+      </p>
+ (\xa9:1, \xa3:1, \x91:1)
+3	N	<p>
+        Sorry, I am unable to validate this document because on line
+        <strong>8</strong>
+        it contained one or more bytes that I cannot interpret as
+        <code>utf-8</code>
+        (in other words, the bytes found are not valid values in the specified
+        Character Encoding). Please check both the content of the file and the
+        character encoding indication.
+      </p>
+<p>The error was: 
+        utf8 "%0" does not map to Unicode
+
+      </p>
+ (\xcc:1, \xe1:1, \xf1:1)
+3	N	document type "%0" already defined (html:3)
+3	N	Bad value \"%0" for attribute href on element a: Illegal character in scheme component. (http://fbcmustang.org/\:3)
+3	N	ID "%0"contenedor_ayuda\"" already defined (\:3)
+2	N	value of attribute "%0" cannot be ""%1"top"%2"middle"%2"bottom"%2"left"%2"right" (align:2)
+2	N	value of attribute "%0" cannot be "%1"no\""%2"yes"%3"no"%3"auto" (scrolling:2)
+2	N	<p>
+        Sorry, I am unable to validate this document because on line
+        <strong>58</strong>
+        it contained one or more bytes that I cannot interpret as
+        <code>utf-8</code>
+        (in other words, the bytes found are not valid values in the specified
+        Character Encoding). Please check both the content of the file and the
+        character encoding indication.
+      </p>
+<p>The error was: 
+        utf8 "%0" does not map to Unicode
+
+      </p>
+ (\xed:1, \xe9:1)
+2	N	<p>
+        Sorry, I am unable to validate this document because on line
+        <strong>197</strong>
+        it contained one or more bytes that I cannot interpret as
+        <code>utf-8</code>
+        (in other words, the bytes found are not valid values in the specified
+        Character Encoding). Please check both the content of the file and the
+        character encoding indication.
+      </p>
+<p>The error was: 
+        utf8 "%0" does not map to Unicode
+
+      </p>
+ (\xa9:1, \xa3:1)
+2	N	<p>
+        Sorry, I am unable to validate this document because on line
+        <strong>20</strong>
+        it contained one or more bytes that I cannot interpret as
+        <code>utf-8</code>
+        (in other words, the bytes found are not valid values in the specified
+        Character Encoding). Please check both the content of the file and the
+        character encoding indication.
+      </p>
+<p>The error was: 
+        utf8 "%0" does not map to Unicode
+
+      </p>
+ (\x94:1, \xf1:1)
+2	N	<p>
+        Sorry, I am unable to validate this document because on line
+        <strong>12</strong>
+        it contained one or more bytes that I cannot interpret as
+        <code>utf-8</code>
+        (in other words, the bytes found are not valid values in the specified
+        Character Encoding). Please check both the content of the file and the
+        character encoding indication.
+      </p>
+<p>The error was: 
+        utf8 "%0" does not map to Unicode
+
+      </p>
+ (\x96:1, \xab:1)
+2	N	<p>
+        Sorry, I am unable to validate this document because on line
+        <strong>1510</strong>
+        it contained one or more bytes that I cannot interpret as
+        <code>utf-8</code>
+        (in other words, the bytes found are not valid values in the specified
+        Character Encoding). Please check both the content of the file and the
+        character encoding indication.
+      </p>
+<p>The error was: 
+        utf8 "%0" does not map to Unicode
+
+      </p>
+ (\xfc:1, \xe9:1)
+2	N	<p>
+        Sorry, I am unable to validate this document because on line
+        <strong>28</strong>
+        it contained one or more bytes that I cannot interpret as
+        <code>utf-8</code>
+        (in other words, the bytes found are not valid values in the specified
+        Character Encoding). Please check both the content of the file and the
+        character encoding indication.
+      </p>
+<p>The error was: 
+        utf8 "%0" does not map to Unicode
+
+      </p>
+ (\xf1:1, \xe0:1)
+2	N	<p>
+        Sorry, I am unable to validate this document because on line
+        <strong>36</strong>
+        it contained one or more bytes that I cannot interpret as
+        <code>utf-8</code>
+        (in other words, the bytes found are not valid values in the specified
+        Character Encoding). Please check both the content of the file and the
+        character encoding indication.
+      </p>
+<p>The error was: 
+        utf8 "%0" does not map to Unicode
+
+      </p>
+ (\xc9:1, \xc4:1)
+2	N	<p>
+        Sorry, I am unable to validate this document because on line
+        <strong>54</strong>
+        it contained one or more bytes that I cannot interpret as
+        <code>utf-8</code>
+        (in other words, the bytes found are not valid values in the specified
+        Character Encoding). Please check both the content of the file and the
+        character encoding indication.
+      </p>
+<p>The error was: 
+        utf8 "%0" does not map to Unicode
+
+      </p>
+ (\xf3:1, \xed:1)
+2	N	<p>
+        Sorry, I am unable to validate this document because on line
+        <strong>201</strong>
+        it contained one or more bytes that I cannot interpret as
+        <code>utf-8</code>
+        (in other words, the bytes found are not valid values in the specified
+        Character Encoding). Please check both the content of the file and the
+        character encoding indication.
+      </p>
+<p>The error was: 
+        utf8 "%0" does not map to Unicode
+
+      </p>
+ (\x91:1, \xba:1)
+2	N	<p>
+        Sorry, I am unable to validate this document because on line
+        <strong>202</strong>
+        it contained one or more bytes that I cannot interpret as
+        <code>utf-8</code>
+        (in other words, the bytes found are not valid values in the specified
+        Character Encoding). Please check both the content of the file and the
+        character encoding indication.
+      </p>
+<p>The error was: 
+        utf8 "%0" does not map to Unicode
+
+      </p>
+ (\x91:1, \xc3:1)
+2	N	<p>
+        Sorry, I am unable to validate this document because on line
+        <strong>14</strong>
+        it contained one or more bytes that I cannot interpret as
+        <code>utf-8</code>
+        (in other words, the bytes found are not valid values in the specified
+        Character Encoding). Please check both the content of the file and the
+        character encoding indication.
+      </p>
+<p>The error was: 
+        utf8 "%0" does not map to Unicode
+
+      </p>
+ (\xf1:1, \x82:1)
+2	N	<p>
+        Sorry, I am unable to validate this document because on line
+        <strong>4</strong>
+        it contained one or more bytes that I cannot interpret as
+        <code>utf-8</code>
+        (in other words, the bytes found are not valid values in the specified
+        Character Encoding). Please check both the content of the file and the
+        character encoding indication.
+      </p>
+<p>The error was: 
+        utf8 "%0" does not map to Unicode
+
+      </p>
+ (\xf3:1, \xd6:1)
+2	N	<p>
+        Sorry, I am unable to validate this document because on line
+        <strong>165</strong>
+        it contained one or more bytes that I cannot interpret as
+        <code>utf-8</code>
+        (in other words, the bytes found are not valid values in the specified
+        Character Encoding). Please check both the content of the file and the
+        character encoding indication.
+      </p>
+<p>The error was: 
+        utf8 "%0" does not map to Unicode
+
+      </p>
+ (\xf3:1, \x93:1)
+2	N	ID "%0"contenedor_ayuda_dcto\"" already defined (\:2)
+2	N	Duplicate attribute "%0". (spain:2)

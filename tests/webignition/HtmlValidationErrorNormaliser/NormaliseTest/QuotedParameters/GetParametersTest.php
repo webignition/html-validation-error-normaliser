@@ -89,6 +89,18 @@ class GetParametersTest extends BaseTest {
                  '"p", "h1", "h2", "h3", "h4", "h5", "h6", "div", "address", "fieldset", "ins", "del"'
             )
         );        
-    }      
+    } 
+    
+    
+    public function testValueOfAttributeXCannotBeYMustBeOneOfZ() {
+        $this->parametersTest(
+            'value of attribute "type" cannot be "email"; must be one of "text", "password", "checkbox", "radio", "submit", "reset", "file", "hidden", "image", "button"',
+             array(
+                 'type',
+                 'email',
+                 '"text", "password", "checkbox", "radio", "submit", "reset", "file", "hidden", "image", "button"'
+            )
+        );
+    }     
     
 }

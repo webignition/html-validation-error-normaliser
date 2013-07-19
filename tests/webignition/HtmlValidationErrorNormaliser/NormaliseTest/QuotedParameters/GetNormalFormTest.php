@@ -68,4 +68,11 @@ class GetNormalFormTest extends BaseTest {
         
         $this->normalFormTest($htmlErrorString, $expectedNormalForm);
     }    
+    
+    public function testValueOfAttributeXCannotBeYMustBeOneOfZ() {
+        $htmlErrorString = 'value of attribute "type" cannot be "email"; must be one of "text", "password", "checkbox", "radio", "submit", "reset", "file", "hidden", "image", "button"';
+        $expectedNormalForm = 'value of attribute "%0" cannot be "%1"; must be one of %2';
+        
+        $this->normalFormTest($htmlErrorString, $expectedNormalForm);
+    }     
 }
