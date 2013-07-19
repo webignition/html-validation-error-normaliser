@@ -66,8 +66,7 @@ class GetParametersTest extends BaseTest {
             'document type does not allow element "script" here; missing one of "dt", "dd" start-tag',
              array(
                  'script',
-                 'dt',
-                 'dd'
+                 '"dt", "dd"'
             )
         );
     }
@@ -77,9 +76,7 @@ class GetParametersTest extends BaseTest {
             'document type does not allow element "DIV" here; missing one of "OBJECT", "MAP", "BUTTON" start-tag',
              array(
                  'DIV',
-                 'OBJECT',
-                 'MAP',
-                 'BUTTON'
+                 '"OBJECT", "MAP", "BUTTON"'
             )
         );        
     }
@@ -89,18 +86,7 @@ class GetParametersTest extends BaseTest {
             'document type does not allow element "img" here; missing one of "p", "h1", "h2", "h3", "h4", "h5", "h6", "div", "address", "fieldset", "ins", "del" start-tag',
              array(
                  'img',
-                 'p',
-                 'h1',
-                 'h2',
-                 'h3',
-                 'h4',
-                 'h5',
-                 'h6',
-                 'div',
-                 'address',
-                 'fieldset',
-                 'ins',
-                 'del'
+                 '"p", "h1", "h2", "h3", "h4", "h5", "h6", "div", "address", "fieldset", "ins", "del"'
             )
         );        
     }      
