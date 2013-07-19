@@ -9,7 +9,7 @@ use webignition\HtmlValidationErrorNormaliser\NormalisedError;
  * 
  * W3C html error reference: http://validator.w3.org/docs/errors.html
  */
-class HtmlValidationErrorNormaliser {  
+class HtmlValidationErrorNormaliser { 
     
     /**
      * 
@@ -163,6 +163,10 @@ class HtmlValidationErrorNormaliser {
             return $normalisedError;             
         }        
         
+        if (($normalisedError = $this->getElementXNotAllowedAsChildOfElementYInThisContextError($htmlErrorString)) !== false) {
+            return $normalisedError;             
+        }        
+        
         return false;
     }
     
@@ -180,6 +184,25 @@ class HtmlValidationErrorNormaliser {
         }        
         
         return false;
+    }
+    
+    private function getElementXNotAllowedAsChildOfElementYInThisContextError($htmlErrorString) {
+        if (preg_match('/Element .+ not allowed as child of element .+ in this context\./i', $htmlErrorString)) {
+            $errorParts = explode(' not allowed as child of element ', $htmlErrorString);
+            
+            $parameter0Parts = explode(' ', $errorParts[0], 2);
+            $parameter1Parts = explode(' ', $errorParts[1], 2);
+            
+            $normalisedError = new NormalisedError();            
+            $normalisedError->setNormalForm('Element %0 not allowed as child of element %1 in this context. (Suppressing further errors from this subtree.)');
+            
+            $normalisedError->addParameter($parameter0Parts[1]);
+            $normalisedError->addParameter($parameter1Parts[0]);
+            
+            return $normalisedError;
+        }        
+        
+        return false;        
     }
     
 }
