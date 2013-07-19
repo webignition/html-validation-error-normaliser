@@ -16,7 +16,7 @@ class HtmlValidationErrorNormaliser {
      * @param string $htmlErrorString
      * @return array
      */
-    public function normalise($htmlErrorString) {
+    public function normalise($htmlErrorString) {        
         $result = new Result();
         $result->setRawError($htmlErrorString);
         
@@ -36,6 +36,10 @@ class HtmlValidationErrorNormaliser {
     
     
     private function getQuotedParameterNormalisedError($htmlErrorString) {                
+        if (($normalisedError = $this->getCharacterXIsNotAllowedInTheValueOfAttributeY($htmlErrorString)) !== false) {            
+            return $normalisedError;            
+        }        
+        
         if (($normalisedError = $this->getIdAlreadyDefinedError($htmlErrorString)) !== false) {            
             return $normalisedError;            
         }            
@@ -110,6 +114,27 @@ class HtmlValidationErrorNormaliser {
         
         return false;
     }
+    
+    private function getCharacterXIsNotAllowedInTheValueOfAttributeY($htmlErrorString) {        
+        if (preg_match('/character ".+" is not allowed in the value of attribute ".+"/i', $htmlErrorString)) {                        
+            $errorParts = explode(' is not allowed in the value of attribute ', $htmlErrorString);
+
+
+            $normalisedError = new NormalisedError();            
+            $normalisedError->setNormalForm('character "%0" is not allowed in the value of attribute "%1"');
+            
+            if (substr_count($errorParts[0], '"""')) {
+                $normalisedError->addParameter('"');
+            } else {
+                $normalisedError->addParameter(trim(str_replace('character ', '', $errorParts[0]), '"'));
+            }
+            
+            $normalisedError->addParameter(trim($errorParts[1], '"'));
+            return $normalisedError;
+        }
+        
+        return false;
+    }    
     
     
     private function getDocumentDoesNotAllowElementXHereMissingOneOfYError($htmlErrorString) {        

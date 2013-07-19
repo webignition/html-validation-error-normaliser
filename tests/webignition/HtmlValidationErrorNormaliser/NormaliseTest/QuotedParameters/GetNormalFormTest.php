@@ -109,5 +109,19 @@ class GetNormalFormTest extends BaseTest {
         $expectedNormalForm = 'ID "%0" already defined';
         
         $this->normalFormTest($htmlErrorString, $expectedNormalForm);              
-    }     
+    }
+    
+    public function testCharacterBlankIsNotAllowedInTheValueOfAttributeXOne() {
+        $htmlErrorString = 'character """ is not allowed in the value of attribute "id"';
+        $expectedNormalForm = 'character "%0" is not allowed in the value of attribute "%1"';
+        
+        $this->normalFormTest($htmlErrorString, $expectedNormalForm);          
+    }
+    
+    public function testCharacterBlankIsNotAllowedInTheValueOfAttributeXTwo() {
+        $htmlErrorString = 'character "a" is not allowed in the value of attribute "foo"';
+        $expectedNormalForm = 'character "%0" is not allowed in the value of attribute "%1"';
+        
+        $this->normalFormTest($htmlErrorString, $expectedNormalForm);          
+    }    
 }

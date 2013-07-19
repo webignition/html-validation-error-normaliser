@@ -140,6 +140,26 @@ class GetParametersTest extends BaseTest {
                  '\"contenedor_ayuda\"'
             )
         );           
-    }      
+    }
+    
+    public function testCharacterBlankIsNotAllowedInTheValueOfAttributeXOne() {
+        $this->parametersTest(
+            'character """ is not allowed in the value of attribute "id"',
+             array(
+                 '"',
+                 'id'
+            )
+        );           
+    }
+    
+    public function testCharacterBlankIsNotAllowedInTheValueOfAttributeXTwo() {
+        $this->parametersTest(
+            'character "a" is not allowed in the value of attribute "foo"',
+             array(
+                 'a',
+                 'foo'
+            )
+        );           
+    }   
     
 }
