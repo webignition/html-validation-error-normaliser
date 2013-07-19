@@ -4,7 +4,7 @@ namespace webignition\HtmlValidationErrorNormaliser\Tests\webignition\HtmlValida
 
 use webignition\HtmlValidationErrorNormaliser\Tests\webignition\HtmlValidationErrorNormaliser\BaseTest;
 
-class GetNormalFormTest extends BaseTest {    
+class GetNormalFormTest extends BaseTest {       
 
     public function testValignAndImg() {        
         $this->normalFormTest(
@@ -26,4 +26,18 @@ class GetNormalFormTest extends BaseTest {
             'Attribute %0 not allowed on element %1 at this point.'
         );     
     }
+    
+    public function testMessyAttributeOne() {
+        $this->normalFormTest(
+            'Attribute sans-serif";" not allowed on element span at this point.',
+            'Attribute %0 not allowed on element %1 at this point.'
+        );     
+    } 
+    
+    public function testMessyAttributeTwo() {
+        $this->normalFormTest(
+            'Attribute penalty". not allowed on element meta at this point.',
+            'Attribute %0 not allowed on element %1 at this point.'
+        );     
+    }       
 }

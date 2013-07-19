@@ -34,6 +34,26 @@ class GetParametersTest extends BaseTest {
                 'time'
             )
         );    
+    }
+    
+    public function testMessyAttributeOne() {
+       $this->parametersTest(
+            'Attribute sans-serif";" not allowed on element span at this point.',
+             array(
+                'sans-serif";"',
+                'span'
+            )
+        );   
     }    
+    
+    public function testMessyAttributeTwo() {
+       $this->parametersTest(
+            'Attribute penalty". not allowed on element meta at this point.',
+             array(
+                'penalty".',
+                'meta'
+            )
+        );   
+    }     
     
 }

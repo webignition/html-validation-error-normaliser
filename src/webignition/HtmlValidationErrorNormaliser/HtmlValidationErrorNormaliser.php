@@ -23,15 +23,16 @@ class HtmlValidationErrorNormaliser {
         $result = new Result();
         $result->setRawError($htmlErrorString);
         
-        if (($normalisedError = $this->getQuotedParameterNormalisedError($htmlErrorString)) !== false) {
-            $result->setNormalisedError($normalisedError);               
-            return $result;               
-        }
-        
         if (($normalisedError = $this->getNonQuotedParameterNormalisedError($htmlErrorString)) !== false) {
             $result->setNormalisedError($normalisedError);               
             return $result;               
         }
+        
+        
+        if (($normalisedError = $this->getQuotedParameterNormalisedError($htmlErrorString)) !== false) {
+            $result->setNormalisedError($normalisedError);               
+            return $result;               
+        }        
         
         return $result;
     }
