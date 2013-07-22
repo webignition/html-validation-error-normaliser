@@ -16,7 +16,7 @@ class GetNormalFormTest extends BaseTest {
         $this->normalFormTest(
             'End tag p seen, but there were open elements.'
         );     
-    }   
+    }
     
     protected function normalFormTest($htmlErrorString, $expectedNormalForm = 'End tag %0 seen, but there were open elements.') {
         return parent::normalFormTest($htmlErrorString, $expectedNormalForm);           

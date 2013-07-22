@@ -9,172 +9,183 @@ class PatternBasedNormaliser {
     private $html5ErrorPatterns = array(
         array(
             'Duplicate ID ',
-            '{{ token_0 }}',
+            '{{token_0}}',
             '.'
         ),
         array(
             'Duplicate ID ',
-            '{{ blank_token_0 }}',
+            '{{blank_token_0}}',
             '.'
         ),        
         array(
             'Duplicate attribute ',
-            '{{ token_0 }}',
+            '{{token_0}}',
             '.'
         ),
         array(
             'Stray end tag ',
-            '{{ token_0 }}',
+            '{{token_0}}',
             '.'
         ),        
         array(
             'Attribute ',
-            '{{ token_0 }}',
+            '{{token_0}}',
             ' not allowed on element ',
-            '{{ token_1 }}',
+            '{{token_1}}',
             ' at this point.'
         ),        
         array(
             'Element ',
-            '{{ token_0 }}',
+            '{{token_0}}',
             ' not allowed as child of element ',
-            '{{ token_1 }}',
+            '{{token_1}}',
             ' in this context. (Suppressing further errors from this subtree.)'
         ),
         array(
             'character "',
-            '{{ token_0 }}"',
+            '{{token_0}}"',
             '" is not allowed in the value of attribute "',
-            '{{ token_1 }}',
+            '{{token_1}}',
             '"'
         ),
         array(
             'ID "',
-            '{{ token_0 }}"',
+            '{{token_0}}"',
             '" already defined'
         ),
         array(
             'document type does not allow element "',
-            '{{ token_0 }}"',
+            '{{token_0}}"',
             '" here; missing one of ',
-            '{{ token_1 }}',
+            '{{token_1}}',
             ' start-tag'
         ),
         array(
             'value of attribute "',
-            '{{ token_0 }}',
+            '{{token_0}}',
             '" cannot be "',
-            '{{ token_1 }}',
+            '{{token_1}}',
             '"; must be one of ',
-            '{{ token_2 }}'
+            '{{token_2}}'
         ),
         array(
             'Bad value ',
-            '{{ token_0 }}',
+            '{{token_0}}',
             ' for attribute ',
-            '{{ token_1 }}',
+            '{{token_1}}',
             ' on element ',
-            '{{ token_2 }}',
+            '{{token_2}}',
             ': ',
-            '{{ token_3 }}'
+            '{{token_3}}'
         ),   
         array(
             'Bad value ',
-            '{{ blank_token_0 }}',
+            '{{blank_token_0}}',
             ' for attribute ',
-            '{{ token_1 }}',
+            '{{token_1}}',
             ' on element ',
-            '{{ token_2 }}',
+            '{{token_2}}',
             ': ',
-            '{{ token_3 }}'
+            '{{token_3}}'
         ),         
         array(
             'Bad value ',
-            '{{ token_0 }}',
+            '{{token_0}}',
             ' for attribute ',
-            '{{ token_1 }}',
+            '{{token_1}}',
             ' on element ',
-            '{{ token_2 }}',
+            '{{token_2}}',
             '.'
         ),         
         array(
             'No ',
-            '{{ token_0 }}',
+            '{{token_0}}',
             ' element in scope but a ',
-            '{{ token_1 }}',
+            '{{token_1}}',
             ' end tag seen.'
         ), 
         array(
             'Element ',
-            '{{ token_0 }}',
+            '{{token_0}}',
             ' must not have attribute ',
-            '{{ token_1 }}',
+            '{{token_1}}',
             ' unless attribute ',
-            '{{ token_2 }}',
+            '{{token_2}}',
             ' is also specified.'
         ),        
         array(
             'The ',
-            '{{ token_0 }}',
+            '{{token_0}}',
             ' attribute on the ',
-            '{{ token_1 }}',
+            '{{token_1}}',
             ' element is obsolete. Use CSS instead.'
         ),        
         array(
             'The ',
-            '{{ token_0 }}',
+            '{{token_0}}',
             ' element is obsolete. Use CSS instead.',
         ),         
         array(
             'Element ',
-            '{{ token_0 }}',
+            '{{token_0}}',
             ' is missing required attribute ',
-            '{{ token_1 }}',
+            '{{token_1}}',
             '.'
         ),            
         array(
             'Unclosed element ',
-            '{{ token_0 }}',
+            '{{token_0}}',
             '.'
         ),         
         array(
             'End tag ',
-            '{{ token_0 }}',
+            '{{token_0}}',
             ' seen, but there were open elements.'
         ),          
         array(
+            'End tag for  ',
+            '{{token_0}}',
+            ' seen, but there were unclosed elements.'
+        ),        
+        array(
             'An ',
-            '{{ token_0 }}',
+            '{{token_0}}',
             ' start tag seen but an element of the same type was already open.'
         ),  
         array(
             'Bad value ',
-            '{{ token_0 }}',
+            '{{token_0}}',
             ' for attribute ',
-            '{{ token_1 }}',
+            '{{token_1}}',
             ' on XHTML element ',
-            '{{ token_2 }}',
+            '{{token_2}}',
             ': ',
-            '{{ token_3 }}'
+            '{{token_3}}'
         ),
         array(
             'Bad value ',
-            '{{ token_0 }}',
+            '{{token_0}}',
             ' for attribute ',
-            '{{ token_1 }}',
+            '{{token_1}}',
             ' on XHTML element ',
-            '{{ token_2 }}',
+            '{{token_2}}',
             '.'       
         ),
         array(
             'Element ',
-            '{{ token_0 }}',
+            '{{token_0}}',
             ' is missing a required instance of child element ',
-            '{{ token_1 }}',
+            '{{token_1}}',
             '.'
-        ),        
+        ), 
+        array(
+            'XHTML element ',
+            '{{token_0}}',
+            ' not allowed as child of XHTML element ',
+            '{{token_1}}',
+            ' in this context. (Suppressing further errors from this subtree.)'            
+        ),
     );
-    
     
     /**
      * 
@@ -232,54 +243,49 @@ class PatternBasedNormaliser {
         return $normalForm;
     }
     
-    private function getParametersFromMatchString($matchString, $pattern) {
-        $modifiedMatchString = $matchString;
-        $parameters = array();
+    private function getMatchStringParameterIndices($matchString, $pattern) {
+        $indices = array();
         
-        $patternTokenCount = $this->getPatternTokenCount($pattern);
-        $patternPartCount = count($pattern);
-        
-        $previousPart = null;
-        
-        foreach ($pattern as $partIndex => $part) {
-            if ($this->isTokenPatternPart($part)) {                
-                if ($partIndex == $patternPartCount - 1 && count($parameters) < $patternTokenCount) {
-                    $parameters[] = $modifiedMatchString;
-                }
-            } else {
-                $tokenSeparatedParts = explode($part, $modifiedMatchString);
+        foreach ($pattern as $part) {
+            if (!$this->isTokenPatternPart($part)) {
+                $offset = 0;
                 
-                if (count($tokenSeparatedParts) === 1) {                    
-                    return $parameters;
+                foreach ($indices as $currentIndex) {
+                    if ($currentIndex['prefix'] == $part || substr_count($currentIndex['prefix'], $part) || substr_count($part, $currentIndex['prefix'])) {
+                        $offset = $currentIndex['index'];
+                    }
                 }
                 
-                if ($tokenSeparatedParts[0] !== '' || ($tokenSeparatedParts[0] === '' && $this->isBlankTokenPatternPart($previousPart))) {
-                    $parameters[] = $tokenSeparatedParts[0];
-                }
-                
-                $modifiedMatchString = $tokenSeparatedParts[1];                
+                $indices[] = array(
+                    'prefix' => $part,
+                    'index' => strpos($matchString, $part, $offset) + strlen($part)
+                );
             }
-            
-            $previousPart = $part;
         }
         
-        if ($patternTokenCount === 1 && count($parameters) === 0) {
-            $parameters[] = '';
+        return $indices;
+    }
+    
+    private function getParametersFromMatchString($matchString, $pattern) {        
+        $parameterIndices = $this->getMatchStringParameterIndices($matchString, $pattern);
+        
+        foreach ($parameterIndices as $position => $parameterIndex) {            
+            $start = $parameterIndex['index'];
+            
+            if (isset($parameterIndices[$position + 1])) {
+                $length = $parameterIndices[$position + 1]['index'] - $start - strlen($parameterIndices[$position + 1]['prefix']);
+                
+                $parameters[] = substr($matchString, $start, $length);
+            } else {
+                $parameter = substr($matchString, $start);
+                if ($parameter !== false) {
+                    $parameters[] = $parameter;
+                }
+            }
+            
         }
         
         return $parameters;
-    }
-    
-    private function getPatternTokenCount($pattern) {
-        $tokenCount = 0;
-        
-        foreach ($pattern as $part) {
-            if ($this->isTokenPatternPart($part)) {
-                $tokenCount++;
-            }
-        }
-        
-        return $tokenCount;
     }
     
     private function matches($htmlErrorString, $pattern) {        
@@ -317,15 +323,15 @@ class PatternBasedNormaliser {
     
     
     private function isBlankTokenPatternPart($part) {
-        return preg_match('/{{ blank_token_[0-9]+ }}/', $part) > 0;
+        return preg_match('/{{blank_token_[0-9]+}}/', $part) > 0;
     }     
     
     private function isFilledTokenPatternPart($part) {
-        return preg_match('/{{ token_[0-9]+ }}/', $part) > 0;
+        return preg_match('/{{token_[0-9]+}}/', $part) > 0;
     }    
     
     private function isTokenPatternPart($part) {
-        return preg_match('/{{ (blank_token|token)_[0-9]+ }}/', $part) > 0;
+        return preg_match('/{{(blank_token|token)_[0-9]+}}/', $part) > 0;
     }        
     
 }
