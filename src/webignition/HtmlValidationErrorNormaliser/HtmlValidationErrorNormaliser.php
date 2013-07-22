@@ -19,18 +19,18 @@ class HtmlValidationErrorNormaliser {
      */
     public function normalise($htmlErrorString) {        
         $result = new Result();
-        $result->setRawError($htmlErrorString);
-        
-        if (($normalisedError = $this->getQuotedParameterNormalisedError($htmlErrorString)) !== false) {            
-            $result->setNormalisedError($normalisedError);               
-            return $result;               
-        }        
+        $result->setRawError($htmlErrorString);       
         
         $patternBasedNormaliser = new PatternBasedNormaliser();
         if (($normalisedError = $patternBasedNormaliser->normalise($htmlErrorString)) !== false) {                        
             $result->setNormalisedError($normalisedError);               
             return $result;            
         }
+        
+        if (($normalisedError = $this->getQuotedParameterNormalisedError($htmlErrorString)) !== false) {            
+            $result->setNormalisedError($normalisedError);               
+            return $result;               
+        }         
         
         return $result;
     }
