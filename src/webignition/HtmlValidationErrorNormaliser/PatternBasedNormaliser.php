@@ -108,6 +108,11 @@ class PatternBasedNormaliser {
             '{{ token_1 }}',
             '.'
         ),            
+        array(
+            'Unclosed element ',
+            '{{ token_0 }}',
+            '.'
+        ),         
     );
     
     
