@@ -113,6 +113,11 @@ class PatternBasedNormaliser {
             '{{ token_0 }}',
             '.'
         ),         
+        array(
+            'End tag ',
+            '{{ token_0 }}',
+            ' seen, but there were open elements.'
+        ),          
     );
     
     
