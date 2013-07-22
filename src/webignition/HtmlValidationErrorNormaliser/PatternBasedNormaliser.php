@@ -185,6 +185,11 @@ class PatternBasedNormaliser {
             '{{token_1}}',
             ' in this context. (Suppressing further errors from this subtree.)'            
         ),
+        array(
+            'End tag ',
+            '{{token_0}}',
+            '.'       
+        ),        
     );
     
     /**
