@@ -19,4 +19,11 @@ class GetNormalFormTest extends BaseTest {
             'Duplicate attribute %0.'
         );     
     }  
+    
+    public function testDuplicateIdBlank() {        
+        $this->normalFormTest(
+            'Duplicate ID .',
+            'Duplicate ID %0.'
+        );     
+    }     
 }

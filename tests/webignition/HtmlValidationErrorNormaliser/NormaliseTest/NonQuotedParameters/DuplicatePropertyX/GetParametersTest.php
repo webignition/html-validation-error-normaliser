@@ -22,6 +22,15 @@ class GetParametersTest extends BaseTest {
                 'class'
             )
         );  
+    }
+    
+    public function testDuplicateIdBlank() {        
+       $this->parametersTest(
+            'Duplicate ID .',
+             array(
+                ''
+            )
+        );    
     }     
     
 }

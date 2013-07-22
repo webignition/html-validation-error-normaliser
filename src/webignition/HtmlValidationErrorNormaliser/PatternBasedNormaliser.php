@@ -13,6 +13,11 @@ class PatternBasedNormaliser {
             '.'
         ),
         array(
+            'Duplicate ID ',
+            '{{ blank_token_0 }}',
+            '.'
+        ),        
+        array(
             'Duplicate attribute ',
             '{{ token_0 }}',
             '.'
@@ -151,7 +156,7 @@ class PatternBasedNormaliser {
         return false;
     }
     
-    private function getFromHtml5Pattern($htmlErrorString, $pattern) {                
+    private function getFromHtml5Pattern($htmlErrorString, $pattern) {
         if ($this->matches($htmlErrorString, $pattern)) {            
             $matches = array();
             
@@ -219,6 +224,10 @@ class PatternBasedNormaliser {
             }
         }
         
+        if ($patternTokenCount === 1 && count($parameters) === 0) {
+            $parameters[] = '';
+        }
+        
         return $parameters;
     }
     
@@ -244,7 +253,11 @@ class PatternBasedNormaliser {
         
         foreach ($pattern as $part) {
             if ($this->isTokenPatternPart($part)) {
-                $regexPattern .= '.+';
+                if ($this->isFilledTokenPatternPart($part)) {
+                    $regexPattern .= '.+';
+                } else {
+                    $regexPattern .= '';
+                }                
             } else {
                 $regexPattern .= $this->preg_quote($part);
             }
@@ -263,8 +276,17 @@ class PatternBasedNormaliser {
         return $escapedValue;
     }    
     
-    private function isTokenPatternPart($part) {
+    
+    private function isBlankTokenPatternPart($part) {
+        return preg_match('/{{ blank_token_[0-9]+ }}/', $part) > 0;
+    }     
+    
+    private function isFilledTokenPatternPart($part) {
         return preg_match('/{{ token_[0-9]+ }}/', $part) > 0;
     }    
+    
+    private function isTokenPatternPart($part) {
+        return preg_match('/{{ (blank_token|token)_[0-9]+ }}/', $part) > 0;
+    }        
     
 }
