@@ -79,10 +79,17 @@ class PatternBasedNormaliser {
             ' element in scope but a ',
             '{{ token_1 }}',
             ' end tag seen.'
-        ),          
+        ), 
+        array(
+            'Element ',
+            '{{ token_0 }}',
+            ' must not have attribute ',
+            '{{ token_1 }}',
+            ' unless attribute ',
+            '{{ token_2 }}',
+            ' is also specified.'
+        ),        
     );
-    
-    // No p element in scope but a p end tag seen.
     
     
     /**
