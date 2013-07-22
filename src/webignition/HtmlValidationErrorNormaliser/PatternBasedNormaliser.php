@@ -194,7 +194,12 @@ class PatternBasedNormaliser {
             'Attribute ',
             '{{token_0}}',
             ' not allowed here.'
-        )
+        ),
+        array(
+            'Stray start tag ',
+            '{{token_0}}',
+            '.'
+        ),        
     );
     
     /**
