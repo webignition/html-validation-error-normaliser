@@ -34,8 +34,19 @@ class GetNormalFormTest extends BaseTest {
         $this->normalFormTest(
             'Bad value twitter:site for attribute name on element meta: Keyword twitter:site is not registered.'
         );     
-    }
+    }    
     
+    public function testBlankAndActionAndFormAndAnything() {        
+        $this->normalFormTest(
+            'Bad value  for attribute action on element form: Must be non-empty.'
+        );     
+    } 
+    
+    public function testBlankAndIdAndAAndAnything() {        
+        $this->normalFormTest(
+            'Bad value  for attribute id on element a: An ID must not be the empty string.'
+        );     
+    }
     
     protected function normalFormTest($htmlErrorString, $expectedNormalForm = 'Bad value %0 for attribute %1 on element %2: %3') {                
         return parent::normalFormTest($htmlErrorString, $expectedNormalForm);           

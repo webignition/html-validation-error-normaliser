@@ -79,6 +79,16 @@ class PatternBasedNormaliser {
             '{{ token_3 }}'
         ),   
         array(
+            'Bad value ',
+            '{{ blank_token_0 }}',
+            ' for attribute ',
+            '{{ token_1 }}',
+            ' on element ',
+            '{{ token_2 }}',
+            ': ',
+            '{{ token_3 }}'
+        ),         
+        array(
             'No ',
             '{{ token_0 }}',
             ' element in scope but a ',
@@ -204,15 +214,17 @@ class PatternBasedNormaliser {
         return $normalForm;
     }
     
-    private function getParametersFromMatchString($matchString, $pattern) {        
+    private function getParametersFromMatchString($matchString, $pattern) {
         $modifiedMatchString = $matchString;
         $parameters = array();
         
         $patternTokenCount = $this->getPatternTokenCount($pattern);
         $patternPartCount = count($pattern);
         
-        foreach ($pattern as $partIndex => $part) {            
-            if ($this->isTokenPatternPart($part)) {
+        $previousPart = null;
+        
+        foreach ($pattern as $partIndex => $part) {
+            if ($this->isTokenPatternPart($part)) {                
                 if ($partIndex == $patternPartCount - 1 && count($parameters) < $patternTokenCount) {
                     $parameters[] = $modifiedMatchString;
                 }
@@ -221,14 +233,16 @@ class PatternBasedNormaliser {
                 
                 if (count($tokenSeparatedParts) === 1) {                    
                     return $parameters;
-                }                
+                }
                 
-                if ($tokenSeparatedParts[0] !== '') {
+                if ($tokenSeparatedParts[0] !== '' || ($tokenSeparatedParts[0] === '' && $this->isBlankTokenPatternPart($previousPart))) {
                     $parameters[] = $tokenSeparatedParts[0];
                 }
                 
                 $modifiedMatchString = $tokenSeparatedParts[1];                
             }
+            
+            $previousPart = $part;
         }
         
         if ($patternTokenCount === 1 && count($parameters) === 0) {

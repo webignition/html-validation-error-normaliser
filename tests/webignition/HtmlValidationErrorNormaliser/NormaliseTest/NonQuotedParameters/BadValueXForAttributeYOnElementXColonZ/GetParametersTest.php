@@ -64,6 +64,31 @@ class GetParametersTest extends BaseTest {
                  'Keyword twitter:site is not registered.'
             )
         );    
+    } 
+    
+    
+    public function testBlankAndActionAndFormAndAnything() {        
+        $this->parametersTest(
+            'Bad value  for attribute action on element form: Must be non-empty.',
+             array(
+                 '',
+                 'action',
+                 'form',
+                 'Must be non-empty.'
+            )
+        );     
+    } 
+    
+    public function testBlankAndIdAndAAndAnything() {        
+        $this->parametersTest(
+            'Bad value  for attribute id on element a: An ID must not be the empty string.',
+             array(
+                 '',
+                 'id',
+                 'a',
+                 'An ID must not be the empty string.'
+            )
+        );     
     }    
     
 }
