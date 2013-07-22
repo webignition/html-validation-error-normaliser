@@ -1,0 +1,103 @@
+4326	N	end tag for "%0" omitted, but OMITTAG NO was specified (img:2042, li:555, variable:486, p:284, br:178, k:174, il:111, input:91, meta:86, link:79)
+4041	N	reference to entity "%0" for which no system identifier could be generated (action:351, widgettype:326, sectionid:326, widgetid:326, postid:211, br_id:175, pro_type:150, nid:144, newscatid:134, l:88)
+3961	N	required attribute "%0" not specified (alt:2909, type:810, cols:96, rows:90, src:46, action:10)
+3336	N	there is no attribute "%0" (target:148, property:115, id:109, width:106, size:104, href:103, allowtransparency:101, border:93, name:71, class:71)
+1960	N	Document type does not allow element "%0" here; missing one of %1 start-tag (div:610, p:310, li:229, input:218, h3:131, ul:111, img:101, noscript:68, a:61, span:50)
+1806	N	general entity "%0" not defined and no default entity (action:63, l:58, a.external:48, a.gtbexternal:48, a.chrome.csi:48, a:48, a.performance.timing:48, zx:48, sectionid:48, widgetid:48)
+1502	R	& did not start a character reference. (& probably should have been escaped as &amp;.)
+1354	N	element "%0" undefined (variable:486, k:174, il:111, g:plusone:103, iframe:84, center:66, fb:like:59, br:28, font:20, embed:20)
+1061	N	document type does not allow element "%0" here (style:198, link:176, dd:145, meta:119, dt:71, a:69, input:64, tr:61, li:43, div:37)
+1042	N	Duplicate ID %0. (product_type:240, product_key:240, referrer_url:240, all-css-0:50, fb-root:27, _wpnonce:16, comments:16, signin-wrapper:10, password:10, signin-top-left:9)
+728	N	Attribute %0 not allowed on element %1 at this point. (pubdate:249, url":38, class"fn:38, position:30, rel:22, allowfullscreen:22, g:plusone:size:20, fb:like:layout:20, value:20, count-layout:18)
+684	R	An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+567	N	document type does not allow element "%0" here; assuming missing "%1" start-tag (ul:507, a:14, div:13, noscript:11, script:10, td:5, dt:4, b:2, tr:1)
+517	N	Element %0 not allowed as child of element %1 in this context. (Suppressing further errors from this subtree.) (div:158, g:plusone:93, br:53, style:45, p:44, fb:like:28, a:19, h2:14, fb:comments-count:10, ol:10)
+472	N	end tag for element "%0" which is not open (li:146, div:71, font:56, link:40, a:37, p:30, head:26, td:15, tr:7, body:6)
+334	N	character "%0" is not allowed in the value of attribute "%1" (#:301, /:20, &:10, (:1, ":1, ,:1)
+320	R	Bad value archives for attribute rel on element link: Not an absolute IRI. The string archives is not a registered keyword or absolute URL.
+294	N	ID "%0" already defined (all-css-0:46, myprice:31, latest_font:22, footercontent:16, group:10, latest_pic:10, menuspec:10, latest_namee:10, fb-root:10, latest_name:10)
+258	R	No p element in scope but a p end tag seen.
+225	N	character "%0" not allowed in attribute specification list (&:179, ;:32, ,:10, +:4)
+211	R	Bad value utf-8 for attribute charset on element script: utf-8 is not a valid character encoding name.
+206	R	Element script must not have attribute charset unless attribute src is also specified.
+179	N	end tag for "%0" which is not finished (ul:75, noscript:42, form:22, dl:17, head:15, html:6, table:1, tr:1)
+179	R	The frameborder attribute on the iframe element is obsolete. Use CSS instead.
+171	R	character data is not allowed here
+158	R	Bad value UTF-8 for attribute charset on element meta: utf-8 is not a valid character encoding name.
+147	R	Bad value utf-8 for attribute charset on element meta: utf-8 is not a valid character encoding name.
+147	R	The scrolling attribute on the iframe element is obsolete. Use CSS instead.
+142	R	The align attribute on the p element is obsolete. Use CSS instead.
+141	N	"%0" is not a member of a group specified for any attribute (font:69, itemscope:10, required:9, k:6, in:4, style:4, party:4, mozallowfullscreen:3, webkitallowfullscreen:3, allowfullscreen:3)
+133	R	The allowtransparency attribute on the iframe element is obsolete. Use CSS instead.
+133	N	value of attribute "%0" cannot be "%1"; must be one of %2 (type:96, align:35, method:2)
+124	N	Stray end tag %0. (div:28, param:22, hr:18, a:15, span:13, script:10, embed:7, ul:6, tr:2, del:1)
+120	R	The tt element is obsolete. Use CSS instead.
+114	R	Element dl is missing a required instance of child element dd.
+113	R	Bad value category tag for attribute rel on element a: The string category is not a registered keyword or absolute URL. Whitespace in path component. Use %20 in place of spaces.
+110	R	Unclosed element span.
+107	R	Bad value text/html; charset=UTF-8 for attribute content on element meta: utf-8 is not a valid character encoding name.
+106	R	The itemprop attribute was specified, but the element is not a property of any item.
+97	R	Bad value X-UA-Compatible for attribute http-equiv on element meta.
+86	R	Quote " in attribute name. Probable cause: Matching quote missing somewhere earlier.
+84	R	Bad value twitter:card for attribute name on element meta: Keyword twitter:card is not registered.
+84	R	Bad value twitter:site for attribute name on element meta: Keyword twitter:site is not registered.
+80	R	Bad value text/html; charset=utf-8 for attribute content on element meta: utf-8 is not a valid character encoding name.
+64	R	Bad value title for attribute name on element meta: Keyword title is not registered.
+64	N	Duplicate attribute %0. (class:19, x:7, the:5, to:3, you:3, href:2, are:2, your:2, allowfullscreen:2, a:1)
+61	N	value of attribute "%0" invalid: "%1" cannot start a name (id:61)
+58	R	invalid comment declaration: found name character outside comment but inside comment declaration
+57	R	Bad value  for attribute action on element form: Must be non-empty.
+56	R	Element meta is missing required attribute content.
+52	R	No li element in scope but a li end tag seen.
+49	R	Bad value twitter:creator for attribute name on element meta: Keyword twitter:creator is not registered.
+47	R	Bad value twitter:image for attribute name on element meta: Keyword twitter:image is not registered.
+47	R	syntax of attribute value does not conform to declared value
+46	R	an attribute specification must start with a name or name token
+46	R	Bad value generator for attribute rel on element a: Not an absolute IRI. The string generator is not a registered keyword or absolute URL.
+46	R	an attribute value specification must be an attribute value literal unless SHORTTAG YES is specified
+46	N	end tag for "%0" omitted, but its declaration does not permit this (ul:25, div:11, a:10)
+45	R	End tag h3 seen, but there were open elements.
+45	R	Bad value  for attribute target on element a: Browsing context name must be at least one character long.
+43	N	value of attribute "%0" cannot be "%1"; must be one of "%2" (nowrap:43)
+43	R	Bad value designer for attribute rel on element a: Not an absolute IRI. The string designer is not a registered keyword or absolute URL.
+42	R	Element script must not have attribute async unless attribute src is also specified.
+39	R	The font element is obsolete. Use CSS instead.
+39	R	Element input is missing required attribute alt.
+37	R	A numeric character reference expanded to the C1 controls range.
+36	R	xmlParsePI : no target name
+
+36	R	The for attribute of the label element must refer to a form control.
+34	R	The text content of element time was not in the required format: The literal did not satisfy the time-datetime format.
+31	R	attributes construct error
+
+31	R	Bad value Content-Type for attribute http-equiv on XHTML element meta.
+31	R	an attribute value must be a literal unless it contains only name characters
+30	R	Bad value twitter:description for attribute name on element meta: Keyword twitter:description is not registered.
+30	R	Bad value tooltip for attribute rel on element a: Not an absolute IRI. The string tooltip is not a registered keyword or absolute URL.
+30	R	Unescaped '<' not allowed in attributes values
+
+29	R	The center element is obsolete. Use CSS instead.
+28	R	The width attribute on the td element is obsolete. Use CSS instead.
+27	R	No space between attributes.
+26	N	value of attribute "%0" must be a single token (name:25, id:1)
+25	R	The align attribute on the div element is obsolete. Use CSS instead.
+25	R	The value of the border attribute on the table element must be either 1 or the empty string. To regulate the thickness of table borders, Use CSS instead.
+24	R	Unclosed element div.
+21	R	Consecutive hyphens did not terminate a comment. -- is not permitted inside a comment, but e.g. - - is.
+20	R	Missing xmlns attribute for element html. The value should be: http://www.w3.org/1999/xhtml
+19	R	Not a name start character, U+5c
+19	R	Bad value publisher for attribute rel on XHTML element link: Not an absolute IRI. The string publisher is not a registered keyword or absolute URL.
+19	R	Bad value date for attribute name on element meta: Keyword date is not registered.
+19	R	an attribute value literal can occur in an attribute specification list only after a VI delimiter
+19	R	Element img is missing required attribute src.
+19	R	Bad value 100% for attribute width on element img: Expected a digit but saw % instead.
+19	R	Bad value news_keywords for attribute name on XHTML element meta: Keyword news_keywords is not registered.
+19	R	Bad value twitter:site for attribute name on XHTML element meta: Keyword twitter:site is not registered.
+19	R	Bad value twitter:image for attribute name on XHTML element meta: Keyword twitter:image is not registered.
+19	R	Bad value twitter:card for attribute name on XHTML element meta: Keyword twitter:card is not registered.
+18	R	The cellspacing attribute on the table element is obsolete. Use CSS instead.
+18	R	The aria-labelledby attribute must point to an element in the same document.
+18	R	The cellpadding attribute on the table element is obsolete. Use CSS instead.
+18	R	The width attribute on the th element is obsolete. Use CSS instead.
+16	R	Bad value social-pingback for attribute rel on element a: Not an absolute IRI. The string social-pingback is not a registered keyword or absolute URL.
+16	R	An a start tag seen but an element of the same type was already open.
