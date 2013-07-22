@@ -138,6 +138,13 @@ class PatternBasedNormaliser {
             ': ',
             '{{ token_3 }}'
         ),
+        array(
+            'Element ',
+            '{{ token_0 }}',
+            ' is missing a required instance of child element ',
+            '{{ token_1 }}',
+            '.'
+        ),        
     );
     
     
