@@ -101,6 +101,13 @@ class PatternBasedNormaliser {
             '{{ token_0 }}',
             ' element is obsolete. Use CSS instead.',
         ),         
+        array(
+            'Element ',
+            '{{ token_0 }}',
+            ' is missing required attribute ',
+            '{{ token_1 }}',
+            '.'
+        ),            
     );
     
     
