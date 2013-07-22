@@ -63,6 +63,16 @@ class PatternBasedNormaliser {
             '"; must be one of ',
             '{{ token_2 }}'
         ),
+        array(
+            'Bad value ',
+            '{{ token_0 }}',
+            ' for attribute ',
+            '{{ token_1 }}',
+            ' on element ',
+            '{{ token_2 }}',
+            ': ',
+            '{{ token_3 }}'
+        ),        
     );
     
     
@@ -195,29 +205,6 @@ class PatternBasedNormaliser {
     
     private function isTokenPatternPart($part) {
         return preg_match('/{{ token_[0-9]+ }}/', $part) > 0;
-    }
-    
-    /**
-     * 
-     */
-
-    
-    // Unclosed element div.
-    // Unclosed element %0
-    // 
-    // 
-    // End tag h3 seen, but there were open elements
-    // End tag %0 seen, but there were open elements
-    // 
-    // 
-    // Bad value 100% for attribute width on element img: Expected a digit but saw % instead.
-    // Bad value %0 for attribute %1 on element %2: %3
-    // 
-    // No p element in scope but a p end tag seen
-    // No %0 element in scope but a %0 end tag seen
-    // 
-    //
-    
-    
+    }    
     
 }
