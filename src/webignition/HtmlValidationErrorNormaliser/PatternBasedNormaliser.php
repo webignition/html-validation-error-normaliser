@@ -189,7 +189,12 @@ class PatternBasedNormaliser {
             'End tag ',
             '{{token_0}}',
             '.'       
-        ),        
+        ),
+        array(
+            'Attribute ',
+            '{{token_0}}',
+            ' not allowed here.'
+        )
     );
     
     /**

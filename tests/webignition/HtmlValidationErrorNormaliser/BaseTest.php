@@ -13,7 +13,7 @@ abstract class BaseTest extends \PHPUnit_Framework_TestCase {
     }
     
     
-    protected function normalFormTest($htmlErrorString, $expectedNormalForm) {                
+    protected function normalFormTest($htmlErrorString, $expectedNormalForm) {
         $this->assertEquals(
             $expectedNormalForm,
             $this->getNormaliser()->normalise($htmlErrorString)->getNormalisedError()->getNormalForm()
