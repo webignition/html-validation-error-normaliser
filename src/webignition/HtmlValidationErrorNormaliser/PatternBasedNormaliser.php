@@ -96,6 +96,11 @@ class PatternBasedNormaliser {
             '{{ token_1 }}',
             ' element is obsolete. Use CSS instead.'
         ),        
+        array(
+            'The ',
+            '{{ token_0 }}',
+            ' element is obsolete. Use CSS instead.',
+        ),         
     );
     
     
