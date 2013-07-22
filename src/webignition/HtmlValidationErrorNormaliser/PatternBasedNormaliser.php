@@ -8,31 +8,18 @@ class PatternBasedNormaliser {
     
     private $html5ErrorPatterns = array(
         array(
-            'Duplicate ID ',
-            '{{token_0}}',
-            '.'
-        ),
-        array(
-            'Duplicate ID ',
-            '{{blank_token_0}}',
-            '.'
-        ),        
-        array(
-            'Duplicate attribute ',
-            '{{token_0}}',
-            '.'
-        ),
-        array(
-            'Stray end tag ',
-            '{{token_0}}',
-            '.'
-        ),        
-        array(
             'Attribute ',
             '{{token_0}}',
             ' not allowed on element ',
             '{{token_1}}',
             ' at this point.'
+        ), 
+        array(
+            'document type does not allow element "',
+            '{{token_0}}"',
+            '" here; missing one of ',
+            '{{token_1}}',
+            ' start-tag'
         ),        
         array(
             'Element ',
@@ -40,34 +27,7 @@ class PatternBasedNormaliser {
             ' not allowed as child of element ',
             '{{token_1}}',
             ' in this context. (Suppressing further errors from this subtree.)'
-        ),
-        array(
-            'character "',
-            '{{token_0}}"',
-            '" is not allowed in the value of attribute "',
-            '{{token_1}}',
-            '"'
-        ),
-        array(
-            'ID "',
-            '{{token_0}}"',
-            '" already defined'
-        ),
-        array(
-            'document type does not allow element "',
-            '{{token_0}}"',
-            '" here; missing one of ',
-            '{{token_1}}',
-            ' start-tag'
-        ),
-        array(
-            'value of attribute "',
-            '{{token_0}}',
-            '" cannot be "',
-            '{{token_1}}',
-            '"; must be one of ',
-            '{{token_2}}'
-        ),
+        ), 
         array(
             'Bad value ',
             '{{token_0}}',
@@ -87,6 +47,62 @@ class PatternBasedNormaliser {
             '{{token_2}}',
             ': ',
             '{{token_3}}'
+        ),
+        array(
+            'ID "',
+            '{{token_0}}"',
+            '" already defined'
+        ),        
+        array(
+            'The ',
+            '{{token_0}}',
+            ' attribute on the ',
+            '{{token_1}}',
+            ' element is obsolete. Use CSS instead.'
+        ),
+        array(
+            'No ',
+            '{{token_0}}',
+            ' element in scope but a ',
+            '{{token_1}}',
+            ' end tag seen.'
+        ),         
+        
+        
+        array(
+            'Duplicate ID ',
+            '{{token_0}}',
+            '.'
+        ),
+        array(
+            'Duplicate ID ',
+            '{{blank_token_0}}',
+            '.'
+        ),        
+        array(
+            'Duplicate attribute ',
+            '{{token_0}}',
+            '.'
+        ),
+        array(
+            'Stray end tag ',
+            '{{token_0}}',
+            '.'
+        ),             
+        array(
+            'character "',
+            '{{token_0}}"',
+            '" is not allowed in the value of attribute "',
+            '{{token_1}}',
+            '"'
+        ),
+        array(
+            'value of attribute "',
+            '{{token_0}}',
+            '" cannot be "',
+            '{{token_1}}',
+            '"; must be one of ',
+            '{{token_2}}'
         ),         
         array(
             'Bad value ',
@@ -98,13 +114,6 @@ class PatternBasedNormaliser {
             '.'
         ),         
         array(
-            'No ',
-            '{{token_0}}',
-            ' element in scope but a ',
-            '{{token_1}}',
-            ' end tag seen.'
-        ), 
-        array(
             'Element ',
             '{{token_0}}',
             ' must not have attribute ',
@@ -112,14 +121,7 @@ class PatternBasedNormaliser {
             ' unless attribute ',
             '{{token_2}}',
             ' is also specified.'
-        ),        
-        array(
-            'The ',
-            '{{token_0}}',
-            ' attribute on the ',
-            '{{token_1}}',
-            ' element is obsolete. Use CSS instead.'
-        ),        
+        ),                
         array(
             'The ',
             '{{token_0}}',
