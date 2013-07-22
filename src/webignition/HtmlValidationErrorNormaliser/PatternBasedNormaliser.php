@@ -89,6 +89,15 @@ class PatternBasedNormaliser {
             '{{ token_3 }}'
         ),         
         array(
+            'Bad value ',
+            '{{ token_0 }}',
+            ' for attribute ',
+            '{{ token_1 }}',
+            ' on element ',
+            '{{ token_2 }}',
+            '.'
+        ),         
+        array(
             'No ',
             '{{ token_0 }}',
             ' element in scope but a ',
@@ -147,6 +156,15 @@ class PatternBasedNormaliser {
             '{{ token_2 }}',
             ': ',
             '{{ token_3 }}'
+        ),
+        array(
+            'Bad value ',
+            '{{ token_0 }}',
+            ' for attribute ',
+            '{{ token_1 }}',
+            ' on XHTML element ',
+            '{{ token_2 }}',
+            '.'       
         ),
         array(
             'Element ',
