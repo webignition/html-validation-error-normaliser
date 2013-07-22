@@ -122,7 +122,17 @@ class PatternBasedNormaliser {
             'An ',
             '{{ token_0 }}',
             ' start tag seen but an element of the same type was already open.'
-        ),        
+        ),  
+        array(
+            'Bad value ',
+            '{{ token_0 }}',
+            ' for attribute ',
+            '{{ token_1 }}',
+            ' on XHTML element ',
+            '{{ token_2 }}',
+            ': ',
+            '{{ token_3 }}'
+        ),
     );
     
     
