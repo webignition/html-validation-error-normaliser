@@ -89,6 +89,13 @@ class PatternBasedNormaliser {
             '{{ token_2 }}',
             ' is also specified.'
         ),        
+        array(
+            'The ',
+            '{{ token_0 }}',
+            ' attribute on the ',
+            '{{ token_1 }}',
+            ' element is obsolete. Use CSS instead.'
+        ),        
     );
     
     
