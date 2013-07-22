@@ -118,6 +118,11 @@ class PatternBasedNormaliser {
             '{{ token_0 }}',
             ' seen, but there were open elements.'
         ),          
+        array(
+            'An ',
+            '{{ token_0 }}',
+            ' start tag seen but an element of the same type was already open.'
+        ),        
     );
     
     
