@@ -210,6 +210,12 @@ class PatternBasedNormaliser {
             '{{token_0}}',
             '.'
         ),
+        array(
+            'Couldn\'t find end of Start Tag ',
+            '{{token_0}}',
+            ' line ',
+            '{{token_1}}',
+        ),        
     );
     
     /**
