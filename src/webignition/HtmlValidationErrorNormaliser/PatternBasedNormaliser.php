@@ -103,7 +103,15 @@ class PatternBasedNormaliser {
             '{{token_1}}',
             '"; must be one of ',
             '{{token_2}}'
-        ),         
+        ),
+        array(
+            'value of attribute "',
+            '{{token_0}}',
+            '" cannot be "',
+            '{{blank_token_1}}',
+            '"; must be one of ',
+            '{{token_2}}'
+        ),        
         array(
             'Bad value ',
             '{{token_0}}',
@@ -201,7 +209,7 @@ class PatternBasedNormaliser {
             'Stray start tag ',
             '{{token_0}}',
             '.'
-        ),        
+        ),
     );
     
     /**

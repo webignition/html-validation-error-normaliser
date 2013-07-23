@@ -78,7 +78,7 @@ class GetNormalFormTest extends BaseTest {
     
     public function testValueOfAttributeXCannotBeBlank() {
         $htmlErrorString = 'value of attribute "nowrap" cannot be ""; must be one of "nowrap"';
-        $expectedNormalForm = 'value of attribute "%0" cannot be "%1"; must be one of "%2"';
+        $expectedNormalForm = 'value of attribute "%0" cannot be "%1"; must be one of %2';
         
         $this->normalFormTest($htmlErrorString, $expectedNormalForm);
     }
@@ -130,5 +130,12 @@ class GetNormalFormTest extends BaseTest {
         $expectedNormalForm = 'Element "%0" undefined';
         
         $this->normalFormTest($htmlErrorString, $expectedNormalForm);          
-    }    
+    }
+    
+    public function testValueOfAttrbuteXCannotBeYMustBeOneOfZ() {
+        $htmlErrorString = 'value of attribute "valign" cannot be ""; must be one of "top", "middle", "bottom", "baseline"';
+        $expectedNormalForm = 'value of attribute "%0" cannot be "%1"; must be one of %2';
+        
+        $this->normalFormTest($htmlErrorString, $expectedNormalForm);          
+    }
 }

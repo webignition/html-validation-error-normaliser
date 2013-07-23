@@ -109,7 +109,7 @@ class GetParametersTest extends BaseTest {
              array(
                  'nowrap',
                  '',
-                 'nowrap'
+                 '"nowrap"'
             )
         );
     }
@@ -161,5 +161,16 @@ class GetParametersTest extends BaseTest {
             )
         );           
     }   
+    
+    public function testValueOfAttrbuteXCannotBeYMustBeOneOfZ() {
+        $this->parametersTest(
+            'value of attribute "valign" cannot be ""; must be one of "top", "middle", "bottom", "baseline"',
+             array(
+                 'valign',
+                 '',
+                 '"top", "middle", "bottom", "baseline"'
+            )
+        );
+    }    
     
 }
