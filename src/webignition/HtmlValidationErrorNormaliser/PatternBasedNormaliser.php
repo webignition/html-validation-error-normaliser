@@ -223,6 +223,11 @@ class PatternBasedNormaliser {
             '{{token_1}}',
             ' and ',
             '{{token_2}}',
+        ),
+        array(
+            'Forbidden code point ',
+            '{{token_0}}',
+            '.'
         ),        
     );
     
