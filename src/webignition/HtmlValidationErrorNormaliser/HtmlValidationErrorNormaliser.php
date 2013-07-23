@@ -19,7 +19,7 @@ class HtmlValidationErrorNormaliser {
      */
     public function normalise($htmlErrorString) {        
         $result = new Result();
-        $result->setRawError($htmlErrorString);       
+        $result->setRawError(trim($htmlErrorString));       
         
         $patternBasedNormaliser = new PatternBasedNormaliser();
         if (($normalisedError = $patternBasedNormaliser->normalise($htmlErrorString)) !== false) {                        
