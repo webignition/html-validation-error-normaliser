@@ -215,6 +215,14 @@ class PatternBasedNormaliser {
             '{{token_0}}',
             ' line ',
             '{{token_1}}',
+        ),
+        array(
+            'Opening and ending tag mismatch: ',
+            '{{token_0}}',
+            ' line ',
+            '{{token_1}}',
+            ' and ',
+            '{{token_2}}',
         ),        
     );
     
