@@ -280,6 +280,8 @@ class PatternBasedNormaliser {
         ),
     );
     
+    private $preg_cache = array();
+    
     /**
      * 
      * @param string $htmlErrorString
@@ -297,9 +299,8 @@ class PatternBasedNormaliser {
     
     private function getFromHtml5Pattern($htmlErrorString, $pattern) {        
         if ($this->matches($htmlErrorString, $pattern)) {            
-            $matches = array();
-            
-            if (preg_match_all($this->getRegexPatternFromHtmlErrorPattern($pattern), $htmlErrorString, $matches) === 0) {
+            $matches = $this->preg_match_all($htmlErrorString, $pattern); 
+            if ($matches === false) {
                 return false;
             }
             
@@ -386,7 +387,20 @@ class PatternBasedNormaliser {
             return false;
         }
         
-        return preg_match($this->getRegexPatternFromHtmlErrorPattern($pattern), $htmlErrorString) > 0;
+        return $this->preg_match_all($htmlErrorString, $pattern);
+    }
+    
+    private function preg_match_all($htmlErrorString, $pattern) {
+        $key = md5($htmlErrorString . implode('', $pattern));
+        
+        if (!isset($this->preg_cache[$key])) {
+            $matches = array();
+            $matchCount = preg_match_all($this->getRegexPatternFromHtmlErrorPattern($pattern), $htmlErrorString, $matches);
+            
+            $this->preg_cache[$key] = ($matchCount === 0) ? false : $matches;
+        }
+        
+        return $this->preg_cache[$key];
     }
     
     private function simpleMatchRejection($htmlErrorString, $pattern) {
