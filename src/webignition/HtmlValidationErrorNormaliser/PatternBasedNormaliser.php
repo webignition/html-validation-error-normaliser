@@ -299,12 +299,12 @@ class PatternBasedNormaliser {
     
     private function getFromHtml5Pattern($htmlErrorString, $pattern) {        
         if ($this->matches($htmlErrorString, $pattern)) {            
-            $matches = $this->preg_match_all($htmlErrorString, $pattern); 
+            $matches = $this->preg_match($htmlErrorString, $pattern); 
             if ($matches === false) {
                 return false;
             }
             
-            $parameters = $this->getParametersFromMatchString($matches[0][0], $pattern);
+            $parameters = $this->getParametersFromMatchString($matches[0], $pattern);
             
             $normalisedError = new NormalisedError();
             $normalisedError->setNormalForm($this->getNormalForm($pattern));
@@ -385,15 +385,15 @@ class PatternBasedNormaliser {
             return false;
         }
         
-        return $this->preg_match_all($htmlErrorString, $pattern);
+        return $this->preg_match($htmlErrorString, $pattern);
     }
     
-    private function preg_match_all($htmlErrorString, $pattern) {
+    private function preg_match($htmlErrorString, $pattern) {
         $key = md5($htmlErrorString . implode('', $pattern));
         
         if (!isset($this->preg_cache[$key])) {
             $matches = array();
-            $matchCount = preg_match_all($this->getRegexPatternFromHtmlErrorPattern($pattern), $htmlErrorString, $matches);
+            $matchCount = preg_match($this->getRegexPatternFromHtmlErrorPattern($pattern), $htmlErrorString, $matches);
             
             $this->preg_cache[$key] = ($matchCount === 0) ? false : $matches;
         }
