@@ -239,7 +239,25 @@ class PatternBasedNormaliser {
             ') (expected ',
             '{{token_1}}',
             ')'
-        ),      
+        ),
+        array(
+            'Bad start tag in ',
+            '{{token_0}}',
+            ' in ',
+            '{{token_1}}',
+            '.'
+        ),
+        array(
+            'Not a name start character, ',
+            '{{token_0}}'            
+        ),
+        array(
+            'Element ',
+            '{{token_0}}',
+            ' is missing one or more of the following attributes: ',
+            '{{token_1}}',
+            '.'
+        ),
     );
     
     /**
