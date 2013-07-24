@@ -381,8 +381,22 @@ class PatternBasedNormaliser {
         return $parameters;
     }
     
-    private function matches($htmlErrorString, $pattern) {        
+    private function matches($htmlErrorString, $pattern) {
+        if ($this->simpleMatchRejection($htmlErrorString, $pattern) === false) {
+            return false;
+        }
+        
         return preg_match($this->getRegexPatternFromHtmlErrorPattern($pattern), $htmlErrorString) > 0;
+    }
+    
+    private function simpleMatchRejection($htmlErrorString, $pattern) {
+        if (!$this->isTokenPatternPart($pattern[0])) {
+            if (strtolower(substr($htmlErrorString, 0, strlen($pattern[0]))) !== strtolower($pattern[0])) {
+                return false;
+            }           
+        }
+        
+        return null;
     }
     
     
