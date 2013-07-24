@@ -228,7 +228,11 @@ class PatternBasedNormaliser {
             'Forbidden code point ',
             '{{token_0}}',
             '.'
-        ),        
+        ),
+        array(
+            'non SGML character number ',
+            '{{token_0}}'
+        ),
     );
     
     /**
