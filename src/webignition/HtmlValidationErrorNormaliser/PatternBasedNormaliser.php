@@ -270,6 +270,13 @@ class PatternBasedNormaliser {
             '{{token_1}}',
             '.'
         ),
+        array(
+            'The element ',
+            '{{token_0}}',
+            ' must not appear as a descendant of the ',
+            '{{token_1}}',
+            ' element.'
+        ),
     );
     
     /**
