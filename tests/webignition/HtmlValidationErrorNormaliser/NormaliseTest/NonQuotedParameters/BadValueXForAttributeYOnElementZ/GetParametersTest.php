@@ -28,4 +28,15 @@ class GetParametersTest extends BaseTest {
         );    
     }   
     
+    public function testBlankAndMethodAndForm() {        
+        $this->parametersTest(
+            'Bad value  for attribute method on element form.',
+             array(
+                 '',
+                 'method',
+                 'form'                 
+            )
+        );   
+    }    
+    
 }

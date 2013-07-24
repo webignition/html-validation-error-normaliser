@@ -39,16 +39,6 @@ class PatternBasedNormaliser {
             '{{token_3}}'
         ),   
         array(
-            'Bad value ',
-            '{{blank_token_0}}',
-            ' for attribute ',
-            '{{token_1}}',
-            ' on element ',
-            '{{token_2}}',
-            ': ',
-            '{{token_3}}'
-        ),
-        array(
             'ID "',
             '{{token_0}}"',
             '" already defined'
@@ -66,19 +56,12 @@ class PatternBasedNormaliser {
             ' element in scope but a ',
             '{{token_1}}',
             ' end tag seen.'
-        ),         
-        
-        
+        ),
         array(
             'Duplicate ID ',
             '{{token_0}}',
             '.'
-        ),
-        array(
-            'Duplicate ID ',
-            '{{blank_token_0}}',
-            '.'
-        ),        
+        ),       
         array(
             'Duplicate attribute ',
             '{{token_0}}',
@@ -103,14 +86,6 @@ class PatternBasedNormaliser {
             '{{token_1}}',
             '"; must be one of ',
             '{{token_2}}'
-        ),
-        array(
-            'value of attribute "',
-            '{{token_0}}',
-            '" cannot be "',
-            '{{blank_token_1}}',
-            '"; must be one of ',
-            '{{token_2}}'
         ),        
         array(
             'Bad value ',
@@ -120,7 +95,7 @@ class PatternBasedNormaliser {
             ' on element ',
             '{{token_2}}',
             '.'
-        ),         
+        ),        
         array(
             'Element ',
             '{{token_0}}',
@@ -171,17 +146,7 @@ class PatternBasedNormaliser {
             '{{token_2}}',
             ': ',
             '{{token_3}}'
-        ),
-        array(
-            'Bad value ',
-            '{{blank_token_0}}',
-            ' for attribute ',
-            '{{token_1}}',
-            ' on XHTML element ',
-            '{{token_2}}',
-            ': ',
-            '{{token_3}}'
-        ),        
+        ),      
         array(
             'Bad value ',
             '{{token_0}}',
@@ -426,11 +391,7 @@ class PatternBasedNormaliser {
         
         foreach ($pattern as $part) {
             if ($this->isTokenPatternPart($part)) {
-                if ($this->isFilledTokenPatternPart($part)) {
-                    $regexPattern .= '.+';
-                } else {
-                    $regexPattern .= '';
-                }                
+                $regexPattern .= '.*';              
             } else {
                 $regexPattern .= $this->preg_quote($part);
             }
@@ -447,19 +408,10 @@ class PatternBasedNormaliser {
         }
         
         return $escapedValue;
-    }    
-    
-    
-    private function isBlankTokenPatternPart($part) {
-        return preg_match('/{{blank_token_[0-9]+}}/', $part) > 0;
-    }     
-    
-    private function isFilledTokenPatternPart($part) {
-        return preg_match('/{{token_[0-9]+}}/', $part) > 0;
-    }    
+    }   
     
     private function isTokenPatternPart($part) {
-        return preg_match('/{{(blank_token|token)_[0-9]+}}/', $part) > 0;
+        return preg_match('/{{(token)_[0-9]+}}/', $part) > 0;
     }        
     
 }

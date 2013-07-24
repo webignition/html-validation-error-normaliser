@@ -18,6 +18,12 @@ class GetNormalFormTest extends BaseTest {
         );     
     }
     
+    public function testBlankAndMethodAndForm() {        
+        $this->normalFormTest(
+            'Bad value  for attribute method on element form.'
+        );     
+    }
+    
     protected function normalFormTest($htmlErrorString, $expectedNormalForm = 'Bad value %0 for attribute %1 on element %2.') {                
         return parent::normalFormTest($htmlErrorString, $expectedNormalForm);           
     }     
