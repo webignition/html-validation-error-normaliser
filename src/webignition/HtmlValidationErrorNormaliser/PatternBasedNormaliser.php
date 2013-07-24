@@ -263,6 +263,13 @@ class PatternBasedNormaliser {
             '{{token_0}}',
             ' of a row group established by a tbody element has no cells beginning on it.'
         ),
+        array(
+            'Start tag ',
+            '{{token_0}}',
+            ' seen in ',
+            '{{token_1}}',
+            '.'
+        ),
     );
     
     /**
