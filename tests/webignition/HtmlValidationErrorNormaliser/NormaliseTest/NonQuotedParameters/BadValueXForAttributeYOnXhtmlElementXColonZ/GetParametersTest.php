@@ -28,6 +28,18 @@ class GetParametersTest extends BaseTest {
                  'Keyword news_keywords is not registered.'
             )
         );   
-    }  
+    }
+    
+    public function testBlankAndAnything() {        
+        $this->parametersTest(
+            'Bad value  for attribute target on XHTML element a: Browsing context name must be at least one character long.',
+             array(
+                 '',
+                 'target',
+                 'a',
+                 'Browsing context name must be at least one character long.'
+            )
+        );   
+    }   
     
 }

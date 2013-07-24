@@ -18,6 +18,11 @@ class GetNormalFormTest extends BaseTest {
         );     
     }
     
+    public function testBlankAndAnything() {        
+        $this->normalFormTest(
+            'Bad value  for attribute target on XHTML element a: Browsing context name must be at least one character long.'
+        );     
+    }
     
     protected function normalFormTest($htmlErrorString, $expectedNormalForm = 'Bad value %0 for attribute %1 on XHTML element %2: %3') {
         return parent::normalFormTest($htmlErrorString, $expectedNormalForm);           
