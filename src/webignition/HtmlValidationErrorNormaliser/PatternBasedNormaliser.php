@@ -291,7 +291,13 @@ class PatternBasedNormaliser {
             '{{token_0}}',
             ' element is obsolete. Use the id attribute instead.'
         ),
-        
+        array(
+            'Attribute ',
+            '{{token_0}}',
+            ' not allowed on XHTML element ',
+            '{{token_1}}',
+            ' at this point.',
+        ),
     );
     
     /**
