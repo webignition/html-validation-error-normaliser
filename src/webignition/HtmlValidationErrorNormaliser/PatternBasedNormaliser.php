@@ -286,6 +286,12 @@ class PatternBasedNormaliser {
             'reference to undeclared general entity ',
             '{{token_0}}'
         ),
+        array(
+            'The name attribute on the ',
+            '{{token_0}}',
+            ' element is obsolete. Use the id attribute instead.'
+        ),
+        
     );
     
     /**
