@@ -304,9 +304,7 @@ class PatternBasedNormaliser {
                 return false;
             }
             
-            foreach ($matches[0] as $matchString) {
-                $parameters = $this->getParametersFromMatchString($matchString, $pattern);
-            }
+            $parameters = $this->getParametersFromMatchString($matches[0][0], $pattern);
             
             $normalisedError = new NormalisedError();
             $normalisedError->setNormalForm($this->getNormalForm($pattern));
