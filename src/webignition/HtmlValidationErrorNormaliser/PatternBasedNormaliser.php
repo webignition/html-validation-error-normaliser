@@ -233,6 +233,13 @@ class PatternBasedNormaliser {
             'non SGML character number ',
             '{{token_0}}'
         ),
+        array(
+            'required character (found ',
+            '{{token_0}}',
+            ') (expected ',
+            '{{token_1}}',
+            ')'
+        ),      
     );
     
     /**
