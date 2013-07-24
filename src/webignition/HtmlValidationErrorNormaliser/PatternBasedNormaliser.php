@@ -426,7 +426,7 @@ class PatternBasedNormaliser {
             }
         }
         
-        return '/' . $regexPattern . '/i';
+        return '/' . $regexPattern . '/is';
     }
     
     

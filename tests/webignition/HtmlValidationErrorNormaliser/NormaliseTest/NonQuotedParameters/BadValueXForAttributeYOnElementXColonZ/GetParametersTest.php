@@ -89,6 +89,18 @@ class GetParametersTest extends BaseTest {
                  'An ID must not be the empty string.'
             )
         );     
-    }    
+    } 
+    
+    public function testUrlAndSrcAndImgAndAnything() {        
+        $this->parametersTest(
+            "Bad value //googleads.g.doubleclick.net/pagead/viewthroughconversion/1024448116/?value=0&label=KY1O\nCKz58AIQ9Ky_6AM&guid=ON&script=0 for attribute src on element img: Control character in query component.",
+             array(
+                 "//googleads.g.doubleclick.net/pagead/viewthroughconversion/1024448116/?value=0&label=KY1O\nCKz58AIQ9Ky_6AM&guid=ON&script=0",
+                 'src',
+                 'img',
+                 'Control character in query component.'
+            )
+        );     
+    }  
     
 }

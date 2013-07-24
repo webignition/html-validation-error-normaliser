@@ -48,6 +48,12 @@ class GetNormalFormTest extends BaseTest {
         );     
     }
     
+    public function testUrlAndSrcAndImgAndAnything() {        
+        $this->normalFormTest(
+            'Bad value //googleads.g.doubleclick.net/pagead/viewthroughconversion/1024448116/?value=0&label=KY1O\nCKz58AIQ9Ky_6AM&guid=ON&script=0 for attribute src on element img: Control character in query component.'
+        );
+    }
+    
     protected function normalFormTest($htmlErrorString, $expectedNormalForm = 'Bad value %0 for attribute %1 on element %2: %3') {                
         return parent::normalFormTest($htmlErrorString, $expectedNormalForm);           
     }     
