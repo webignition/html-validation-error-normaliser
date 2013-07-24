@@ -21,6 +21,11 @@ class HtmlValidationErrorNormaliser {
         $result = new Result();
         $result->setRawError(trim($htmlErrorString));       
         
+        if (($normalisedError = $this->processSpecialCase($htmlErrorString)) !== false) {            
+            $result->setNormalisedError($normalisedError);               
+            return $result;               
+        } 
+        
         $patternBasedNormaliser = new PatternBasedNormaliser();
         if (($normalisedError = $patternBasedNormaliser->normalise($htmlErrorString)) !== false) {                        
             $result->setNormalisedError($normalisedError);               
@@ -64,6 +69,54 @@ class HtmlValidationErrorNormaliser {
         }
         
         return $escapedValue;
+    }
+    
+    
+    /**
+     * 
+     * @param string $htmlErrorString
+     * @return boolean
+     */
+    private function isSpecialCase($htmlErrorString) {
+        if (substr_count($htmlErrorString, 'I am unable to validate this document')) {
+            return true;
+        }
+        
+        return false;
+    }
+    
+    private function processSpecialCase($htmlErrorString) {
+        if (substr_count($htmlErrorString, 'I am unable to validate this document')) {
+            $normalForm = 'Unable to interpret %0 as %1 on line %2';
+            
+            $normalisedError = new NormalisedError();
+            $normalisedError->setNormalForm($normalForm);
+            
+            $byteMatches = array();
+            preg_match('/".+"/', $htmlErrorString, $byteMatches);
+            
+            $normalisedError->addParameter($byteMatches[0]);
+          
+            $encodingMatches = array();
+            preg_match('/<code>.+<\/code>/', $htmlErrorString, $encodingMatches);            
+            
+            $normalisedError->addParameter(str_replace(array(
+                '<code>',
+                '</code>'
+            ), '', $encodingMatches[0]));
+            
+            $lineMatches = array();
+            preg_match('/<strong>[0-9]+<\/strong>/', $htmlErrorString, $lineMatches);            
+            
+            $normalisedError->addParameter(str_replace(array(
+                '<strong>',
+                '</strong>'
+            ), '', $lineMatches[0])); 
+            
+            return $normalisedError;
+        }
+        
+        return false;        
     }
     
     
