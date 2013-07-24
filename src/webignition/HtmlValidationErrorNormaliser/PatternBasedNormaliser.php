@@ -282,6 +282,10 @@ class PatternBasedNormaliser {
             '{{token_0}}',
             ' in this context.'
         ),
+        array(
+            'reference to undeclared general entity ',
+            '{{token_0}}'
+        ),
     );
     
     /**
