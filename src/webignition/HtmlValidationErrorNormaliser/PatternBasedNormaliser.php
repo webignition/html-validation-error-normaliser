@@ -295,7 +295,7 @@ class PatternBasedNormaliser {
         return false;
     }
     
-    private function getFromHtml5Pattern($htmlErrorString, $pattern) {
+    private function getFromHtml5Pattern($htmlErrorString, $pattern) {        
         if ($this->matches($htmlErrorString, $pattern)) {            
             $matches = array();
             
@@ -381,7 +381,7 @@ class PatternBasedNormaliser {
         return $parameters;
     }
     
-    private function matches($htmlErrorString, $pattern) {
+    private function matches($htmlErrorString, $pattern) {        
         if ($this->simpleMatchRejection($htmlErrorString, $pattern) === false) {
             return false;
         }
@@ -390,10 +390,12 @@ class PatternBasedNormaliser {
     }
     
     private function simpleMatchRejection($htmlErrorString, $pattern) {
-        if (!$this->isTokenPatternPart($pattern[0])) {
-            if (strtolower(substr($htmlErrorString, 0, strlen($pattern[0]))) !== strtolower($pattern[0])) {
-                return false;
-            }           
+        foreach ($pattern as $part) {
+            if (!$this->isTokenPatternPart($part)) {
+                if (substr_count($htmlErrorString, $part) === 0) {
+                    return false;
+                }
+            }
         }
         
         return null;
