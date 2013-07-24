@@ -298,6 +298,11 @@ class PatternBasedNormaliser {
             '{{token_1}}',
             ' at this point.',
         ),
+        array(
+            'Bad character ',
+            '{{token_0}}',
+            ' after <. Probable cause: Unescaped <. Try escaping it as &lt;.',
+        ),
     );
     
     /**
