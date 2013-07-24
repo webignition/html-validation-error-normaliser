@@ -277,6 +277,11 @@ class PatternBasedNormaliser {
             '{{token_1}}',
             ' element.'
         ),
+        array(
+            'Text not allowed in element ',
+            '{{token_0}}',
+            ' in this context.'
+        ),
     );
     
     /**
