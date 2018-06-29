@@ -8,12 +8,14 @@ use webignition\HtmlValidationErrorNormaliser\Result;
 use webignition\HtmlValidationErrorNormaliser\Tests\DataProvider\NoNormalFormDataProviderTrait;
 use webignition\HtmlValidationErrorNormaliser\Tests\DataProvider\PatternBasedNormalisedFormDataProviderTrait;
 use webignition\HtmlValidationErrorNormaliser\Tests\DataProvider\QuotedParameterNormalisedFormDataProviderTrait;
+use webignition\HtmlValidationErrorNormaliser\Tests\DataProvider\SpecialCasesNormalisedFormDataProviderTrait;
 
 class HtmlValidationErrorNormaliserTest extends \PHPUnit_Framework_TestCase
 {
     use NoNormalFormDataProviderTrait;
     use PatternBasedNormalisedFormDataProviderTrait;
     use QuotedParameterNormalisedFormDataProviderTrait;
+    use SpecialCasesNormalisedFormDataProviderTrait;
 
     /**
      * @var HtmlValidationErrorNormaliser
@@ -69,6 +71,24 @@ class HtmlValidationErrorNormaliserTest extends \PHPUnit_Framework_TestCase
      * @param NormalisedError $expectedNormalisedError
      */
     public function testNormaliseHasQuotedParameterNormalisedForm(
+        $htmlErrorString,
+        NormalisedError $expectedNormalisedError
+    ) {
+        $result = $this->htmlValidationErrorNormaliser->normalise($htmlErrorString);
+
+        $this->assertInstanceOf(Result::class, $result);
+        $this->assertTrue($result->isNormalised());
+
+        $this->assertEquals($expectedNormalisedError, $result->getNormalisedError());
+    }
+
+    /**
+     * @dataProvider normaliseSpecialCasesNormalisedFormDataProvider
+     *
+     * @param string $htmlErrorString
+     * @param NormalisedError $expectedNormalisedError
+     */
+    public function testNormaliseSpecialCasesNormalisedForm(
         $htmlErrorString,
         NormalisedError $expectedNormalisedError
     ) {
