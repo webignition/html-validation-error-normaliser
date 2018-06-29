@@ -5,10 +5,12 @@ namespace webignition\HtmlValidationErrorNormaliser\Tests;
 use webignition\HtmlValidationErrorNormaliser\HtmlValidationErrorNormaliser;
 use webignition\HtmlValidationErrorNormaliser\NormalisedError;
 use webignition\HtmlValidationErrorNormaliser\Result;
+use webignition\HtmlValidationErrorNormaliser\Tests\DataProvider\NoNormalFormDataProviderTrait;
 use webignition\HtmlValidationErrorNormaliser\Tests\DataProvider\PatternBasedNormalisedFormDataProviderTrait;
 
 class HtmlValidationErrorNormaliserTest extends \PHPUnit_Framework_TestCase
 {
+    use NoNormalFormDataProviderTrait;
     use PatternBasedNormalisedFormDataProviderTrait;
 
     /**
@@ -40,23 +42,6 @@ class HtmlValidationErrorNormaliserTest extends \PHPUnit_Framework_TestCase
         $this->assertNull($result->getNormalisedError());
     }
 
-    /**
-     * @return array
-     */
-    public function normaliseHasNoNormalisedFormDataProvider()
-    {
-        return [
-            'no normalisation needed [0]' => [
-                'htmlErrorString' => 'unterminated comment: found end of entity inside comment',
-            ],
-            'no normalisation needed [1]' => [
-                'htmlErrorString' => 'literal is missing closing delimiter',
-            ],
-            'no normalisation needed [2]' => [
-                'htmlErrorString' => 'character data is not allowed here',
-            ],
-        ];
-    }
 
     /**
      * @dataProvider normaliseHasPatternBasedNormalisedFormDataProvider
