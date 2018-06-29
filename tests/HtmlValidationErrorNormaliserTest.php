@@ -49,7 +49,7 @@ class HtmlValidationErrorNormaliserTest extends \PHPUnit_Framework_TestCase
      * @param string $htmlErrorString
      * @param NormalisedError $expectedNormalisedError
      */
-    public function testNormaliseHasNormalisedForm($htmlErrorString, NormalisedError $expectedNormalisedError)
+    public function testNormaliseHasPatternBasedNormalisedForm($htmlErrorString, NormalisedError $expectedNormalisedError)
     {
         $result = $this->htmlValidationErrorNormaliser->normalise($htmlErrorString);
 
