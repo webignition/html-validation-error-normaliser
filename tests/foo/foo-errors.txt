@@ -2067,7 +2067,7 @@ there is no attribute "QTLID_HREF"
 reference to entity "sFlashXmlData" for which no system identifier could be generated
 reference to entity "iVer" for which no system identifier could be generated
 reference to entity "banId" for which no system identifier could be generated
-Non-space characters found without seeing a doctype first. Expected <!DOCTYPE html>.
+Non-space characters found without seeing a doctype first. Expected
 there is no attribute "__expr-val-dir"
 reference to entity "cat_prefixes" for which no system identifier could be generated
 reference to entity "browser_path" for which no system identifier could be generated
@@ -2667,7 +2667,6 @@ there is no attribute "jQuery1321431613562"
 "onblur" is not a member of a group specified for any attribute
 there is no attribute "jQuery1328510469960"
 there is no attribute "jQuery1348676142697"
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitiomal//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 reference to entity "lm" for which no system identifier could be generated
 duplicate specification of attribute "ID"
 ; assuming missing "li" start-tag
@@ -2791,7 +2790,6 @@ there is no attribute "c"
 there is no attribute "data-map-height"
 Bad character @ after <. Probable cause: Unescaped <. Try escaping it as &lt;.
 reference to entity "lat" for which no system identifier could be generated
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//ES" "">
 there is no attribute "data-map-skin"
 there is no attribute "data-map-width"
 there is no attribute "data-map-iframe-url"
@@ -2804,7 +2802,6 @@ end tag for element "EMAIL" which is not open
 end tag for element "PASSWORD" which is not open
 "157" is not a member of a group specified for any attribute
 "149" is not a member of a group specified for any attribute
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ES" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 The hash-name reference in attribute usemap referred to DongTaiMap294-2, but there is no map element with a name attribute with that value.
 element "document.images.length" undefined
 there is no attribute "offset"
@@ -2959,7 +2956,6 @@ there is no attribute "data-bread-crumbs"
 element "originalEmailList.length" undefined
 end tag for element "HTML" which is not open
 "HTML" not finished but containing element ended
-<!DOCTYPE html SYSTEM "about:legacy-compat">
 there is no attribute "variable"
 there is no attribute "g:plusone:href"
 Bad value  for attribute target on element form: Browsing context name must be at least one character long.
@@ -2981,7 +2977,6 @@ reference to entity "kflist" for which no system identifier could be generated
 reference to entity "bI.glyphs" for which no system identifier could be generated
 element "data.length" undefined
 Attribute id declares a duplicate ID value main-content.
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN" "">
 end tag for element "cc1:TextBoxWatermarkExtender" which is not open
 ; assuming missing "body" start-tag
 there is no attribute "Text"
@@ -3006,10 +3001,8 @@ element "Td" undefined
 reference to entity "ecid" for which no system identifier could be generated
 reference to entity "pgid" for which no system identifier could be generated
 reference to entity "idsite" for which no system identifier could be generated
-<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
 there is no attribute "cellpadding"
 reference to entity "idzone" for which no system identifier could be generated
-<!DOCTYPE html PUBLIC "-//w3c//dtd xhtml 1.0 strict//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-strict.dtd">
 reference to entity "fowardURL" for which no system identifier could be generated
 there is no attribute "data-current"
 element "spen" undefined
@@ -3250,7 +3243,6 @@ DNS lookup failure resolving resource domain name
 Authorization Required
 reference to entity "iwloc" for which no system identifier could be generated
 End tag h5 seen, but there were open elements.
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
 Forbidden
 Redirect loop deteted
 "offer" is not a member of a group specified for any attribute
@@ -3291,20 +3283,16 @@ there is no attribute "data-mosaic-order-date"
 there is no attribute "data-mosaic-order-title"
 there is no attribute "results"
 End tag kbd seen, but there were open elements.
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 reference to entity "apos" for which no system identifier could be generated
 reference to entity "autoPlay" for which no system identifier could be generated
 reference to entity "mediaPath" for which no system identifier could be generated
 reference to entity "defaultVolume" for which no system identifier could be generated
-<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.01 transitional//en" "">
 No doctype
 reference to entity "showStroke" for which no system identifier could be generated
 Not Found
 Internal Server Error
 reference to entity "secondColor" for which no system identifier could be generated
-<!DOCTYPE html PUBLIC "-/W3C/DTD XHTML 1.0 Transitional/EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 document type "html" already defined
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "">
 "ul" not finished but document ended
 reference to entity "fullsize_url" for which no system identifier could be generated
 reference to entity "slideshow_title" for which no system identifier could be generated
@@ -3325,7 +3313,6 @@ there is no attribute "data-nr"
 there is no attribute "data-direction"
 reference to entity "_voyageurs::Dispositions_reglementaires__FIMO_FCO_MARCHANDISES" for which no system identifier could be generated
 reference to entity "_voyageurs::fimo_fco_-_marchandises_" for which no system identifier could be generated
-<!DOCTYPE html PUBLIC "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">
 reference to entity "_VOYAGEURS" for which no system identifier could be generated
 reference to entity "_voyageurs::ECOPILOTE_:_le_" for which no system identifier could be generated
 there is no attribute "srch"
@@ -3422,12 +3409,10 @@ Unauthorized
 there is no attribute "for"
 reference to entity "sscat" for which no system identifier could be generated
 there is no attribute "data-tags"
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//DE" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 there is no attribute "temp_src"
 element "atpos" undefined
 there is no attribute "aria-expanded"
 there is no attribute "wb_screen_name"
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 reference to entity "ScriptureVerse" for which no system identifier could be generated
 reference to entity "ScriptureBookA" for which no system identifier could be generated
 reference to entity "TopicID" for which no system identifier could be generated
@@ -3478,7 +3463,6 @@ there is no attribute "useMap"
 reference to entity "qsPriceB" for which no system identifier could be generated
 element "MAP" undefined
 there is no attribute "shape"
-<!DOCTYPE html PUBLIC "-//W3C//dtD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/dtD/xhtml1-transitional.dtd">
 there is no attribute "coords"
 reference to entity "x4" for which no system identifier could be generated
 reference to entity "x3" for which no system identifier could be generated
@@ -3496,7 +3480,6 @@ there is no attribute "x:num"
 reference to entity "iframed" for which no system identifier could be generated
 there is no attribute "x:fmla"
 there is no attribute "fc_href"
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//FR" "http://w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 reference to entity "_nicholsons_1.jpg" for which no system identifier could be generated
 "p" is not a member of a group specified for any attribute
 there is no attribute "borderColorDark"
@@ -3512,7 +3495,6 @@ reference to entity "Bath" for which no system identifier could be generated
 there is no attribute "QTLID_ALT"
 there is no attribute "QTLID_TITLE"
 reference to entity "zoneid" for which no system identifier could be generated
-<!DOCTYPE html PUBLIC "-//W3C//Dtd HTML 4.01 Transitional//EN" "">
 there is no attribute "QTLID_ACTION"
 "DENNIS" is not a member of a group specified for any attribute
 reference to entity "aacutetica" for which no system identifier could be generated
@@ -3734,7 +3716,6 @@ there is no attribute "DATA-PIN-BOARD-WIDTH"
 there is no attribute "DATA-PIN-SCALE-HEIGHT"
 reference to entity "subgroup" for which no system identifier could be generated
 Not found
-<!DOCTYPE html PUBLIC "-//SoftQuad//DTD HoTMetaL PRO 4.0::19971010::extensions to HTML 4.0//EN" "hmpro4.dtd">
 reference to entity "typ" for which no system identifier could be generated
 there is no attribute "metricOff"
 there is no attribute "data-option-value"
