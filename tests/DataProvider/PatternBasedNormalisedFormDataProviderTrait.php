@@ -457,12 +457,30 @@ trait PatternBasedNormalisedFormDataProviderTrait
                     ]
                 ),
             ],
-            'Bad character %0 after <. Probable cause: Unescaped <. Try escaping it as &lt;.' => [
-                'htmlErrorString' => 'Bad character . after <. Probable cause: Unescaped <. Try escaping it as &lt;.',
+            'Bad character %0 after <. Probable cause: Unescaped <. Try escaping it as &lt;. [0]' => [
+                'htmlErrorString' => 'Bad character   after <. Probable cause: Unescaped <. Try escaping it as &lt;.',
                 'expectedNormalisedError' => new NormalisedError(
                     'Bad character %0 after <. Probable cause: Unescaped <. Try escaping it as &lt;.',
                     [
-                        '.',
+                        ' ',
+                    ]
+                ),
+            ],
+            'Bad character %0 after <. Probable cause: Unescaped <. Try escaping it as &lt;. [1]' => [
+                'htmlErrorString' => 'Bad character < after <. Probable cause: Unescaped <. Try escaping it as &lt;.',
+                'expectedNormalisedError' => new NormalisedError(
+                    'Bad character %0 after <. Probable cause: Unescaped <. Try escaping it as &lt;.',
+                    [
+                        '<',
+                    ]
+                ),
+            ],
+            'Bad character %0 after <. Probable cause: Unescaped <. Try escaping it as &lt;. [2]' => [
+                'htmlErrorString' => 'Bad character 越 after <. Probable cause: Unescaped <. Try escaping it as &lt;.',
+                'expectedNormalisedError' => new NormalisedError(
+                    'Bad character %0 after <. Probable cause: Unescaped <. Try escaping it as &lt;.',
+                    [
+                        '越',
                     ]
                 ),
             ],
