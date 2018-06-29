@@ -802,7 +802,6 @@ element "TBODY" undefined
 reference to entity "tab" for which no system identifier could be generated
 there is no attribute "tabindex"
 reference to entity "Cub" for which no system identifier could be generated
-invalid comment declaration: found delimiter "-" outside comment but inside comment declaration
 there is no attribute "HTTP-EQUIV"
 reference to entity "CO." for which no system identifier could be generated
 there is no attribute "data-flattr-uid"
@@ -3300,7 +3299,6 @@ reference to entity "defaultVolume" for which no system identifier could be gene
 <!DOCTYPE html PUBLIC "-//w3c//dtd html 4.01 transitional//en" "">
 No doctype
 reference to entity "showStroke" for which no system identifier could be generated
-invalid comment declaration: found delimiter "(" outside comment but inside comment declaration
 Not Found
 Internal Server Error
 reference to entity "secondColor" for which no system identifier could be generated

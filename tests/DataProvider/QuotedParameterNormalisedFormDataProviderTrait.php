@@ -66,6 +66,16 @@ trait QuotedParameterNormalisedFormDataProviderTrait
                     ]
                 ),
             ],
+            'invalid comment declaration: found delimiter "%0" outside comment but inside comment declaration' => [
+                'htmlErrorString' => 'invalid comment declaration: found delimiter "(" outside comment but '
+                    .'inside comment declaration',
+                'expectedNormalisedError' => new NormalisedError(
+                    'invalid comment declaration: found delimiter "%0" outside comment but inside comment declaration',
+                    [
+                        '(',
+                    ]
+                ),
+            ],
         ];
     }
 }
