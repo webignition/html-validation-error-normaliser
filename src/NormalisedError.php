@@ -24,7 +24,7 @@ class NormalisedError
      * @param string $normalForm
      * @param array $parameters
      */
-    public function __construct($normalForm = '', array $parameters = [])
+    public function __construct($normalForm = null, array $parameters = [])
     {
         $this->setNormalForm($normalForm);
 
