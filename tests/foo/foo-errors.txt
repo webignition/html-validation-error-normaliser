@@ -1,14 +1,11 @@
 reference to entity "order" for which no system identifier could be generated
 reference to entity "mode" for which no system identifier could be generated
 & did not start a character reference. (& probably should have been escaped as &amp;.)
-end tag for "area" omitted, but OMITTAG NO was specified
 required attribute "type" not specified
 An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
-end tag for "img" omitted, but OMITTAG NO was specified
 required attribute "alt" not specified
 there is no attribute "target"
 there is no attribute "itemprop"
-end tag for "li" omitted, but OMITTAG NO was specified
 reference to entity "limit" for which no system identifier could be generated
 end tag for element "div" which is not open
 reference to entity "q" for which no system identifier could be generated
@@ -31,8 +28,6 @@ reference to entity "hq" for which no system identifier could be generated
 reference to entity "split" for which no system identifier could be generated
 an attribute value specification must be an attribute value literal unless SHORTTAG YES is specified
 value of attribute "id" must be a single token
-end tag for "br" omitted, but OMITTAG NO was specified
-end tag for "td" omitted, but OMITTAG NO was specified
 "itemscope" is not a member of a group specified for any attribute
 there is no attribute "itemtype"
 Bad value  for attribute action on element form: Must be non-empty.
@@ -46,11 +41,9 @@ there is no attribute "onload"
 reference to entity "zc" for which no system identifier could be generated
 required attribute "ALT" not specified
 there is no attribute "allowTransparency"
-end tag for "p" omitted, but OMITTAG NO was specified
 Consecutive hyphens did not terminate a comment. -- is not permitted inside a comment, but e.g. - - is.
 reference to entity "reviewid" for which no system identifier could be generated
 The itemprop attribute was specified, but the element is not a property of any item.
-end tag for "input" omitted, but OMITTAG NO was specified
 there is no attribute "content"
 element "A" undefined
 No space between attributes.
@@ -58,13 +51,10 @@ an attribute value must be a literal unless it contains only name characters
 element "P" undefined
 an attribute specification must start with a name or name token
 reference to entity "p" for which no system identifier could be generated
-end tag for "meta" omitted, but OMITTAG NO was specified
 ; assuming missing "li" start-tag
 character data is not allowed here
 end tag for element "p" which is not open
 value of attribute "id" invalid: "1" cannot start a name
-end tag for "div" omitted, but OMITTAG NO was specified
-end tag for "Variable" omitted, but OMITTAG NO was specified
 reference to entity "lpos" for which no system identifier could be generated
 reference to entity "action" for which no system identifier could be generated
 reference to entity "postID" for which no system identifier could be generated
@@ -73,7 +63,6 @@ there is no attribute "property"
 there is no attribute "href"
 element "DIV" undefined
 there is no attribute "width"
-end tag for "link" omitted, but OMITTAG NO was specified
 reference to entity "mnu" for which no system identifier could be generated
 reference to entity "widgetId" for which no system identifier could be generated
 reference to entity "widgetType" for which no system identifier could be generated
@@ -81,11 +70,9 @@ reference to entity "sectionId" for which no system identifier could be generate
 ; assuming missing "li" start-tag
 end tag for element "strong" which is not open
 element "BR" undefined
-end tag for "BR" omitted, but OMITTAG NO was specified
 there is no attribute "src"
 required attribute "TYPE" not specified
 The text content of element time was not in the required format: The literal did not satisfy the time-datetime format.
-end tag for "a" omitted, but OMITTAG NO was specified
 there is no attribute "height"
 element "g:plusone" undefined
 required attribute "cols" not specified
@@ -130,7 +117,6 @@ element "EM" undefined
 reference to entity "utm_medium" for which no system identifier could be generated
 reference to entity "url" for which no system identifier could be generated
 element "il" undefined
-end tag for "il" omitted, but OMITTAG NO was specified
 reference to entity "m" for which no system identifier could be generated
 element "IMG" undefined
 element "TD" undefined
@@ -141,7 +127,6 @@ element "STRONG" undefined
 element "embed" undefined
 there is no attribute "class"
 element "f" undefined
-end tag for "f" omitted, but OMITTAG NO was specified
 reference to entity "utm_campaign" for which no system identifier could be generated
 element "I" undefined
 there is no attribute "alt"
@@ -150,7 +135,6 @@ there is no attribute "frameborder"
 there is no attribute "show_faces"
 there is no attribute "aria-required"
 element "fb:like" undefined
-end tag for "LI" omitted, but OMITTAG NO was specified
 there is no attribute "scrolling"
 there is no attribute "HREF"
 reference to entity "leng" for which no system identifier could be generated
@@ -174,24 +158,20 @@ there is no attribute "data-src"
 reference to entity "resize" for which no system identifier could be generated
 there is no attribute "data-name"
 reference to entity "appId" for which no system identifier could be generated
-end tag for "P" omitted, but OMITTAG NO was specified
 there is no attribute "role"
 reference to entity "v_id" for which no system identifier could be generated
 reference to entity "h" for which no system identifier could be generated
 reference to entity "fixid" for which no system identifier could be generated
 element "k" undefined
-end tag for "k" omitted, but OMITTAG NO was specified
 there is no attribute "data-send"
 there is no attribute "data-size"
 value of attribute "id" invalid: "3" cannot start a name
-end tag for "IMG" omitted, but OMITTAG NO was specified
 reference to entity "width" for which no system identifier could be generated
 reference to entity "c" for which no system identifier could be generated
 Using the meta element to specify the document-wide default language is obsolete. Consider specifying the language on the root element instead.
 there is no attribute "TARGET"
 there is no attribute "onClick"
 reference to entity "height" for which no system identifier could be generated
-end tag for "span" omitted, but OMITTAG NO was specified
 value of attribute "name" must be a single token
 there is no attribute "BORDER"
 there is no attribute "data-show-count"
@@ -226,18 +206,15 @@ reference to entity "redir" for which no system identifier could be generated
 reference to entity "x_noads" for which no system identifier could be generated
 reference to entity "callback" for which no system identifier could be generated
 reference to entity "scaleafter" for which no system identifier could be generated
-end tag for "META" omitted, but OMITTAG NO was specified
 end tag for element "br" which is not open
 Bad value  for attribute href on element link: Must be non-empty.
 The profile attribute on the head element is obsolete. To declare which meta terms are used in the document, instead register the names as meta extensions. To trigger specific UA behaviors, use a link element instead.
 there is no attribute "ALIGN"
 An element with role=menuitem requires role=menu or role=menubar on the parent.
 required attribute "action" not specified
-end tag for "param" omitted, but OMITTAG NO was specified
 Bad value  for attribute src on element img: Must be non-empty.
 element "B" undefined
 there is no attribute "data-bump-view"
-end tag for "font" omitted, but OMITTAG NO was specified
 end tag for element "LINK" which is not open
 reference to entity "count" for which no system identifier could be generated
 there is no attribute "layout"
@@ -253,7 +230,6 @@ element "header" undefined
 there is no attribute "g:plusone:count"
 there is no attribute "data-via"
 reference to entity "I" for which no system identifier could be generated
-end tag for "script" omitted, but OMITTAG NO was specified
 end tag for element "A" which is not open
 there is no attribute "default"
 there is no attribute "description"
@@ -276,9 +252,7 @@ reference to entity "x_ads_click_theme" for which no system identifier could be 
 reference to entity "x_ads_imp_placement" for which no system identifier could be generated
 reference to entity "x_ads_click_network" for which no system identifier could be generated
 reference to entity "x_ads_imp_network" for which no system identifier could be generated
-end tag for "hr" omitted, but OMITTAG NO was specified
 there is no attribute "data-layout"
-end tag for "object" omitted, but OMITTAG NO was specified
 there is no attribute "language"
 A numeric character reference expanded to carriage return.
 The charset attribute on the link element is obsolete. Use an HTTP Content-Type header on the linked resource instead.
@@ -311,7 +285,6 @@ reference to entity "c2" for which no system identifier could be generated
 value of attribute "id" invalid: "6" cannot start a name
 reference to entity "text" for which no system identifier could be generated
 xmlParseEntityRef: no name
-end tag for "tr" omitted, but OMITTAG NO was specified
 there is no attribute "displayText"
 there is no attribute "autocomplete"
 there is no attribute "st_url"
@@ -345,7 +318,6 @@ there is no attribute "prefix"
 reference to entity "show" for which no system identifier could be generated
 character "\" not allowed in attribute specification list
 start tag for "LI" omitted, but its declaration does not permit thisreference to entity "cid" for which no system identifier could be generated
-end tag for "dd" omitted, but OMITTAG NO was specified
 reference to entity "utm_source" for which no system identifier could be generated
 delimiter "'" invalid: only S separators and TAGC allowed here
 reference to entity "user_id" for which no system identifier could be generated
@@ -353,7 +325,6 @@ there is no attribute "onMouseOver"
 "novalidate" is not a member of a group specified for any attribute
 end tag for element "font" which is not open
 element "g:plus" undefined
-end tag for "ul" omitted, but OMITTAG NO was specified
 reference to entity "alt" for which no system identifier could be generated
 there is no attribute "XML:LANG"
 there is no attribute "onMouseOut"
@@ -362,15 +333,12 @@ there is no attribute "data-rel"
 Bad value  for attribute id on element li: An ID must not be the empty string.
 element "figure" undefined
 duplicate specification of attribute "class"
-end tag for "dl" omitted, but OMITTAG NO was specified
 "required" is not a member of a group specified for any attribute
 Bad value  for attribute height on element img: The empty string is not a valid non-negative integer.
 end tag for element "script" which is not open
 End tag p seen, but there were open elements.
-end tag for "b" omitted, but OMITTAG NO was specified
 reference to entity "s" for which no system identifier could be generated
 Bad value  for attribute id on element a: An ID must not be the empty string.
-end tag for "strong" omitted, but OMITTAG NO was specified
 reference to entity "rand" for which no system identifier could be generated
 reference to entity "sid" for which no system identifier could be generated
 there is no attribute "DATA-WIDTH"
@@ -394,7 +362,6 @@ element "SCRIPT" undefined
 element "fb:like-box" undefined
 there is no attribute "STYLE"
 there is no attribute "source"
-end tag for "a.length" omitted, but OMITTAG NO was specified
 reference to entity "includeref" for which no system identifier could be generated
 element "a.length" undefined
 there is no attribute "quality"
@@ -411,7 +378,6 @@ there is no attribute "onLoad"
 end tag for element "b" which is not open
 there is no attribute "DATA-SHOW-FACES"
 reference to entity "emc" for which no system identifier could be generated
-end tag for "body" omitted, but OMITTAG NO was specified
 there is no attribute "pluginspage"
 end tag for element "td" which is not open
 end tag for element "DIV" which is not open
@@ -427,7 +393,6 @@ reference to entity "nortrk" for which no system identifier could be generated
 duplicate specification of attribute "height"
 ; assuming missing "object" start-tag
 reference to entity "storeId" for which no system identifier could be generated
-end tag for "html" omitted, but OMITTAG NO was specified
 ; assuming missing "LI" start-tag
 end tag for "tr" which is not finished
 reference to entity "hotelid" for which no system identifier could be generated
@@ -441,7 +406,6 @@ there is no attribute "NAME"
 element "BLOCKQUOTE" undefined
 reference to entity "category" for which no system identifier could be generated
 reference to entity "_r" for which no system identifier could be generated
-end tag for "table" omitted, but OMITTAG NO was specified
 End tag ul seen, but there were open elements.
 reference to entity "popup" for which no system identifier could be generated
 reference to entity "via" for which no system identifier could be generated
@@ -452,7 +416,6 @@ reference to entity "related" for which no system identifier could be generated
 there is no attribute "HEIGHT"
 name expected
 reference to entity "_render" for which no system identifier could be generated
-end tag for "option" omitted, but OMITTAG NO was specified
 reference to entity "advid" for which no system identifier could be generated
 there is no attribute "data"
 there is no attribute "imageanchor"
@@ -512,7 +475,6 @@ there is no attribute "itemscope"
 End tag had attributes.
 Quote ' in attribute name. Probable cause: Matching quote missing somewhere earlier.
 Bad value  for attribute media on element link: Media query ended prematurely.
-end tag for "form" omitted, but OMITTAG NO was specified
 reference to entity "nid" for which no system identifier could be generated
 reference to entity "rel" for which no system identifier could be generated
 duplicate specification of attribute "onclick"
@@ -520,7 +482,6 @@ there is no attribute "hspace"
 reference to entity "to" for which no system identifier could be generated
 there is no attribute "bgcolor"
 reference to entity "page_show_back_url" for which no system identifier could be generated
-end tag for "Strong" omitted, but OMITTAG NO was specified
 reference to entity "jump_to" for which no system identifier could be generated
 reference to entity "set_id" for which no system identifier could be generated
 reference to entity "page_show_url" for which no system identifier could be generated
@@ -531,7 +492,6 @@ there is no attribute "CHARSET"
 Character reference was not terminated by a semicolon.
 reference to entity "web_id" for which no system identifier could be generated
 reference to entity "c15" for which no system identifier could be generated
-end tag for "head" omitted, but OMITTAG NO was specified
 reference to entity "appID" for which no system identifier could be generated
 reference to entity "index" for which no system identifier could be generated
 there is no attribute "DATA-ID"
@@ -592,7 +552,6 @@ End tag blockquote seen, but there were open elements.
 reference to entity "propositionId" for which no system identifier could be generated
 reference to entity "refer" for which no system identifier could be generated
 reference to entity "NAMEofProduct" for which no system identifier could be generated
-end tag for "A" omitted, but OMITTAG NO was specified
 End tag li implied, but there were open elements.
 reference to entity "format" for which no system identifier could be generated
 reference to entity "forum" for which no system identifier could be generated
@@ -603,7 +562,6 @@ value of attribute "NAME" must be a single token
 element "FROM" undefined
 element "noindex" undefined
 reference to entity "catid" for which no system identifier could be generated
-end tag for "FROM" omitted, but OMITTAG NO was specified
 reference to entity "list" for which no system identifier could be generated
 duplicate specification of attribute "id"
 there is no attribute "ID"
@@ -635,12 +593,10 @@ element "wbr" undefined
 there is no attribute "data-widget-id"
 reference to entity "comment_registration" for which no system identifier could be generated
 there is no attribute "data-annotation"
-end tag for "d.forms.length" omitted, but OMITTAG NO was specified
 reference to entity "require_name_email" for which no system identifier could be generated
 reference to entity "stc_enabled" for which no system identifier could be generated
 reference to entity "show_avatars" for which no system identifier could be generated
 reference to entity "stb_enabled" for which no system identifier could be generated
-end tag for "d.layers.length" omitted, but OMITTAG NO was specified
 reference to entity "d.layers" for which no system identifier could be generated
 reference to entity "parent.frames.length" for which no system identifier could be generated
 reference to entity "d.all" for which no system identifier could be generated
@@ -657,7 +613,6 @@ there is no attribute "data-action"
 reference to entity "goodieId" for which no system identifier could be generated
 element "hgroup" undefined
 there is no attribute "charset"
-end tag for "h3" omitted, but OMITTAG NO was specified
 there is no attribute "LANGUAGE"
 reference to entity "loop" for which no system identifier could be generated
 there is no attribute "SUMMARY"
@@ -676,7 +631,6 @@ end tag for "dl" which is not finished
 reference to entity "C" for which no system identifier could be generated
 element "d" undefined
 there is no attribute "onmouseover"
-end tag for "d" omitted, but OMITTAG NO was specified
 reference to entity "x" for which no system identifier could be generated
 duplicate specification of attribute "style"
 reference to entity "dpc" for which no system identifier could be generated
@@ -724,7 +678,6 @@ there is no attribute "scrollamount"
 reference to entity "cPath" for which no system identifier could be generated
 ; assuming missing "li" start-tag
 reference to entity "campaign" for which no system identifier could be generated
-end tag for "h4" omitted, but OMITTAG NO was specified
 there is no attribute "async"
 end tag for element "em" which is not open
 End tag section seen, but there were open elements.
@@ -733,7 +686,6 @@ End tag article seen, but there were open elements.
 there is no attribute "TYPE"
 reference to entity "d" for which no system identifier could be generated
 reference to entity "variant" for which no system identifier could be generated
-end tag for "w" omitted, but OMITTAG NO was specified
 element "w" undefined
 reference to entity "cat" for which no system identifier could be generated
 there is no attribute "onMouseout"
@@ -754,9 +706,6 @@ reference to entity "in_reply_to" for which no system identifier could be genera
 End tag font violates nesting rules.
 reference to entity "tf" for which no system identifier could be generated
 there is no attribute "onerror"
-end tag for "isw_vua.length" omitted, but OMITTAG NO was specified
-end tag for "isw_ra.length" omitted, but OMITTAG NO was specified
-end tag for "isw_vda.length" omitted, but OMITTAG NO was specified
 element "isw_vda.length" undefined
 element "isw_ra.length" undefined
 element "isw_vua.length" undefined
@@ -803,14 +752,12 @@ there is no attribute "ITEMPROP"
 End tag span seen, but there were open elements.
 End tag p implied, but there were open elements.
 invalid comment declaration: found character "<" outside comment but inside comment declaration
-end tag for "h1" omitted, but OMITTAG NO was specified
 there is no attribute "bordercolor"
 element "TABLE" undefined
 reference to entity "subset" for which no system identifier could be generated
 duplicate specification of attribute "rel"
 reference to entity "morelink_ga" for which no system identifier could be generated
 reference to entity "is_index" for which no system identifier could be generated
-end tag for "em" omitted, but OMITTAG NO was specified
 value of attribute "ID" invalid: "3" cannot start a name
 reference to entity "chl" for which no system identifier could be generated
 reference to entity "chs" for which no system identifier could be generated
@@ -853,11 +800,9 @@ element "HR" undefined
 there is no attribute "behavior"
 Bad character   after <. Probable cause: Unescaped <. Try escaping it as &lt;.
 reference to entity "preUrl" for which no system identifier could be generated
-end tag for "HR" omitted, but OMITTAG NO was specified
 reference to entity "urlContent" for which no system identifier could be generated
 reference to entity "vitrine" for which no system identifier could be generated
 reference to entity "netid" for which no system identifier could be generated
-end tag for "PARAM" omitted, but OMITTAG NO was specified
 element "PARAM" undefined
 there is no attribute "cd:pos"
 there is no attribute "dir"
@@ -938,12 +883,10 @@ reference to entity "env" for which no system identifier could be generated
 there is no attribute "fecha_in"
 reference to entity "utm_keyword" for which no system identifier could be generated
 reference to entity "aff" for which no system identifier could be generated
-end tag for "sfEls.length" omitted, but OMITTAG NO was specified
 "of" is not a member of a group specified for any attribute
 reference to entity "T" for which no system identifier could be generated
 reference to entity "excerpt_length" for which no system identifier could be generated
 reference to entity "do" for which no system identifier could be generated
-end tag for "hash.length" omitted, but OMITTAG NO was specified
 end tag for element "img" which is not open
 reference to entity "color" for which no system identifier could be generated
 reference to entity "product" for which no system identifier could be generated
@@ -963,7 +906,6 @@ reference to entity "avatar_size" for which no system identifier could be genera
 there is no attribute "titls"
 there is no attribute "tw:count"
 reference to entity "hide_avatars" for which no system identifier could be generated
-end tag for "max" omitted, but OMITTAG NO was specified
 reference to entity "rnd" for which no system identifier could be generated
 element "max" undefined
 reference to entity "hid" for which no system identifier could be generated
@@ -972,7 +914,6 @@ element "EMBED" undefined
 reference to entity "R" for which no system identifier could be generated
 end tag for element "code" which is not open
 element "Locale" undefined
-end tag for "SCRIPT" omitted, but OMITTAG NO was specified
 there is no attribute "data-thread-key"
 there is no attribute "price"
 there is no attribute "data-num-posts"
@@ -981,7 +922,6 @@ end tag for element "SPAN" which is not open
 reference to entity "token" for which no system identifier could be generated
 reference to entity "aI.is" for which no system identifier could be generated
 reference to entity "BL" for which no system identifier could be generated
-end tag for "a..." omitted, but OMITTAG NO was specified
 element "a..." undefined
 reference to entity "_v" for which no system identifier could be generated
 there is no attribute "BACKGROUND"
@@ -1002,8 +942,6 @@ element "SELECT" undefined
 reference to entity "cate" for which no system identifier could be generated
 reference to entity "value" for which no system identifier could be generated
 end tag for element "textarea" which is not open
-end tag for "center" omitted, but OMITTAG NO was specified
-end tag for "embed" omitted, but OMITTAG NO was specified
 duplicate specification of attribute "CLASS"
 there is no attribute "onChange"
 reference to entity "cg" for which no system identifier could be generated
@@ -1024,13 +962,11 @@ Attribute id declares a duplicate ID value productnav.
 ; assuming missing "DL" start-tag
 reference to entity "URL" for which no system identifier could be generated
 there is no attribute "data-author-key"
-end tag for "INPUT" omitted, but OMITTAG NO was specified
 reference to entity "add" for which no system identifier could be generated
 "head" not finished but containing element ended
 reference to entity "menu" for which no system identifier could be generated
 "visitors" is not a member of a group specified for any attribute
 "solid" is not a member of a group specified for any attribute
-end tag for "col" omitted, but OMITTAG NO was specified
 reference to entity "uin" for which no system identifier could be generated
 "counter" is not a member of a group specified for any attribute
 "Arial" is not a member of a group specified for any attribute
@@ -1062,7 +998,6 @@ reference to entity "img" for which no system identifier could be generated
 Extra content at the end of the document
 reference to entity "src" for which no system identifier could be generated
 Attribute id declares a duplicate ID value wide_img.
-end tag for "g.length" omitted, but OMITTAG NO was specified
 End tag h1 seen, but there were open elements.
 reference to entity "field-keywords" for which no system identifier could be generated
 "pubdate" is not a member of a group specified for any attribute
@@ -1087,7 +1022,6 @@ reference to entity "gclid" for which no system identifier could be generated
 there is no attribute "method"
 reference to entity "board_no" for which no system identifier could be generated
 element "WBR" undefined
-end tag for "style" omitted, but OMITTAG NO was specified
 ; assuming missing "li" start-tag
 reference to entity "ct" for which no system identifier could be generated
 reference to entity "search_app" for which no system identifier could be generated
@@ -1148,7 +1082,6 @@ reference to entity "dn" for which no system identifier could be generated
 reference to entity "license" for which no system identifier could be generated
 there is no attribute "swLiveConnect"
 reference to entity "stage_width" for which no system identifier could be generated
-end tag for "l" omitted, but OMITTAG NO was specified
 there is no attribute "url"
 element "l" undefined
 end tag for element "FORM" which is not open
@@ -1165,7 +1098,6 @@ reference to entity "guid" for which no system identifier could be generated
 reference to entity "showinfo" for which no system identifier could be generated
 there is no attribute "data-counturl"
 "2px" is not a member of a group specified for any attribute
-end tag for "tbody" omitted, but OMITTAG NO was specified
 ; assuming missing "li" start-tag
 element "gcse:searchbox-only" undefined
 reference to entity "D" for which no system identifier could be generated
@@ -1209,7 +1141,6 @@ reference to entity "cb" for which no system identifier could be generated
 there is no attribute "uid"
 there is no attribute "QUALITY"
 reference to entity "segs" for which no system identifier could be generated
-end tag for "types.length" omitted, but OMITTAG NO was specified
 reference to entity "b_csi" for which no system identifier could be generated
 reference to entity "bci" for which no system identifier could be generated
 there is no attribute "DATA-YASHAREQUICKSERVICES"
@@ -1256,7 +1187,6 @@ there is no attribute "pi:pinit:description"
 reference to entity "element" for which no system identifier could be generated
 duplicate specification of attribute "xmlns:fb"
 reference to entity "topic" for which no system identifier could be generated
-end tag for "code" omitted, but OMITTAG NO was specified
 reference to entity "ts" for which no system identifier could be generated
 character "?" not allowed in attribute specification list
 there is no attribute "tw:via"
@@ -1308,7 +1238,6 @@ reference to entity "decodeURIComponent" for which no system identifier could be
 there is no attribute "data-showzero"
 reference to entity "nfd" for which no system identifier could be generated
 reference to entity "ndt" for which no system identifier could be generated
-end tag for "split_url.length" omitted, but OMITTAG NO was specified
 element "split_url.length" undefined
 reference to entity "nct" for which no system identifier could be generated
 there is no attribute "data-slide"
@@ -1345,11 +1274,9 @@ element "x" undefined
 reference to entity "offline-link-html" for which no system identifier could be generated
 reference to entity "nrp" for which no system identifier could be generated
 element "fb:fan" undefined
-end tag for "d.length" omitted, but OMITTAG NO was specified
 reference to entity "twctr" for which no system identifier could be generated
 reference to entity "fbsctr" for which no system identifier could be generated
 reference to entity "twitterlang" for which no system identifier could be generated
-end tag for "t" omitted, but OMITTAG NO was specified
 there is no attribute "xiti_title"
 reference to entity "fbllang" for which no system identifier could be generated
 reference to entity "urlRetour" for which no system identifier could be generated
@@ -1367,7 +1294,6 @@ element "v" undefined
 there is no attribute "profile_id"
 reference to entity "c.parent" for which no system identifier could be generated
 there is no attribute "accordion"
-end tag for "x.length" omitted, but OMITTAG NO was specified
 reference to entity "author" for which no system identifier could be generated
 reference to entity "s.parentNode" for which no system identifier could be generated
 reference to entity "c.chrome.loadTimes" for which no system identifier could be generated
@@ -1397,18 +1323,15 @@ there is no attribute "w:d"
 "data-mosaic-item" is not a member of a group specified for any attribute
 there is no attribute "data-callback"
 reference to entity "ccul" for which no system identifier could be generated
-end tag for "t.length" omitted, but OMITTAG NO was specified
 reference to entity "A.exec" for which no system identifier could be generated
 reference to entity "dns" for which no system identifier could be generated
 element "eMail.length-1" undefined
 there is no attribute "xtclib"
 reference to entity "connect" for which no system identifier could be generated
-end tag for "eMail.length-1" omitted, but OMITTAG NO was specified
 "data-mosaic-content" is not a member of a group specified for any attribute
 Bad value  for attribute id on element video: An ID must not be the empty string.
 reference to entity "xiti_xtsite" for which no system identifier could be generated
 reference to entity "xiti_xtn2_name" for which no system identifier could be generated
-end tag for "v" omitted, but OMITTAG NO was specified
 ; assuming missing "li" start-tag
 reference to entity "desc" for which no system identifier could be generated
 reference to entity "online-link-html" for which no system identifier could be generated
@@ -1417,11 +1340,9 @@ there is no attribute "data-original"
 there is no attribute "val"
 reference to entity "qty" for which no system identifier could be generated
 End tag em violates nesting rules.
-end tag for "x" omitted, but OMITTAG NO was specified
 reference to entity "xiti_xtn2_id" for which no system identifier could be generated
 reference to entity "ccrl" for which no system identifier could be generated
 reference to entity "SESSIONVAR" for which no system identifier could be generated
-end tag for "s" omitted, but OMITTAG NO was specified
 The text content of element script was not in the required format: Expected space, tab, newline, or slash but found a instead.
 "el" is not a member of a group specified for any attribute
 "para" is not a member of a group specified for any attribute
@@ -1475,7 +1396,6 @@ there is no attribute "FONT"
 reference to entity "offset" for which no system identifier could be generated
 there is no attribute "datatype"
 there is no attribute "date-counturl"
-end tag for "this._format.decimals" omitted, but OMITTAG NO was specified
 there is no attribute "gnotify"
 element "document.forms.length" undefined
 there is no attribute "bigpicsrc"
@@ -1483,17 +1403,14 @@ there is no attribute "data-pic-type"
 reference to entity "bH" for which no system identifier could be generated
 there is no attribute "gid"
 reference to entity "goods" for which no system identifier could be generated
-end tag for "document.forms.length" omitted, but OMITTAG NO was specified
 element "this._format.decimals" undefined
 there is no attribute "img_id"
 there is no attribute "autocompleter"
 reference to entity "use_transparent" for which no system identifier could be generated
 reference to entity "use_flash" for which no system identifier could be generated
 there is no attribute "updateSpec"
-end tag for "picThumbnail.getSize" omitted, but OMITTAG NO was specified
 element "picThumbnail.getSize" undefined
 there is no attribute "imgInfo"
-end tag for "select" omitted, but OMITTAG NO was specified
 there is no attribute "tab"
 there is no attribute "ac_options"
 reference to entity "refertype" for which no system identifier could be generated
@@ -1512,14 +1429,12 @@ there is no attribute "data-lazy-src"
 reference to entity "serveas" for which no system identifier could be generated
 element "S" undefined
 element "ORG" undefined
-end tag for "arrDestinations.length" omitted, but OMITTAG NO was specified
 element "fb:login-button" undefined
 there is no attribute "scope"
 there is no attribute "autologoutlink"
 reference to entity "vers" for which no system identifier could be generated
 reference to entity "pdID" for which no system identifier could be generated
 there is no attribute "data-formurl"
-end tag for "arrHotels.length" omitted, but OMITTAG NO was specified
 there is no attribute "data-pp-placementtype"
 "hidefocus" is not a member of a group specified for any attribute
 there is no attribute "data-pp-pubid"
@@ -1573,7 +1488,6 @@ there is no attribute "SITE"
 there is no attribute "HEADER"
 there is no attribute "jquery1255461768343"
 "no" is not a member of a group specified for any attribute
-end tag for "l.length" omitted, but OMITTAG NO was specified
 "_RDEDITOR_EXISTS" is not a member of a group specified for any attribute
 element "FB:ACTIVITY" undefined
 there is no attribute "BORDER_COLOR"
@@ -1601,11 +1515,9 @@ there is no attribute "VISIBLE"
 element "OPTION" undefined
 reference to entity "btype" for which no system identifier could be generated
 reference to entity "kind" for which no system identifier could be generated
-end tag for "preloadimages.arguments.length" omitted, but OMITTAG NO was specified
 there is no attribute "DWCOPYTYPE"
 ; assuming missing "CAPTION" start-tag
 reference to entity "sr" for which no system identifier could be generated
-end tag for "bK" omitted, but OMITTAG NO was specified
 element "preloadimages.arguments.length" undefined
 ' in an unquoted attribute value. Probable causes: Attributes running together or a URL query string in an unquoted attribute value.
 reference to entity "stickers.png" for which no system identifier could be generated
@@ -1644,7 +1556,6 @@ reference to entity "CC" for which no system identifier could be generated
 there is no attribute "nombre"
 reference to entity "fromuid" for which no system identifier could be generated
 duplicate specification of attribute "href"
-end tag for "pe.length" omitted, but OMITTAG NO was specified
 reference to entity "view" for which no system identifier could be generated
 element "pe.length" undefined
 reference to entity "realty-type" for which no system identifier could be generated
@@ -1681,7 +1592,6 @@ Internal encoding declaration iso-8859-1 disagrees with the actual encoding of t
 reference to entity "idaut" for which no system identifier could be generated
 "nofollow" is not a member of a group specified for any attribute
 reference to entity "redirect_to" for which no system identifier could be generated
-end tag for "blockquote" omitted, but OMITTAG NO was specified
 end tag for element "blockquote" which is not open
 reference to entity "edit" for which no system identifier could be generated
 reference to entity "scs-article" for which no system identifier could be generated
@@ -1706,8 +1616,6 @@ character "|" not allowed in attribute specification list
 element "min" undefined
 element "num" undefined
 reference to entity "idbib" for which no system identifier could be generated
-end tag for "num" omitted, but OMITTAG NO was specified
-end tag for "min" omitted, but OMITTAG NO was specified
 "4px" is not a member of a group specified for any attribute
 No digits after &#.
 reference to entity "INDEX" for which no system identifier could be generated
@@ -1718,22 +1626,16 @@ reference to entity "annotation" for which no system identifier could be generat
 there is no attribute "st_username"
 reference to entity "jsh" for which no system identifier could be generated
 reference to entity "parent" for which no system identifier could be generated
-end tag for "strng" omitted, but OMITTAG NO was specified
 "controls" is not a member of a group specified for any attribute
 element "e" undefined
-end tag for "e" omitted, but OMITTAG NO was specified
 reference to entity "tm" for which no system identifier could be generated
 reference to entity "krypto" for which no system identifier could be generated
 there is no attribute "autocorrect"
 end tag for "TR" which is not finished
 element "scr" undefined
-end tag for "abbr" omitted, but OMITTAG NO was specified
 reference to entity "feedurl" for which no system identifier could be generated
 character "," not allowed in end tag
-end tag for "DIV" omitted, but OMITTAG NO was specified
 reference to entity "loadlink" for which no system identifier could be generated
-end tag for "B" omitted, but OMITTAG NO was specified
-end tag for "parseInt" omitted, but OMITTAG NO was specified
 reference to entity "pe" for which no system identifier could be generated
 element "parseInt" undefined
 element "bR" undefined
@@ -1763,7 +1665,6 @@ reference to entity "typeof" for which no system identifier could be generated
 duplicate specification of attribute "STYLE"
 reference to entity "Catanmusic.T14b.jpg" for which no system identifier could be generated
 there is no attribute "onUnload"
-end tag for "h2" omitted, but OMITTAG NO was specified
 reference to entity "b64_50_sceau_cible_bouton_lgn" for which no system identifier could be generated
 there is no attribute "data-widgetkit"
 there is no attribute "DATA-CFEMAIL"
@@ -1771,8 +1672,6 @@ reference to entity "j" for which no system identifier could be generated
 end tag for element "l" which is not open
 reference to entity "region" for which no system identifier could be generated
 reference to entity "qy" for which no system identifier could be generated
-end tag for "del" omitted, but OMITTAG NO was specified
-end tag for "bR" omitted, but OMITTAG NO was specified
 reference to entity "articleId" for which no system identifier could be generated
 reference to entity "hd" for which no system identifier could be generated
 reference to entity "blobkey" for which no system identifier could be generated
@@ -1788,27 +1687,22 @@ element "data.result.length" undefined
 reference to entity "ssbinary" for which no system identifier could be generated
 reference to entity "wvr" for which no system identifier could be generated
 reference to entity "ls" for which no system identifier could be generated
-end tag for "i" omitted, but OMITTAG NO was specified
 end tag for element "i" which is not open
 end tag for element "G" which is not open
 reference to entity "thumbnail" for which no system identifier could be generated
 element "NOBR" undefined
 there is no attribute "HASPERS"
-end tag for "data.result.length" omitted, but OMITTAG NO was specified
 reference to entity "preuve" for which no system identifier could be generated
 element "h7" undefined
 there is no attribute "ALLOWDELETE"
 reference to entity "M" for which no system identifier could be generated
 element "TH" undefined
-end tag for "ORG" omitted, but OMITTAG NO was specified
-end tag for "bL" omitted, but OMITTAG NO was specified
 reference to entity "simple" for which no system identifier could be generated
 there is no attribute "WEBPARTID"
 Bad value  for attribute id on element input: An ID must not be the empty string.
 reference to entity "Uin" for which no system identifier could be generated
 reference to entity "release_id" for which no system identifier could be generated
 reference to entity "package_id" for which no system identifier could be generated
-end tag for "th" omitted, but OMITTAG NO was specified
 reference to entity "fref" for which no system identifier could be generated
 reference to entity "ARTICLE_ID" for which no system identifier could be generated
 there is no attribute "max"
@@ -1821,7 +1715,6 @@ Bad value  for attribute id on element div: An ID must not be the empty string.
 reference to entity "logo" for which no system identifier could be generated
 reference to entity "StrucID" for which no system identifier could be generated
 reference to entity "Kern" for which no system identifier could be generated
-end tag for "category" omitted, but OMITTAG NO was specified
 element "category" undefined
 reference to entity "bL" for which no system identifier could be generated
 end tag for element "object" which is not open
@@ -1856,7 +1749,6 @@ unexpected characters after document end (found <)
 reference to entity "area_name" for which no system identifier could be generated
 reference to entity "ei" for which no system identifier could be generated
 "webkitAllowFullScreen" is not a member of a group specified for any attribute
-end tag for "source" omitted, but OMITTAG NO was specified
 reference to entity "oi" for which no system identifier could be generated
 reference to entity "qsAvgB" for which no system identifier could be generated
 reference to entity "single" for which no system identifier could be generated
@@ -1875,10 +1767,8 @@ reference to entity "oc.indexOf" for which no system identifier could be generat
 "green" is not a member of a group specified for any attribute
 element "gNumBoxes561" undefined
 reference to entity "h.substring" for which no system identifier could be generated
-end tag for "gNumBoxes561" omitted, but OMITTAG NO was specified
 reference to entity "ds" for which no system identifier could be generated
 reference to entity "cs" for which no system identifier could be generated
-end tag for "scr" omitted, but OMITTAG NO was specified
 character "[" not allowed in attribute specification list
 reference to entity "pt2" for which no system identifier could be generated
 element "SECTION" undefined
@@ -1901,7 +1791,6 @@ there is no attribute "suda-data"
 reference to entity "authenticate" for which no system identifier could be generated
 reference to entity "ft" for which no system identifier could be generated
 reference to entity "group_id" for which no system identifier could be generated
-end tag for "N" omitted, but OMITTAG NO was specified
 reference to entity "s.pt" for which no system identifier could be generated
 there is no attribute "invokeurls"
 there is no attribute "data-pinit"
@@ -1925,11 +1814,9 @@ reference to entity "qfh_ft" for which no system identifier could be generated
 reference to entity "qfh_rct" for which no system identifier could be generated
 reference to entity "str" for which no system identifier could be generated
 Bad value  for attribute href on element a: Illegal character in query component.
-end tag for "Br" omitted, but OMITTAG NO was specified
 element "Br" undefined
 reference to entity "trail" for which no system identifier could be generated
 reference to entity "catName" for which no system identifier could be generated
-end tag for "H1" omitted, but OMITTAG NO was specified
 end tag for element "h1" which is not open
 reference to entity "showOutOfStockItems" for which no system identifier could be generated
 reference to entity "tUrl" for which no system identifier could be generated
@@ -1971,7 +1858,6 @@ there is no attribute "jQuery1344993142035"
 there is no attribute "minlength"
 end tag for element "tbody" which is not open
 end tag for element "center" which is not open
-end tag for "uscesL10n.key_opts.length" omitted, but OMITTAG NO was specified
 reference to entity "J" for which no system identifier could be generated
 "page" is not a member of a group specified for any attribute
 "fenÃ" is not a member of a group specified for any attribute
@@ -1980,8 +1866,6 @@ reference to entity "J" for which no system identifier could be generated
 "THE" is not a member of a group specified for any attribute
 reference to entity "this" for which no system identifier could be generated
 there is no attribute "noshade"
-end tag for "S" omitted, but OMITTAG NO was specified
-end tag for "E" omitted, but OMITTAG NO was specified
 end tag for element "DT" which is not open
 end tag for element "DD" which is not open
 there is no attribute "CLIENTID"
@@ -1992,7 +1876,6 @@ reference to entity "orderId" for which no system identifier could be generated
 "data-showcase-pane" is not a member of a group specified for any attribute
 "SCHEDULE" is not a member of a group specified for any attribute
 reference to entity "filter" for which no system identifier could be generated
-end tag for "dt" omitted, but OMITTAG NO was specified
 Unnamespaced element script not allowed in this context. (Suppressing further errors from this subtree.)
 "TRAVEL" is not a member of a group specified for any attribute
 "CHANGE" is not a member of a group specified for any attribute
@@ -2074,7 +1957,6 @@ reference to entity "um" for which no system identifier could be generated
 reference to entity "client" for which no system identifier could be generated
 element "subtitle" undefined
 there is no attribute "aria-labelledby"
-end tag for "base" omitted, but OMITTAG NO was specified
 element "g" undefined
 reference to entity "wi" for which no system identifier could be generated
 reference to entity "isSelfContained" for which no system identifier could be generated
@@ -2090,7 +1972,6 @@ element "line.length" undefined
 reference to entity "theme" for which no system identifier could be generated
 end tag for element "EMBED" which is not open
 end tag for element "SCR" which is not open
-end tag for "line.length" omitted, but OMITTAG NO was specified
 Bad value  for attribute href on XHTML element link: Must be non-empty.
 reference to entity "word" for which no system identifier could be generated
 End tag figure seen, but there were open elements.
@@ -2147,29 +2028,24 @@ reference to entity "updated" for which no system identifier could be generated
 value of attribute "FOR" invalid: "1" cannot start a name
 Saw an end tag after body had been closed.
 element "total" undefined
-end tag for "total" omitted, but OMITTAG NO was specified
 reference to entity "subNum" for which no system identifier could be generated
 end tag for element "if" which is not open
 reference to entity "fee" for which no system identifier could be generated
 reference to entity "Go." for which no system identifier could be generated
-end tag for "j" omitted, but OMITTAG NO was specified
 Bad value  for attribute rel on element a: The string веб-дизайн, is not a registered keyword or absolute URL.
 end tag for element "scri" which is not open
 character "*" not allowed in attribute specification list
 element "j" undefined
 reference to entity "_a" for which no system identifier could be generated
-end tag for "bH" omitted, but OMITTAG NO was specified
 reference to entity "teamid" for which no system identifier could be generated
 reference to entity "Product.Mobile.Vorteilspaket" for which no system identifier could be generated
 reference to entity "Product.Mobile.Voice.Tariff" for which no system identifier could be generated
 reference to entity "surname" for which no system identifier could be generated
 reference to entity "ty" for which no system identifier could be generated
-end tag for "bI" omitted, but OMITTAG NO was specified
 reference to entity "season" for which no system identifier could be generated
 reference to entity "teamname" for which no system identifier could be generated
 reference to entity "Product.Landline.Net.DSL.Bandwidth" for which no system identifier could be generated
 element "bH" undefined
-end tag for "R" omitted, but OMITTAG NO was specified
 start tag for "TR" omitted, but its declaration does not permit this
 reference to entity "firstname" for which no system identifier could be generated
 end tag for "TBODY" which is not finished
@@ -2194,9 +2070,7 @@ there is no attribute "DATA-INSET"
 reference to entity "offer_id" for which no system identifier could be generated
 there is no attribute "DATA-ROLE"
 element "R" undefined
-end tag for "TABLE" omitted, but OMITTAG NO was specified
 reference to entity "ptid" for which no system identifier could be generated
-end tag for "sc" omitted, but OMITTAG NO was specified
 reference to entity "bT" for which no system identifier could be generated
 element "string:stream" undefined
 element "bI" undefined
@@ -2221,12 +2095,10 @@ reference to entity "browser_path" for which no system identifier could be gener
 reference to entity "url_name" for which no system identifier could be generated
 there is no attribute "TRANSLATE"
 there is no attribute "fw-msg"
-end tag for "frame" omitted, but OMITTAG NO was specified
 element "menu" undefined
 there is no attribute "fw-filter"
 reference to entity "site_prefix" for which no system identifier could be generated
 there is no attribute "fw-label"
-end tag for "ahrefs.length" omitted, but OMITTAG NO was specified
 reference to entity "position_list" for which no system identifier could be generated
 value of attribute "align" must be a single token
 element "ahrefs.length" undefined
@@ -2240,10 +2112,8 @@ reference to entity "affTrackingCode" for which no system identifier could be ge
 reference to entity "show_id" for which no system identifier could be generated
 reference to entity "SMSID" for which no system identifier could be generated
 reference to entity "A." for which no system identifier could be generated
-end tag for "FORM" omitted, but OMITTAG NO was specified
 reference to entity "MMSID" for which no system identifier could be generated
 element "AREA" undefined
-end tag for "AREA" omitted, but OMITTAG NO was specified
 reference to entity "familyIds" for which no system identifier could be generated
 there is no attribute "XMLNS:V"
 reference to entity "adid" for which no system identifier could be generated
@@ -2263,7 +2133,6 @@ there is no attribute "HIDDEN"
 reference to entity "re" for which no system identifier could be generated
 reference to entity "ut" for which no system identifier could be generated
 reference to entity "at" for which no system identifier could be generated
-end tag for "_slices" omitted, but OMITTAG NO was specified
 element "_slices" undefined
 reference to entity "groupid" for which no system identifier could be generated
 there is no attribute "SIZES"
@@ -2284,7 +2153,6 @@ there is no attribute "accept-charset"
 "POWER" is not a member of a group specified for any attribute
 reference to entity "fvImageURL" for which no system identifier could be generated
 reference to entity "fvMovieURL" for which no system identifier could be generated
-end tag for "document.getElementsByName" omitted, but OMITTAG NO was specified
 element "document.getElementsByName" undefined
 reference to entity "fvStreamURL" for which no system identifier could be generated
 end tag for element "sc" which is not open
@@ -2351,7 +2219,6 @@ there is no attribute "data-sv"
 The scope attribute on the td element is obsolete. Use the scope attribute on a th element instead.
 element "STRIKE" undefined
 element "this.globalData.maxnum-1" undefined
-end tag for "this.globalData.maxnum-1" omitted, but OMITTAG NO was specified
 reference to entity "fq" for which no system identifier could be generated
 there is no attribute "data-appid"
 reference to entity "juli" for which no system identifier could be generated
@@ -2524,9 +2391,6 @@ reference to entity "afsid" for which no system identifier could be generated
 reference to entity "flvUrl" for which no system identifier could be generated
 reference to entity "setTimeout" for which no system identifier could be generated
 there is no attribute "lb-id"
-end tag for "g" omitted, but OMITTAG NO was specified
-end tag for "c" omitted, but OMITTAG NO was specified
-end tag for "m" omitted, but OMITTAG NO was specified
 element "c" undefined
 reference to entity "bH.rotate" for which no system identifier could be generated
 element "bV" undefined
@@ -2538,18 +2402,13 @@ there is no attribute "app_id"
 there is no attribute "site"
 there is no attribute "ref"
 element "fb:recommendations" undefined
-end tag for "bV" omitted, but OMITTAG NO was specified
-end tag for "bQ" omitted, but OMITTAG NO was specified
-end tag for "bN" omitted, but OMITTAG NO was specified
-end tag for "bP" omitted, but OMITTAG NO was specified
 reference to entity "bQ.stroke" for which no system identifier could be generated
 reference to entity "bN" for which no system identifier could be generated
 reference to entity "zs" for which no system identifier could be generated
 reference to entity "logoUrl" for which no system identifier could be generated
 reference to entity "bK" for which no system identifier could be generated
-end tag for "bS" omitted, but OMITTAG NO was specified
 reference to entity "viewKey" for which no system identifier could be generated
-end tag for "bW" omitted, but OMITTAG NO was specifiedthere is no attribute "MARGINWIDTH"
+there is no attribute "MARGINWIDTH"
 there is no attribute "SPAN"
 there is no attribute "MARGINHEIGHT"
 reference to entity "bq" for which no system identifier could be generated
@@ -2558,13 +2417,11 @@ reference to entity "Site" for which no system identifier could be generated
 reference to entity "Menu" for which no system identifier could be generated
 element "audio" undefined
 reference to entity "online" for which no system identifier could be generated
-end tag for "caption" omitted, but OMITTAG NO was specified
 ; assuming missing "caption" start-tag
 "https:" is not a member of a group specified for any attribute
 element "product" undefined
 --! found in comment.
 title element between head and body.
-end tag for "product" omitted, but OMITTAG NO was specified
 there is no attribute "font-family:"
 element "picarr.length" undefined
 element "linkarr.length" undefined
@@ -2577,15 +2434,12 @@ reference to entity "Language" for which no system identifier could be generated
 "SPAN" is not a member of a group specified for any attribute
 ; assuming missing "object" start-tag
 "0px" is not a member of a group specified for any attribute
-end tag for "textarr.length" omitted, but OMITTAG NO was specified
 there is no attribute "s"
 reference to entity "h.maxwidth" for which no system identifier could be generated
 reference to entity "e.css" for which no system identifier could be generated
 there is no attribute "data-box"
 there is no attribute "aria-haspopup"
 there is no attribute "aria-autocomplete"
-end tag for "linkarr.length" omitted, but OMITTAG NO was specified
-end tag for "picarr.length" omitted, but OMITTAG NO was specified
 reference to entity "YOU." for which no system identifier could be generated
 there is no attribute "xtcz"
 element "canvas" undefined
@@ -2616,11 +2470,6 @@ reference to entity "anim" for which no system identifier could be generated
 reference to entity "modestbranding" for which no system identifier could be generated
 no internal or external document type declaration subset; will parse without validation
 reference to entity "fg" for which no system identifier could be generated
-end tag for "n" omitted, but OMITTAG NO was specified
-end tag for "uol_sc.d.links.length" omitted, but OMITTAG NO was specified
-end tag for "t1" omitted, but OMITTAG NO was specified
-end tag for "d.get" omitted, but OMITTAG NO was specified
-end tag for "_data.length" omitted, but OMITTAG NO was specified
 element "_data.length" undefined
 reference to entity "d.appendChild" for which no system identifier could be generated
 there is no attribute "ALLOWFULLSCREEN"
@@ -2636,7 +2485,6 @@ there is no attribute "data-tagsid"
 there is no attribute "BANNER"
 there is no attribute "WMODE"
 End tag h4 seen, but there were open elements.
-end tag for "emailvar.length" omitted, but OMITTAG NO was specified
 element "emailvar.length" undefined
 reference to entity "hkeywordtype" for which no system identifier could be generated
 reference to entity "KeyWord" for which no system identifier could be generated
@@ -2718,45 +2566,28 @@ reference to entity "Math.random" for which no system identifier could be genera
 reference to entity "ot" for which no system identifier could be generated
 reference to entity "i.next" for which no system identifier could be generated
 reference to entity "s.d.all" for which no system identifier could be generated
-end tag for "iBox" omitted, but OMITTAG NO was specified
 element "s.d.links.length" undefined
 reference to entity "sc_r" for which no system identifier could be generated
 reference to entity "ta" for which no system identifier could be generated
 reference to entity "m.indexOf" for which no system identifier could be generated
 reference to entity "sc_d" for which no system identifier could be generated
-end tag for "s.va_t.length" omitted, but OMITTAG NO was specified
-end tag for "im" omitted, but OMITTAG NO was specified
 reference to entity "rs.indexOf" for which no system identifier could be generated
 reference to entity "s.wd." for which no system identifier could be generated
 reference to entity "s.m_nl" for which no system identifier could be generated
-end tag for "a." omitted, but OMITTAG NO was specified
 element "s.m_nl.length" undefined
 "Better" is not a member of a group specified for any attribute
 reference to entity "s.d" for which no system identifier could be generated
-end tag for "s.va_g.length" omitted, but OMITTAG NO was specified
 reference to entity "s_d" for which no system identifier could be generated
 reference to entity "s.d.createElement" for which no system identifier could be generated
 reference to entity "t1" for which no system identifier could be generated
 reference to entity "m._e" for which no system identifier could be generated
-end tag for "s.d.links.length" omitted, but OMITTAG NO was specified
 reference to entity "l.indexOf" for which no system identifier could be generated
-end tag for "iLinks" omitted, but OMITTAG NO was specified
 element "s.va_t.length" undefined
 reference to entity "s.b.attachEvent" for which no system identifier could be generated
 reference to entity "e.getTime" for which no system identifier could be generated
-end tag for "iEl" omitted, but OMITTAG NO was specified
-end tag for "x2.length" omitted, but OMITTAG NO was specified
 element "im" undefined
 reference to entity "o.c" for which no system identifier could be generated
 reference to entity "s.b.addEventListener" for which no system identifier could be generated
-end tag for "fl" omitted, but OMITTAG NO was specified
-end tag for "g.lengt" omitted, but OMITTAG NO was specified
-end tag for "iModChildren" omitted, but OMITTAG NO was specified
-end tag for "iModChildrenDivs" omitted, but OMITTAG NO was specified
-end tag for "s.pl.length" omitted, but OMITTAG NO was specified
-end tag for "iMods" omitted, but OMITTAG NO was specified
-end tag for "s.dll.length" omitted, but OMITTAG NO was specified
-end tag for "s.m_nl.length" omitted, but OMITTAG NO was specified
 element "b.length" undefined
 Bad character 王 after <. Probable cause: Unescaped <. Try escaping it as &lt;.
 element "o" undefined
@@ -2765,11 +2596,8 @@ reference to entity "h--" for which no system identifier could be generated
 reference to entity "eacutes" for which no system identifier could be generated
 element "loop1_count" undefined
 there is no attribute "DISABLED"
-end tag for "loop1_count" omitted, but OMITTAG NO was specified
-end tag for "len.length" omitted, but OMITTAG NO was specified
 element "len.length" undefined
 element "num.length" undefined
-end tag for "num.length" omitted, but OMITTAG NO was specified
 there is no attribute "siz"
 there is no attribute "data-redirecturi"
 there is no attribute "DOJORELEASETYPE"
@@ -2791,13 +2619,7 @@ element "list.length" undefined
 element "e.length" undefined
 reference to entity "bL.k" for which no system identifier could be generated
 reference to entity "bQ.d" for which no system identifier could be generated
-end tag for "X.length" omitted, but OMITTAG NO was specified
-end tag for "bX" omitted, but OMITTAG NO was specified
-end tag for "bU" omitted, but OMITTAG NO was specified
-end tag for "bZ" omitted, but OMITTAG NO was specified
-end tag for "ii" omitted, but OMITTAG NO was specified
 reference to entity "TournamentID" for which no system identifier could be generated
-end tag for "X" omitted, but OMITTAG NO was specified
 reference to entity "originPageTitle" for which no system identifier could be generated
 reference to entity "clienturl" for which no system identifier could be generated
 there is no attribute "quantity"
@@ -2805,13 +2627,7 @@ there is no attribute "end"
 there is no attribute "divclass"
 there is no attribute "unit"
 reference to entity "originPageUrl" for which no system identifier could be generated
-end tag for "rvml:" omitted, but OMITTAG NO was specified
-end tag for "b0" omitted, but OMITTAG NO was specified
 there is no attribute "tarfget"
-end tag for "bJ" omitted, but OMITTAG NO was specified
-end tag for "bH.y" omitted, but OMITTAG NO was specified
-end tag for "list.length" omitted, but OMITTAG NO was specified
-end tag for "steps" omitted, but OMITTAG NO was specified
 Bad value  for attribute autocomplete on element input.
 there is no attribute "MEDIA"
 there is no attribute "data-translate"
@@ -2826,12 +2642,9 @@ there is no attribute "data-info1"
 there is no attribute "data-placeholder"
 reference to entity "server" for which no system identifier could be generated
 there is no attribute "data-link"
-end tag for "b.length" omitted, but OMITTAG NO was specified
-end tag for "o" omitted, but OMITTAG NO was specified
 reference to entity "ntildeados" for which no system identifier could be generated
 reference to entity "Body" for which no system identifier could be generated
 there is no attribute "widht"
-end tag for "e.length" omitted, but OMITTAG NO was specified
 reference to entity "sqi" for which no system identifier could be generated
 style element between head and body.
 reference to entity "resnum" for which no system identifier could be generated
@@ -2844,11 +2657,9 @@ reference to entity "bav" for which no system identifier could be generated
 reference to entity "Pdf" for which no system identifier could be generated
 reference to entity "siteid" for which no system identifier could be generated
 reference to entity "forward" for which no system identifier could be generated
-end tag for "rq.length" omitted, but OMITTAG NO was specified
 reference to entity "pageType" for which no system identifier could be generated
 there is no attribute "cssClass"
 element "rq.length" undefined
-end tag for "oli.length-2" omitted, but OMITTAG NO was specified
 element "oli.length-2" undefined
 reference to entity "_suid" for which no system identifier could be generated
 there is no attribute "cope"
@@ -2862,7 +2673,6 @@ there is no attribute "selectedClass"
 there is no attribute "menuName"
 there is no attribute "view"
 element "Require" undefined
-end tag for "ol" omitted, but OMITTAG NO was specified
 reference to entity "show_count" for which no system identifier could be generated
 reference to entity "show_screen_name" for which no system identifier could be generated
 there is no attribute "marco"
@@ -2908,7 +2718,6 @@ reference to entity "P5_Language" for which no system identifier could be genera
 element "kws.length" undefined
 The version attribute on the html element is obsolete. You can safely omit it.
 there is no attribute "DATA-TOGGLE"
-end tag for "kws.length" omitted, but OMITTAG NO was specified
 there is no attribute "data-cb-ad-id"
 there is no attribute "direct_url"
 "Special" is not a member of a group specified for any attribute
@@ -2920,7 +2729,6 @@ there is no attribute "data-suffix"
 there is no attribute "data-search-text-default"
 reference to entity "nowosc_id" for which no system identifier could be generated
 "Accessories" is not a member of a group specified for any attribute
-end tag for "min_num" omitted, but OMITTAG NO was specified
 reference to entity "pf_rd_s" for which no system identifier could be generated
 reference to entity "pf_rd_r" for which no system identifier could be generated
 element "min_num" undefined
@@ -2940,7 +2748,6 @@ there is no attribute "data-test-facebook-url"
 reference to entity "pf_rd_t" for which no system identifier could be generated
 reference to entity "mediaLayer" for which no system identifier could be generated
 duplicate specification of attribute "xmlns"
-end tag for "mediaLayer.length" omitted, but OMITTAG NO was specified
 element "mediaLayer.length" undefined
 "-24" is not a member of a group specified for any attribute
 "-8" is not a member of a group specified for any attribute
@@ -2956,7 +2763,6 @@ required attribute "COLS" not specified
 there is no attribute "data-category-location"
 reference to entity "size_w" for which no system identifier could be generated
 there is no attribute "data-country-code"
-end tag for "respItem.length" omitted, but OMITTAG NO was specified
 there is no attribute "data-url-autocomplete"
 element "respItem.length" undefined
 reference to entity "stru_travel" for which no system identifier could be generated
@@ -2970,7 +2776,6 @@ reference to entity "dcpCode" for which no system identifier could be generated
 reference to entity "使用教程" for which no system identifier could be generated
 reference to entity "使用教" for which no system identifier could be generated
 Garbage after </.
-end tag for "content" omitted, but OMITTAG NO was specified
 element "content" undefined
 there is no attribute "SCHEME"
 ID "othersfirsturl10044" already defined
@@ -3026,9 +2831,7 @@ The hash-name reference in attribute usemap referred to DongTaiMap294-2, but the
 element "document.images.length" undefined
 there is no attribute "offset"
 there is no attribute "mc:label"
-end tag for "document.images.length" omitted, but OMITTAG NO was specified
 there is no attribute "storager"Bad value  for attribute method on element form.
-end tag for "nav1.length" omitted, but OMITTAG NO was specified
 element "nav1.length" undefined
 reference to entity "categoryNames" for which no system identifier could be generated
 reference to entity "sw" for which no system identifier could be generated
@@ -3070,7 +2873,6 @@ Bad value  for attribute cite on element blockquote: Control character in path c
 reference to entity "fontsize" for which no system identifier could be generated
 there is no attribute "SCROLLAMOUNT"
 there is no attribute "DIRECTION"
-end tag for "Conception" omitted, but OMITTAG NO was specified
 element "fb:activity" undefined
 there is no attribute "recommendations"
 element "ui:composition" undefined
@@ -3162,7 +2964,6 @@ there is no attribute "data-product-id"
 there is no attribute "data-domain"
 there is no attribute "data-appkey"
 element "BASE" undefined
-end tag for "BASE" omitted, but OMITTAG NO was specified
 element "HTML" undefined
 there is no attribute "data-close"
 there is no attribute "onorientationchange"
@@ -3178,7 +2979,6 @@ there is no attribute "catid"
 reference to entity "t_rid" for which no system identifier could be generated
 there is no attribute "data-bread-crumbs"
 element "originalEmailList.length" undefined
-end tag for "originalEmailList.length" omitted, but OMITTAG NO was specified
 end tag for element "HTML" which is not open
 "HTML" not finished but containing element ended
 <!DOCTYPE html SYSTEM "about:legacy-compat">
@@ -3192,7 +2992,6 @@ there is no attribute "x-webkit-airplay"
 "autoplay" is not a member of a group specified for any attribute
 there is no attribute "data-scaytid"
 element "pun_status" undefined
-end tag for "pun_status" omitted, but OMITTAG NO was specified
 "preload" is not a member of a group specified for any attribute
 reference to entity "clientSn" for which no system identifier could be generated
 reference to entity "memberType" for which no system identifier could be generated
@@ -3219,7 +3018,6 @@ reference to entity "calpgid" for which no system identifier could be generated
 reference to entity "souscategid" for which no system identifier could be generated
 reference to entity "categid" for which no system identifier could be generated
 reference to entity "grave" for which no system identifier could be generated
-end tag for "ids.length" omitted, but OMITTAG NO was specified
 element "ids.length" undefined
 reference to entity "crid" for which no system identifier could be generated
 reference to entity "gn" for which no system identifier could be generated
@@ -3227,7 +3025,6 @@ there is no attribute "longDesc"
 reference to entity "xc" for which no system identifier could be generated
 unused
 element "Td" undefined
-end tag for "Td" omitted, but OMITTAG NO was specified
 reference to entity "ecid" for which no system identifier could be generated
 reference to entity "pgid" for which no system identifier could be generated
 reference to entity "idsite" for which no system identifier could be generated
@@ -3238,12 +3035,10 @@ reference to entity "idzone" for which no system identifier could be generated
 reference to entity "fowardURL" for which no system identifier could be generated
 there is no attribute "data-current"
 element "spen" undefined
-end tag for "spen" omitted, but OMITTAG NO was specified
 reference to entity "sub_cat" for which no system identifier could be generated
 there is no attribute "data-index"
 there is no attribute "onfocus"
 reference to entity "emv_pagename" for which no system identifier could be generated
-end tag for "gy.length" omitted, but OMITTAG NO was specified
 "margin:0px" is not a member of a group specified for any attribute
 "5px" is not a member of a group specified for any attribute
 reference to entity "partnerID" for which no system identifier could be generated
@@ -3293,7 +3088,6 @@ there is no attribute "dbut"
 there is no attribute "tabid"
 there is no attribute "herf"
 reference to entity "CityID" for which no system identifier could be generated
-end tag for "cmt" omitted, but OMITTAG NO was specified
 element "cmt" undefined
 reference to entity "CustomerVideo" for which no system identifier could be generated
 reference to entity "xres" for which no system identifier could be generated
@@ -3307,7 +3101,6 @@ reference to entity "idcon" for which no system identifier could be generated
 reference to entity "nbdigits" for which no system identifier could be generated
 reference to entity "initCount" for which no system identifier could be generated
 reference to entity "concelho" for which no system identifier could be generated
-end tag for "LINK" omitted, but OMITTAG NO was specified
 there is no attribute "longdesc"
 "screen" is not a member of a group specified for any attribute
 "One" is not a member of a group specified for any attribute
@@ -3316,7 +3109,6 @@ there is no attribute "longdesc"
 "Gorilla" is not a member of a group specified for any attribute
 "SV" is not a member of a group specified for any attribute
 reference to entity "PAGE_URL" for which no system identifier could be generated
-end tag for "gNumBoxes18106" omitted, but OMITTAG NO was specified
 "Baldwinson" is not a member of a group specified for any attribute
 element "gNumBoxes18106" undefined
 "Watkins" is not a member of a group specified for any attribute
@@ -3360,15 +3152,11 @@ there is no attribute "classname"
 reference to entity "_my_space_login_struts_action" for which no system identifier could be generated
 element "gNumBoxes18088" undefined
 "Ablett" is not a member of a group specified for any attribute
-end tag for "gNumBoxes18088" omitted, but OMITTAG NO was specified
 there is no attribute "headercss"
 element "checkj" undefined
-end tag for "checkj" omitted, but OMITTAG NO was specified
 element "checkoldj" undefined
 element "arr1.length" undefined
 reference to entity "clickType" for which no system identifier could be generated
-end tag for "checkoldj" omitted, but OMITTAG NO was specified
-end tag for "arr1.length" omitted, but OMITTAG NO was specified
 "Bailey" is not a member of a group specified for any attribute
 "Jones-Bishop" is not a member of a group specified for any attribute
 "Hood" is not a member of a group specified for any attribute
@@ -3399,15 +3187,12 @@ reference to entity "this.onSelectDay" for which no system identifier could be g
 reference to entity "display" for which no system identifier could be generated
 reference to entity "mpid" for which no system identifier could be generated
 reference to entity "bottomnav" for which no system identifier could be generated
-end tag for "clen" omitted, but OMITTAG NO was specified
 element "clen" undefined
 reference to entity "els" for which no system identifier could be generated
 reference to entity "b.getDate" for which no system identifier could be generated
-end tag for "els.length" omitted, but OMITTAG NO was specified
 reference to entity "f_cate" for which no system identifier could be generated
 reference to entity "local" for which no system identifier could be generated
 reference to entity "cus" for which no system identifier could be generated
-end tag for "c.length" omitted, but OMITTAG NO was specified
 element "c.length" undefined
 reference to entity "wl" for which no system identifier could be generated
 reference to entity "rf" for which no system identifier could be generated
@@ -3423,7 +3208,6 @@ there is no attribute "data-postfix"
 there is no attribute "data-discount"
 reference to entity "head" for which no system identifier could be generated
 reference to entity "PartialRenderControlList" for which no system identifier could be generated
-end tag for "fieldset" omitted, but OMITTAG NO was specified
 there is no attribute "tartget"
 there is no attribute "data-tab-active"
 there is no attribute "data-tab-id"
@@ -3445,7 +3229,6 @@ Unnamespaced element style not allowed in this context. (Suppressing further err
 element "wb:share-button" undefined
 reference to entity "wm_l" for which no system identifier could be generated
 reference to entity "c.hover" for which no system identifier could be generated
-end tag for "q" omitted, but OMITTAG NO was specified
 there is no attribute "mens"
 there is no attribute "republic"
 there is no attribute "democratic"
@@ -3507,7 +3290,6 @@ Redirect loop deteted
 NOT FOUND
 reference to entity "host" for which no system identifier could be generated
 element "Форбс.Ру" undefined
-end tag for "Форбс.Ру" omitted, but OMITTAG NO was specified
 reference to entity "Aです" for which no system identifier could be generated
 "XMLNS" is not a reserved name
 Bad value  for attribute id on element body: An ID must not be the empty string.
@@ -3572,7 +3354,6 @@ reference to entity "_voyageurs::ECOPILOTE_:_le_" for which no system identifier
 there is no attribute "srch"
 there is no attribute "xtclb"
 Bad value  for attribute id on element object: An ID must not be the empty string.
-end tag for "y" omitted, but OMITTAG NO was specified
 there is no attribute "ex:role"
 there is no attribute "ex:showAll"
 there is no attribute "ex:border"
@@ -3649,16 +3430,12 @@ there is no attribute "data-player-onPlay"
 there is no attribute "data-player-width"
 there is no attribute "data-player-height"
 there is no attribute "data-player-sitePage"
-end tag for "m.length" omitted, but OMITTAG NO was specified
 there is no attribute "rightmargin"
-end tag for "variableslide.length" omitted, but OMITTAG NO was specified
 element "variableslide.length" undefined
 there is no attribute "bottommargin"
 reference to entity "nb" for which no system identifier could be generated
 element "tweetUsersdarkbeige.length" undefined
-end tag for "tweetUsersdarkbeige.length" omitted, but OMITTAG NO was specified
 reference to entity "rpp" for which no system identifier could be generated
-end tag for "atpos" omitted, but OMITTAG NO was specified
 reference to entity "o.hasClass" for which no system identifier could be generated
 reference to entity "l.hasClass" for which no system identifier could be generated
 reference to entity "l.select" for which no system identifier could be generated
@@ -3677,7 +3454,6 @@ there is no attribute "wb_screen_name"
 reference to entity "ScriptureVerse" for which no system identifier could be generated
 reference to entity "ScriptureBookA" for which no system identifier could be generated
 reference to entity "TopicID" for which no system identifier could be generated
-end tag for "TBODY" omitted, but OMITTAG NO was specified
 end tag for element "TBODY" which is not open
 reference to entity "streamer" for which no system identifier could be generated
 reference to entity "provider" for which no system identifier could be generated
@@ -3737,9 +3513,7 @@ reference to entity "x1" for which no system identifier could be generated
 reference to entity "scrx" for which no system identifier could be generated
 end tag for element "CODE" which is not open
 element "CAPTION" undefined
-end tag for "CODE" omitted, but OMITTAG NO was specified
 element "CODE" undefined
-end tag for "FONT" omitted, but OMITTAG NO was specified
 "x:str" is not a member of a group specified for any attribute
 there is no attribute "x:num"
 reference to entity "iframed" for which no system identifier could be generated
@@ -3752,10 +3526,7 @@ there is no attribute "borderColorDark"
 there is no attribute "borderColorLight"
 there is no attribute "METHOD"
 there is no attribute "ONSUBMIT"
-end tag for "Div" omitted, but OMITTAG NO was specified
 end tag for element "Div" which is not open
-end tag for "TR" omitted, but OMITTAG NO was specified
-end tag for "TD" omitted, but OMITTAG NO was specified
 reference to entity "mcode" for which no system identifier could be generated
 reference to entity "消费返利回馈" for which no system identifier could be generated
 reference to entity "an" for which no system identifier could be generated
@@ -3776,7 +3547,6 @@ there is no attribute "mes"
 "2013旅游预测报告" is not a member of a group specified for any attribute
 reference to entity "promocode" for which no system identifier could be generated
 reference to entity "refererid" for which no system identifier could be generated
-end tag for ":987" omitted, but OMITTAG NO was specified
 element ":987" undefined
 element "frameset" undefined
 there is no attribute "rows"
@@ -3797,7 +3567,6 @@ there is no attribute "data-skin"
 there is no attribute "data-apikey"
 End of file reached when inside an attribute value. Ignoring tag.
 reference to entity "sensor" for which no system identifier could be generated
-end tag for "this.minHeigth" omitted, but OMITTAG NO was specified
 element "this.minHeigth" undefined
 reference to entity "classb_id" for which no system identifier could be generated
 element "lu" undefined
@@ -3810,7 +3579,6 @@ end tag for element "title" which is not open
 end tag for element "Body" which is not open
 there is no attribute "Language"
 element "Form" undefined
-end tag for "Title" omitted, but OMITTAG NO was specified
 "iG" is not a member of a group specified for any attribute
 "VS" is not a member of a group specified for any attribute
 "时空战线" is not a member of a group specified for any attribute
@@ -3879,9 +3647,6 @@ reference to entity "P" for which no system identifier could be generated
 name character invalid: only minimum literal and parameter separators are allowed
 reference to entity "qid" for which no system identifier could be generated
 there is no attribute "index"
-end tag for "this.length" omitted, but OMITTAG NO was specified
-end tag for "allItemCount" omitted, but OMITTAG NO was specified
-end tag for "allItemCount-1" omitted, but OMITTAG NO was specified
 reference to entity "document.defaultView.getComputedStyle" for which no system identifier could be generated
 there is no attribute "endSeconds"
 there is no attribute "startSeconds"
@@ -3903,15 +3668,12 @@ reference to entity "NICKNAME" for which no system identifier could be generated
 element "this.dotObjArr.length" undefined
 reference to entity "thisMove" for which no system identifier could be generated
 element "pages" undefined
-end tag for "this.dotObjArr.length" omitted, but OMITTAG NO was specified
-end tag for "pages" omitted, but OMITTAG NO was specified
 reference to entity "DEFAULT_REGIST" for which no system identifier could be generated
 reference to entity "EXPIRE_TYPE" for which no system identifier could be generated
 reference to entity "sitesearch" for which no system identifier could be generated
 there is no attribute "data-ev-hover-ocid"
 there is no attribute "data-ev-hover-pid"
 reference to entity "istime" for which no system identifier could be generated
-end tag for "FocusPic_01.htmlData.length" omitted, but OMITTAG NO was specified
 element "FocusPic_01.htmlData.length" undefined
 reference to entity "goodsid" for which no system identifier could be generated
 reference to entity "goodsurl" for which no system identifier could be generated
@@ -3960,7 +3722,6 @@ reference to entity "off" for which no system identifier could be generated
 element "xmenu" undefined
 reference to entity "人文" for which no system identifier could be generated
 reference to entity "get_frame" for which no system identifier could be generated
-end tag for "data.length" omitted, but OMITTAG NO was specified
 there is no attribute "dvalue"
 there is no attribute "qs_url"
 there is no attribute "page"
@@ -3968,10 +3729,7 @@ reference to entity "oumltter" for which no system identifier could be generated
 name start character invalid: only S separators and TAGC allowed here
 end tag for element "spa" which is not open
 reference to entity "C.appendChild" for which no system identifier could be generated
-end tag for "C.length" omitted, but OMITTAG NO was specified
 element "C.length" undefined
-end tag for "B.length" omitted, but OMITTAG NO was specified
-end tag for "D" omitted, but OMITTAG NO was specified
 reference to entity "创意" for which no system identifier could be generated
 there is no attribute "hint"
 element "B.length" undefined
@@ -4027,7 +3785,6 @@ there is no attribute "x-webkit-grammar"
 there is no attribute "onwebkitspeechchange"
 "14px" is not a member of a group specified for any attribute
 there is no attribute "__src"
-end tag for "iframe" omitted, but OMITTAG NO was specified
 there is no attribute "VSPACE"
 there is no attribute "HSPACE"
 "ce.sysu.edu.cn" is not a member of a group specified for any attribute

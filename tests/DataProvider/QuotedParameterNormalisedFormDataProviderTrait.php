@@ -48,6 +48,15 @@ trait QuotedParameterNormalisedFormDataProviderTrait
                     ]
                 ),
             ],
+            'end tag for "%0" omitted, but OMITTAG NO was specified' => [
+                'htmlErrorString' => 'end tag for "h1" omitted, but OMITTAG NO was specified',
+                'expectedNormalisedError' => new NormalisedError(
+                    'end tag for "%0" omitted, but OMITTAG NO was specified',
+                    [
+                        'h1',
+                    ]
+                ),
+            ],
         ];
     }
 }

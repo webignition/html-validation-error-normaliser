@@ -6,13 +6,6 @@ use webignition\HtmlValidationErrorNormaliser\Tests\webignition\HtmlValidationEr
 
 class GetNormalFormTest extends BaseTest {
 
-    public function testEndTagOmittedButOmmittagNoWasSpecified() {
-        $this->normalFormTest(
-            'end tag for "h1" omitted, but OMITTAG NO was specified',
-            'end tag for "%0" omitted, but OMITTAG NO was specified'
-        );
-    }
-
     public function testEndTagWhichIsNotFinished() {
         $this->normalFormTest(
             'end tag for "tbody" which is not finished',
