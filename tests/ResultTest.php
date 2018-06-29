@@ -1,6 +1,6 @@
 <?php
 
-namespace webignition\HtmlValidationErrorNormaliser\Tests\webignition\HtmlValidationErrorNormaliser;
+namespace webignition\HtmlValidationErrorNormaliser\Tests;
 
 use webignition\HtmlValidationErrorNormaliser\NormalisedError;
 use webignition\HtmlValidationErrorNormaliser\Result;

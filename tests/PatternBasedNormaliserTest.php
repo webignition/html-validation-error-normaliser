@@ -1,9 +1,10 @@
 <?php
 
-namespace webignition\HtmlValidationErrorNormaliser\Tests\webignition\HtmlValidationErrorNormaliser;
+namespace webignition\HtmlValidationErrorNormaliser\Tests;
 
 use webignition\HtmlValidationErrorNormaliser\NormalisedError;
 use webignition\HtmlValidationErrorNormaliser\PatternBasedNormaliser;
+use webignition\HtmlValidationErrorNormaliser\Tests\DataProvider\PatternBasedNormalisedFormDataProviderTrait;
 
 class PatternBasedNormaliserTest extends \PHPUnit_Framework_TestCase
 {
@@ -56,7 +57,7 @@ class PatternBasedNormaliserTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @dataProvider normaliseHasNormalisedFormDataProvider
+     * @dataProvider normaliseHasPatternBasedNormalisedFormDataProvider
      *
      * @param string $htmlErrorString
      * @param NormalisedError $expectedNormalisedError
