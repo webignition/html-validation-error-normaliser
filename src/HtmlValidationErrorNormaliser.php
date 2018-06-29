@@ -2,22 +2,20 @@
 
 namespace webignition\HtmlValidationErrorNormaliser;
 
-use webignition\HtmlValidationErrorNormaliser\NormalisedError;
-
 /**
  * Take a raw HTML validation error and return a normal form
  *
  * W3C html error reference: http://validator.w3.org/docs/errors.html
  */
-class HtmlValidationErrorNormaliser {
-
-
+class HtmlValidationErrorNormaliser
+{
     /**
-     *
      * @param string $htmlErrorString
-     * @return array
+     *
+     * @return Result
      */
-    public function normalise($htmlErrorString) {
+    public function normalise($htmlErrorString)
+    {
         $result = new Result();
         $result->setRawError(trim($htmlErrorString));
 
@@ -32,7 +30,7 @@ class HtmlValidationErrorNormaliser {
             return $result;
         }
 
-        if (($normalisedError = $this->getQuotedParameterNormalisedError($htmlErrorString)) !== false) {
+        if (($normalisedError = $this->getQuotedParameterNormalisedError($htmlErrorString)) !== null) {
             $result->setNormalisedError($normalisedError);
             return $result;
         }
@@ -40,20 +38,30 @@ class HtmlValidationErrorNormaliser {
         return $result;
     }
 
-
-    private function getQuotedParameterNormalisedError($htmlErrorString) {
+    /**
+     * @param string $htmlErrorString
+     *
+     * @return NormalisedError|null
+     */
+    private function getQuotedParameterNormalisedError($htmlErrorString)
+    {
         $parameterMatches = array();
         $matchCount = preg_match_all('/"([^"]?)+"/', $htmlErrorString, $parameterMatches);
 
         if ($matchCount === 0) {
-            return false;
+            return null;
         }
 
         $normalisedError = new NormalisedError();
         $normalisedErrorString = $htmlErrorString;
 
         foreach ($parameterMatches[0] as $parameterIndex => $parameterMatch) {
-            $normalisedErrorString = preg_replace('/'.$this->preg_quote($parameterMatch).'/', '"%'.$parameterIndex.'"', $normalisedErrorString, 1);
+            $normalisedErrorString = preg_replace(
+                '/' . PregQuoter::quote($parameterMatch) . '/',
+                '"%'.$parameterIndex.'"',
+                $normalisedErrorString,
+                1
+            );
             $normalisedError->addParameter(trim($parameterMatch, '"'));
         }
 
@@ -62,30 +70,13 @@ class HtmlValidationErrorNormaliser {
         return $normalisedError;
     }
 
-    private function preg_quote($value) {
-        $escapedValue = preg_quote($value);
-        if (substr_count($escapedValue, '/') && !substr_count($escapedValue, '\/')) {
-            $escapedValue = str_replace('/', '\/', $escapedValue);
-        }
-
-        return $escapedValue;
-    }
-
-
     /**
+     * @param $htmlErrorString
      *
-     * @param string $htmlErrorString
-     * @return boolean
+     * @return NormalisedError|bool
      */
-    private function isSpecialCase($htmlErrorString) {
-        if (substr_count($htmlErrorString, 'I am unable to validate this document')) {
-            return true;
-        }
-
-        return false;
-    }
-
-    private function processSpecialCase($htmlErrorString) {
+    private function processSpecialCase($htmlErrorString)
+    {
         if (substr_count($htmlErrorString, 'I am unable to validate this document')) {
             $normalForm = 'Unable to interpret %0 as %1 on line %2';
 
@@ -118,7 +109,4 @@ class HtmlValidationErrorNormaliser {
 
         return false;
     }
-
-
-
 }

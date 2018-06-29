@@ -479,26 +479,11 @@ class PatternBasedNormaliser
             if ($this->isTokenPatternPart($part)) {
                 $regexPattern .= '.*';
             } else {
-                $regexPattern .= $this->pregQuote($part);
+                $regexPattern .= PregQuoter::quote($part);
             }
         }
 
         return '/' . $regexPattern . '/is';
-    }
-
-    /**
-     * @param string $value
-     *
-     * @return string
-     */
-    private function pregQuote($value)
-    {
-        $escapedValue = preg_quote($value);
-        if (substr_count($escapedValue, '/') && !substr_count($escapedValue, '\/')) {
-            $escapedValue = str_replace('/', '\/', $escapedValue);
-        }
-
-        return $escapedValue;
     }
 
     /**
