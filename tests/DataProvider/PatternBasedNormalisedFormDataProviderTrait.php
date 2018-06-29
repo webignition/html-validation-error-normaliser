@@ -484,6 +484,15 @@ trait PatternBasedNormalisedFormDataProviderTrait
                     ]
                 ),
             ],
+            'End tag %0 seen, but there were open elements.' => [
+                'htmlErrorString' => 'End tag h3 seen, but there were open elements.',
+                'expectedNormalisedError' => new NormalisedError(
+                    'End tag %0 seen, but there were open elements.',
+                    [
+                        'h3',
+                    ]
+                ),
+            ],
         ];
     }
 }
