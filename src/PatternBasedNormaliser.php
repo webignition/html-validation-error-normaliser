@@ -312,10 +312,6 @@ class PatternBasedNormaliser
     {
         if ($this->matches($htmlErrorString, $pattern)) {
             $matches = $this->pregMatch($htmlErrorString, $pattern);
-            if ($matches === false) {
-                return null;
-            }
-
             $parameters = $this->getParametersFromMatchString($matches[0], $pattern);
 
             $normalisedError = new NormalisedError();
