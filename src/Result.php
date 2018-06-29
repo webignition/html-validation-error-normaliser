@@ -2,71 +2,60 @@
 
 namespace webignition\HtmlValidationErrorNormaliser;
 
-use webignition\HtmlValidationErrorNormaliser\ErrorType\ErrorType;
-use webignition\HtmlValidationErrorNormaliser\ErrorType\Normaliser;
-
-
 /**
  * Models the result of trying to normalise a HTML validation error
  */
-class Result {    
-    
+class Result
+{
     /**
-     * Original HTML validation error unnormalised
-     * 
+     * Original HTML validation error non-normalised
+     *
      * @var string
      */
     private $rawError;
-    
-   
+
     /**
-     *
-     * @var NormalisedError 
+     * @var NormalisedError
      */
     private $normalisedError;
-    
-    
+
     /**
-     * 
-     * @return boolean
+     * @return bool
      */
-    public function isNormalised() {
+    public function isNormalised()
+    {
         return !is_null($this->normalisedError);
     }
-    
-    
+
     /**
-     * 
      * @param string $rawError
      */
-    public function setRawError($rawError) {
+    public function setRawError($rawError)
+    {
         $this->rawError = $rawError;
     }
-    
-    
+
     /**
-     * 
      * @return string
      */
-    public function getRawError() {
+    public function getRawError()
+    {
         return $this->rawError;
     }
-    
-    
+
     /**
-     * 
-     * @param \webignition\HtmlValidationErrorNormaliser\NormalisedError $normalisedError
+     * @param NormalisedError $normalisedError
      */
-    public function setNormalisedError(NormalisedError $normalisedError) {
+    public function setNormalisedError(NormalisedError $normalisedError)
+    {
         $this->normalisedError = $normalisedError;
     }
-    
+
     /**
-     * 
      * @return NormalisedError
      */
-    public function getNormalisedError() {
+    public function getNormalisedError()
+    {
         return $this->normalisedError;
     }
-    
 }
