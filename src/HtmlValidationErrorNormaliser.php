@@ -45,7 +45,7 @@ class HtmlValidationErrorNormaliser
      */
     private function getQuotedParameterNormalisedError($htmlErrorString)
     {
-        $parameterMatches = array();
+        $parameterMatches = [];
         $matchCount = preg_match_all('/"([^"]?)+"/', $htmlErrorString, $parameterMatches);
 
         if ($matchCount === 0) {
@@ -83,26 +83,26 @@ class HtmlValidationErrorNormaliser
             $normalisedError = new NormalisedError();
             $normalisedError->setNormalForm($normalForm);
 
-            $byteMatches = array();
+            $byteMatches = [];
             preg_match('/".+"/', $htmlErrorString, $byteMatches);
 
             $normalisedError->addParameter($byteMatches[0]);
 
-            $encodingMatches = array();
+            $encodingMatches = [];
             preg_match('/<code>.+<\/code>/', $htmlErrorString, $encodingMatches);
 
-            $normalisedError->addParameter(str_replace(array(
+            $normalisedError->addParameter(str_replace([
                 '<code>',
                 '</code>'
-            ), '', $encodingMatches[0]));
+            ], '', $encodingMatches[0]));
 
-            $lineMatches = array();
+            $lineMatches = [];
             preg_match('/<strong>[0-9]+<\/strong>/', $htmlErrorString, $lineMatches);
 
-            $normalisedError->addParameter(str_replace(array(
+            $normalisedError->addParameter(str_replace([
                 '<strong>',
                 '</strong>'
-            ), '', $lineMatches[0]));
+            ], '', $lineMatches[0]));
 
             return $normalisedError;
         }

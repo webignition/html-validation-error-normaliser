@@ -356,7 +356,7 @@ class PatternBasedNormaliser
      */
     private function getMatchStringParameterIndices($matchString, $pattern)
     {
-        $indices = array();
+        $indices = [];
 
         foreach ($pattern as $part) {
             if (!$this->isTokenPatternPart($part)) {
@@ -370,10 +370,10 @@ class PatternBasedNormaliser
                     }
                 }
 
-                $indices[] = array(
+                $indices[] = [
                     'prefix' => $part,
                     'index' => strpos($matchString, $part, $offset) + strlen($part)
-                );
+                ];
             }
         }
 
@@ -436,7 +436,7 @@ class PatternBasedNormaliser
         $key = md5($htmlErrorString . implode('', $pattern));
 
         if (!isset($this->preg_cache[$key])) {
-            $matches = array();
+            $matches = [];
             $matchCount = preg_match($this->getRegexPatternFromHtmlErrorPattern($pattern), $htmlErrorString, $matches);
 
             $this->preg_cache[$key] = ($matchCount === 0) ? false : $matches;
