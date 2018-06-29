@@ -96,6 +96,15 @@ trait QuotedParameterNormalisedFormDataProviderTrait
                     ]
                 ),
             ],
+            'reference to entity "%0" for which no system identifier could be generated' => [
+                'htmlErrorString' => 'reference to entity "order" for which no system identifier could be generated',
+                'expectedNormalisedError' => new NormalisedError(
+                    'reference to entity "%0" for which no system identifier could be generated',
+                    [
+                        'order',
+                    ]
+                ),
+            ],
         ];
     }
 }
