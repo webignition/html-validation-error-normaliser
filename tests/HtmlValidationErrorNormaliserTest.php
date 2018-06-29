@@ -7,11 +7,13 @@ use webignition\HtmlValidationErrorNormaliser\NormalisedError;
 use webignition\HtmlValidationErrorNormaliser\Result;
 use webignition\HtmlValidationErrorNormaliser\Tests\DataProvider\NoNormalFormDataProviderTrait;
 use webignition\HtmlValidationErrorNormaliser\Tests\DataProvider\PatternBasedNormalisedFormDataProviderTrait;
+use webignition\HtmlValidationErrorNormaliser\Tests\DataProvider\QuotedParameterNormalisedFormDataProviderTrait;
 
 class HtmlValidationErrorNormaliserTest extends \PHPUnit_Framework_TestCase
 {
     use NoNormalFormDataProviderTrait;
     use PatternBasedNormalisedFormDataProviderTrait;
+    use QuotedParameterNormalisedFormDataProviderTrait;
 
     /**
      * @var HtmlValidationErrorNormaliser
@@ -42,15 +44,34 @@ class HtmlValidationErrorNormaliserTest extends \PHPUnit_Framework_TestCase
         $this->assertNull($result->getNormalisedError());
     }
 
-
     /**
      * @dataProvider normaliseHasPatternBasedNormalisedFormDataProvider
      *
      * @param string $htmlErrorString
      * @param NormalisedError $expectedNormalisedError
      */
-    public function testNormaliseHasPatternBasedNormalisedForm($htmlErrorString, NormalisedError $expectedNormalisedError)
-    {
+    public function testNormaliseHasPatternBasedNormalisedForm(
+        $htmlErrorString,
+        NormalisedError $expectedNormalisedError
+    ) {
+        $result = $this->htmlValidationErrorNormaliser->normalise($htmlErrorString);
+
+        $this->assertInstanceOf(Result::class, $result);
+        $this->assertTrue($result->isNormalised());
+
+        $this->assertEquals($expectedNormalisedError, $result->getNormalisedError());
+    }
+
+    /**
+     * @dataProvider normaliseHasQuotedParameterNormalisedFormDataProvider
+     *
+     * @param string $htmlErrorString
+     * @param NormalisedError $expectedNormalisedError
+     */
+    public function testNormaliseHasQuotedParameterNormalisedForm(
+        $htmlErrorString,
+        NormalisedError $expectedNormalisedError
+    ) {
         $result = $this->htmlValidationErrorNormaliser->normalise($htmlErrorString);
 
         $this->assertInstanceOf(Result::class, $result);
