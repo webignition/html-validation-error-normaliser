@@ -363,7 +363,9 @@ class PatternBasedNormaliser
                 $offset = 0;
 
                 foreach ($indices as $currentIndex) {
-                    if ($currentIndex['prefix'] == $part || substr_count($currentIndex['prefix'], $part) || substr_count($part, $currentIndex['prefix'])) {
+                    $prefix = $currentIndex['prefix'];
+
+                    if ($prefix == $part || substr_count($prefix, $part) || substr_count($part, $prefix)) {
                         $offset = $currentIndex['index'];
                     }
                 }
