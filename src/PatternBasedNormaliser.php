@@ -401,7 +401,8 @@ class PatternBasedNormaliser
                 $parameters[] = substr($matchString, $start, $length);
             } else {
                 $parameter = substr($matchString, $start);
-                if ($parameter !== false) {
+
+                if (!empty($parameter)) {
                     $parameters[] = $parameter;
                 }
             }
