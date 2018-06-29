@@ -6,20 +6,6 @@ use webignition\HtmlValidationErrorNormaliser\Tests\webignition\HtmlValidationEr
 
 class GetNormalFormTest extends BaseTest {
 
-    public function testValueOfAttributeXCannotBeYMustBeOneOfZ() {
-        $htmlErrorString = 'value of attribute "type" cannot be "email"; must be one of "text", "password", "checkbox", "radio", "submit", "reset", "file", "hidden", "image", "button"';
-        $expectedNormalForm = 'value of attribute "%0" cannot be "%1"; must be one of %2';
-
-        $this->normalFormTest($htmlErrorString, $expectedNormalForm);
-    }
-
-    public function testValueOfAttributeXCannotBeBlank() {
-        $htmlErrorString = 'value of attribute "nowrap" cannot be ""; must be one of "nowrap"';
-        $expectedNormalForm = 'value of attribute "%0" cannot be "%1"; must be one of %2';
-
-        $this->normalFormTest($htmlErrorString, $expectedNormalForm);
-    }
-
     public function testInvalidCommentDeclarationWithQuotedCurvedBacket() {
         $htmlErrorString = 'invalid comment declaration: found delimiter "(" outside comment but inside comment declaration';
         $expectedNormalForm = 'invalid comment declaration: found delimiter "%0" outside comment but inside comment declaration';
@@ -65,13 +51,6 @@ class GetNormalFormTest extends BaseTest {
     public function testElementXUndefined() {
         $htmlErrorString = 'Element "Variable" undefined';
         $expectedNormalForm = 'Element "%0" undefined';
-
-        $this->normalFormTest($htmlErrorString, $expectedNormalForm);
-    }
-
-    public function testValueOfAttrbuteXCannotBeYMustBeOneOfZ() {
-        $htmlErrorString = 'value of attribute "valign" cannot be ""; must be one of "top", "middle", "bottom", "baseline"';
-        $expectedNormalForm = 'value of attribute "%0" cannot be "%1"; must be one of %2';
 
         $this->normalFormTest($htmlErrorString, $expectedNormalForm);
     }
