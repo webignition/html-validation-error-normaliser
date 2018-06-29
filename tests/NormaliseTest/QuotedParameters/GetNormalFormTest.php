@@ -6,13 +6,6 @@ use webignition\HtmlValidationErrorNormaliser\Tests\webignition\HtmlValidationEr
 
 class GetNormalFormTest extends BaseTest {
 
-    public function testEndTagWhichIsNotFinished() {
-        $this->normalFormTest(
-            'end tag for "tbody" which is not finished',
-            'end tag for "%0" which is not finished'
-        );
-    }
-
     public function testDocumentTypeDoesnotAllowElementHereMissingOneOfTwoParameters() {
         $htmlErrorString = 'document type does not allow element "script" here; missing one of "dt", "dd" start-tag';
         $expectedNormalForm = 'document type does not allow element "%0" here; missing one of %1 start-tag';

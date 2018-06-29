@@ -57,6 +57,15 @@ trait QuotedParameterNormalisedFormDataProviderTrait
                     ]
                 ),
             ],
+            'end tag for "%0" which is not finished' => [
+                'htmlErrorString' => 'end tag for "tbody" which is not finished',
+                'expectedNormalisedError' => new NormalisedError(
+                    'end tag for "%0" which is not finished',
+                    [
+                        'tbody',
+                    ]
+                ),
+            ],
         ];
     }
 }

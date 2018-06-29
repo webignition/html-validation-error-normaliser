@@ -35,7 +35,6 @@ The for attribute of the label element must refer to a form control.
 element "Variable" undefined
 element "iframe" undefined
 there is no attribute "sizes"
-end tag for "ul" which is not finished
 reference to entity "w" for which no system identifier could be generated
 there is no attribute "onload"
 reference to entity "zc" for which no system identifier could be generated
@@ -148,7 +147,6 @@ reference to entity "startSearch" for which no system identifier could be genera
 element "META" undefined
 Cannot recover after last error. Any further errors will be ignored.
 reference to entity "tid" for which no system identifier could be generated
-end tag for "UL" which is not finished
 element "font" undefined
 value of attribute "id" invalid: "2" cannot start a name
 there is no attribute "allowtransparency"
@@ -177,7 +175,6 @@ there is no attribute "BORDER"
 there is no attribute "data-show-count"
 there is no attribute "data-lang"
 there is no attribute "data-count"
-end tag for "NOSCRIPT" which is not finished
 there is no attribute "send"
 reference to entity "bid" for which no system identifier could be generated
 value of attribute "id" invalid: "4" cannot start a name
@@ -270,7 +267,6 @@ element "footer" undefined
 reference to entity "i" for which no system identifier could be generated
 reference to entity "display_group" for which no system identifier could be generated
 there is no attribute "fb:like:layout"
-end tag for "noscript" which is not finished
 end tag for element "body" which is not open
 reference to entity "v" for which no system identifier could be generated
 Duplicate ID .
@@ -394,7 +390,6 @@ duplicate specification of attribute "height"
 ; assuming missing "object" start-tag
 reference to entity "storeId" for which no system identifier could be generated
 ; assuming missing "LI" start-tag
-end tag for "tr" which is not finished
 reference to entity "hotelid" for which no system identifier could be generated
 there is no attribute "DATA-HEADER"
 there is no attribute "DATA-STREAM"
@@ -419,7 +414,6 @@ reference to entity "_render" for which no system identifier could be generated
 reference to entity "advid" for which no system identifier could be generated
 there is no attribute "data"
 there is no attribute "imageanchor"
-end tag for "FORM" which is not finished
 reference to entity "camid" for which no system identifier could be generated
 Bad value  for attribute href on element a: Control character in query component.
 reference to entity "c4" for which no system identifier could be generated
@@ -432,7 +426,6 @@ Named character reference was not terminated by a semicolon. (Or & should have b
 reference to entity "description" for which no system identifier could be generated
 value of attribute "ID" invalid: "_" cannot start a name
 reference to entity "num" for which no system identifier could be generated
-end tag for "head" which is not finished
 reference to entity "catalogId" for which no system identifier could be generated
 reference to entity "f" for which no system identifier could be generated
 there is no attribute "xmlns"
@@ -453,7 +446,6 @@ Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (X
 there is no attribute "PLACEHOLDER"
 reference to entity "Operation" for which no system identifier could be generated
 The classid attribute on the object element is obsolete. Use the data and type attributes to invoke plugins. To set a parameter with the name classid, use the param element.
-end tag for "html" which is not finished
 "text" is not a member of a group specified for any attribute
 there is no attribute "typeof"
 reference to entity "NAMEofCategory" for which no system identifier could be generated
@@ -627,7 +619,6 @@ reference to entity "phoneSKU" for which no system identifier could be generated
 there is no attribute "onmouseout"
 duplicate specification of attribute "name"
 ; assuming missing "dl" start-tag
-end tag for "dl" which is not finished
 reference to entity "C" for which no system identifier could be generated
 element "d" undefined
 there is no attribute "onmouseover"
@@ -814,7 +805,6 @@ reference to entity "Cub" for which no system identifier could be generated
 invalid comment declaration: found delimiter "-" outside comment but inside comment declaration
 there is no attribute "HTTP-EQUIV"
 reference to entity "CO." for which no system identifier could be generated
-end tag for "FIELDSET" which is not finished
 there is no attribute "data-flattr-uid"
 there is no attribute "data-flattr-tags"
 there is no attribute "data-flattr-category"
@@ -843,7 +833,6 @@ reference to entity "glb.menu" for which no system identifier could be generated
 there is no attribute "Title"
 reference to entity "replytocom" for which no system identifier could be generated
 "data-headlines-item" is not a member of a group specified for any attribute
-end tag for "table" which is not finished
 "size-full" is not a member of a group specified for any attribute
 reference to entity "can_play" for which no system identifier could be generated
 end tag for element "h4" which is not open
@@ -892,7 +881,6 @@ reference to entity "color" for which no system identifier could be generated
 reference to entity "product" for which no system identifier could be generated
 reference to entity "_listcontents_WAR_alfresco_packportlet_INSTANCE_3S0b_struts_action" for which no system identifier could be generated
 there is no attribute "tittle"
-end tag for "form" which is not finished
 reference to entity "b._cookie" for which no system identifier could be generated
 reference to entity "g.length" for which no system identifier could be generated
 element "hash.length" undefined
@@ -955,7 +943,6 @@ reference to entity "time" for which no system identifier could be generated
 "pre-wrap" is not a member of a group specified for any attribute
 "font-weight:" is not a member of a group specified for any attribute
 there is no attribute "data-align"
-end tag for "select" which is not finished
 reference to entity "module" for which no system identifier could be generated
 reference to entity "ibid" for which no system identifier could be generated
 Attribute id declares a duplicate ID value productnav.
@@ -1109,7 +1096,6 @@ reference to entity "item" for which no system identifier could be generated
 reference to entity "playlist" for which no system identifier could be generated
 "0" is not a member of a group specified for any attribute
 there is no attribute "DATA-NUM-POSTS"
-end tag for "ol" which is not finished
 there is no attribute "onclick"
 there is no attribute "data-valmsg-for"
 there is no attribute "data-valmsg-replace"
@@ -1159,7 +1145,6 @@ reference to entity "nttfb" for which no system identifier could be generated
 element "types.length" undefined
 reference to entity "script" for which no system identifier could be generated
 reference to entity "cd" for which no system identifier could be generated
-end tag for "HEAD" which is not finished
 there is no attribute "DATA-YASHARETYPE"
 element "d.length" undefined
 reference to entity "e.performance.webkitGetEntries" for which no system identifier could be generated
@@ -1218,7 +1203,6 @@ reference to entity "LANGUAGE" for which no system identifier could be generated
 reference to entity "PARTITION_ID" for which no system identifier could be generated
 there is no attribute "primary"
 Saw ' when expecting an attribute name. Probable cause: = missing immediately before.
-end tag for "TABLE" which is not finished
 reference to entity "scope" for which no system identifier could be generated
 reference to entity "showtitle" for which no system identifier could be generated
 reference to entity "verified" for which no system identifier could be generated
@@ -1260,7 +1244,6 @@ reference to entity "attfb" for which no system identifier could be generated
 reference to entity "ai" for which no system identifier could be generated
 there is no attribute "pi:pinit:url"
 reference to entity "htmlAt" for which no system identifier could be generated
-end tag for "HTML" which is not finished
 reference to entity "s_ttfb" for which no system identifier could be generated
 reference to entity "nav" for which no system identifier could be generated
 reference to entity "fp" for which no system identifier could be generated
@@ -1572,7 +1555,6 @@ missing marked section end
 there is no attribute "allownetworking"
 reference to entity "gp" for which no system identifier could be generated
 reference to entity "security" for which no system identifier could be generated
-end tag for "tbody" which is not finished
 reference to entity "Order" for which no system identifier could be generated
 reference to entity "invisible" for which no system identifier could be generated
 reference to entity "codAnnonce" for which no system identifier could be generated
@@ -1631,7 +1613,6 @@ element "e" undefined
 reference to entity "tm" for which no system identifier could be generated
 reference to entity "krypto" for which no system identifier could be generated
 there is no attribute "autocorrect"
-end tag for "TR" which is not finished
 element "scr" undefined
 reference to entity "feedurl" for which no system identifier could be generated
 character "," not allowed in end tag
@@ -2048,7 +2029,6 @@ reference to entity "Product.Landline.Net.DSL.Bandwidth" for which no system ide
 element "bH" undefined
 start tag for "TR" omitted, but its declaration does not permit this
 reference to entity "firstname" for which no system identifier could be generated
-end tag for "TBODY" which is not finished
 "and" is not a member of a group specified for any attribute
 reference to entity "ab" for which no system identifier could be generated
 there is no attribute "framespacing"
@@ -2692,7 +2672,6 @@ there is no attribute "jQuery1348676142697"
 reference to entity "lm" for which no system identifier could be generated
 duplicate specification of attribute "ID"
 ; assuming missing "li" start-tag
-end tag for "dir" which is not finished
 there is no attribute "vertical-align"
 there is no attribute "access"
 there is no attribute "level"
@@ -3572,7 +3551,6 @@ reference to entity "classb_id" for which no system identifier could be generate
 element "lu" undefined
 invalid comment declaration: found character ")" outside comment but inside comment declaration
 end tag for element "Html" which is not open
-end tag for "SELECT" which is not finished
 there is no attribute "onchange"
 element "Title" undefined
 end tag for element "title" which is not open
