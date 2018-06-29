@@ -105,6 +105,24 @@ trait QuotedParameterNormalisedFormDataProviderTrait
                     ]
                 ),
             ],
+            'required attribute "%0" not specified' => [
+                'htmlErrorString' => 'required attribute "type" not specified',
+                'expectedNormalisedError' => new NormalisedError(
+                    'required attribute "%0" not specified',
+                    [
+                        'type',
+                    ]
+                ),
+            ],
+            'there is no attribute "%0"' => [
+                'htmlErrorString' => 'there is no attribute "itemprop"',
+                'expectedNormalisedError' => new NormalisedError(
+                    'there is no attribute "%0"',
+                    [
+                        'itemprop',
+                    ]
+                ),
+            ],
         ];
     }
 }
