@@ -87,6 +87,15 @@ trait QuotedParameterNormalisedFormDataProviderTrait
                     ]
                 ),
             ],
+            'Element "%0" undefined' => [
+                'htmlErrorString' => 'Element "Variable" undefined',
+                'expectedNormalisedError' => new NormalisedError(
+                    'Element "%0" undefined',
+                    [
+                        'Variable',
+                    ]
+                ),
+            ],
         ];
     }
 }
