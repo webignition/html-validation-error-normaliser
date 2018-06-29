@@ -21,6 +21,17 @@ class NormalisedErrorTest extends \PHPUnit_Framework_TestCase
         $this->normalisedError = new NormalisedError();
     }
 
+    public function testConstruct()
+    {
+        $normalForm = 'foo %0 bar %1 foobar %3';
+        $parameters = ['a', '!', '123'];
+
+        $normalisedError = new NormalisedError($normalForm, $parameters);
+
+        $this->assertEquals($normalForm, $normalisedError->getNormalForm());
+        $this->assertEquals($parameters, $normalisedError->getParameters());
+    }
+
     public function testGetNormalFormSetNormalForm()
     {
         $normalForm = 'foo';
